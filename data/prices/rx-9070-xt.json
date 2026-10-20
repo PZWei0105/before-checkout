@@ -1,0 +1,44 @@
+{
+ "id": "rx-9070-xt",
+ "daily": [
+  {
+   "d": "2026-10-20",
+   "p": 29890,
+   "src": "原價屋"
+  }
+ ],
+ "latest": {
+  "p": 29890,
+  "at": "2026-10-20T19:31:56+08:00",
+  "src": "coolpc",
+  "srcLabel": "原價屋",
+  "title": "｛華擎 RX9070XT Challenger 16GB｝2970MHz/29cm/三風扇/註五年保",
+  "url": "https://www.coolpc.com.tw/evaluate.php",
+  "status": "ok"
+ },
+ "held": null,
+ "checkedAt": "2026-10-20T19:31:56+08:00",
+ "status": "ok",
+ "sources": {
+  "pchome": {
+   "status": "ok",
+   "seen": 60,
+   "n": 10,
+   "best": {
+    "p": 30990,
+    "title": "SAPPHIRE 藍寶石 PULSE 脈動 RX 9070 XT GAMING 16GB 顯示卡",
+    "url": "https://24h.pchome.com.tw/prod/DSBC1T-A900J1ZK2"
+   }
+  },
+  "coolpc": {
+   "status": "ok",
+   "seen": 210,
+   "n": 12,
+   "best": {
+    "p": 29890,
+    "title": "｛華擎 RX9070XT Challenger 16GB｝2970MHz/29cm/三風扇/註五年保",
+    "url": "https://www.coolpc.com.tw/evaluate.php"
+   }
+  }
+ }
+}

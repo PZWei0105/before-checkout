@@ -1,0 +1,20 @@
+{
+ "id": "elgato-4k-x",
+ "daily": [],
+ "checkedAt": "2026-10-20T19:31:56+08:00",
+ "status": "none",
+ "sources": {
+  "pchome": {
+   "status": "none",
+   "seen": 12,
+   "n": 0,
+   "best": null
+  },
+  "coolpc": {
+   "status": "none",
+   "seen": 18,
+   "n": 0,
+   "best": null
+  }
+ }
+}

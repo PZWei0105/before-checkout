@@ -1,0 +1,44 @@
+{
+ "id": "elgato-stream-deck-mk2",
+ "daily": [
+  {
+   "d": "2026-10-20",
+   "p": 4290,
+   "src": "PChome 24h"
+  }
+ ],
+ "latest": {
+  "p": 4290,
+  "at": "2026-10-20T19:31:56+08:00",
+  "src": "pchome",
+  "srcLabel": "PChome 24h",
+  "title": "ELGATO Stream Deck MK.2 串流直播控制台二代-白色 公司貨",
+  "url": "https://24h.pchome.com.tw/prod/DGAFBD-A900FY8QC",
+  "status": "ok"
+ },
+ "held": null,
+ "checkedAt": "2026-10-20T19:31:56+08:00",
+ "status": "ok",
+ "sources": {
+  "pchome": {
+   "status": "ok",
+   "seen": 5,
+   "n": 4,
+   "best": {
+    "p": 4290,
+    "title": "ELGATO Stream Deck MK.2 串流直播控制台二代-白色 公司貨",
+    "url": "https://24h.pchome.com.tw/prod/DGAFBD-A900FY8QC"
+   }
+  },
+  "coolpc": {
+   "status": "ok",
+   "seen": 18,
+   "n": 1,
+   "best": {
+    "p": 4990,
+    "title": "｛海盜船 elgato Stream Deck MK.2｝直播控制器 / 15鍵",
+    "url": "https://www.coolpc.com.tw/evaluate.php"
+   }
+  }
+ }
+}

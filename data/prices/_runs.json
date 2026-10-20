@@ -1,0 +1,20 @@
+[
+ {
+  "at": "2026-10-20T19:31:56+08:00",
+  "mode": "force",
+  "sources": {
+   "pchome": "ok",
+   "coolpc": "ok"
+  },
+  "products": {
+   "elgato-4k-x": "none",
+   "elgato-facecam-4k": "none",
+   "elgato-stream-deck-mk2": "ok",
+   "iphone-18-pro-max": "ok",
+   "rtx-5080": "ok",
+   "rtx-5090": "none",
+   "rx-9070-xt": "ok"
+  },
+  "ms": 30723
+ }
+]

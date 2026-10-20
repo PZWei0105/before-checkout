@@ -1,6 +1,6 @@
 /* 下單前 service worker
  * 網路優先：有網路就拿最新的，沒網路才用存檔；所以 App 更新後不會卡在舊版本。
- * 字型（Google Fonts）存起來重複用。__BUILD__ 由 tools/build.mjs 換成版本號。 */
+ * 字型（Google Fonts）存起來重複用。VERSION 裡的版本號由 tools/build.mjs 打包時填入。 */
 const VERSION='bc-__BUILD__';
 const FONTS='bc-fonts';
 const SHELL=['./','./index.html','./app.css','./app.js','./engine.js','./manifest.webmanifest','./icons/icon-192.png','./icons/apple-touch-icon.png','./data/bundle.json'];

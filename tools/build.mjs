@@ -149,7 +149,9 @@ if(OUT){
   fs.rmSync(OUT,{recursive:true,force:true});
   fs.mkdirSync(path.join(OUT,'data'),{recursive:true});
   for(const f of ['index.html','app.css','app.js','engine.js','manifest.webmanifest'])fs.copyFileSync(path.join(ROOT,f),path.join(OUT,f));
-  fs.writeFileSync(path.join(OUT,'sw.js'),read('sw.js').replace('__BUILD__',buildId));
+  const sw=read('sw.js').replaceAll('__BUILD__',buildId);
+  if(sw.includes('__BUILD__')||!sw.includes(`'bc-${buildId}'`)){console.log('✗ sw.js 的版本號沒有填入，請檢查 VERSION 那一行');process.exit(1)}
+  fs.writeFileSync(path.join(OUT,'sw.js'),sw);
   fs.cpSync(path.join(ROOT,'icons'),path.join(OUT,'icons'),{recursive:true});
   fs.writeFileSync(path.join(OUT,'data','bundle.json'),JSON.stringify(bundle));
   fs.writeFileSync(path.join(OUT,'.nojekyll'),'');

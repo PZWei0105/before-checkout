@@ -1,0 +1,122 @@
+{
+ "at": "2026-10-20T11:24:21.537Z",
+ "log": [
+  {
+   "name": "v-5080-prcdc-p1.json",
+   "url": "https://ecshweb.pchome.com.tw/search/v4.3/all/results?q=RTX%205080%2016G%20%E9%A1%AF%E7%A4%BA%E5%8D%A1&page=1&sort=prc%2Fdc",
+   "status": 200,
+   "total": 1198,
+   "n": 20,
+   "min": 159800,
+   "max": 1464999
+  },
+  {
+   "name": "v-5080-prcdc-p2.json",
+   "url": "https://ecshweb.pchome.com.tw/search/v4.3/all/results?q=RTX%205080%2016G%20%E9%A1%AF%E7%A4%BA%E5%8D%A1&page=2&sort=prc%2Fdc",
+   "status": 200,
+   "total": 1198,
+   "n": 20,
+   "min": 120900,
+   "max": 156000
+  },
+  {
+   "name": "v-5080-prcdc-p3.json",
+   "url": "https://ecshweb.pchome.com.tw/search/v4.3/all/results?q=RTX%205080%2016G%20%E9%A1%AF%E7%A4%BA%E5%8D%A1&page=3&sort=prc%2Fdc",
+   "status": 200,
+   "total": 1198,
+   "n": 20,
+   "min": 104190,
+   "max": 119990
+  },
+  {
+   "name": "v-5080-prcdc-p4.json",
+   "url": "https://ecshweb.pchome.com.tw/search/v4.3/all/results?q=RTX%205080%2016G%20%E9%A1%AF%E7%A4%BA%E5%8D%A1&page=4&sort=prc%2Fdc",
+   "status": 200,
+   "total": 1198,
+   "n": 20,
+   "min": 93090,
+   "max": 103900
+  },
+  {
+   "name": "v-5080-price.json",
+   "url": "https://ecshweb.pchome.com.tw/search/v4.3/all/results?q=RTX%205080%2016G%20%E9%A1%AF%E7%A4%BA%E5%8D%A1&page=1&sort=sale%2Fdc&price=40000-100000",
+   "status": 200,
+   "total": 519,
+   "n": 20,
+   "min": 71390,
+   "max": 93090
+  },
+  {
+   "name": "v-5080-price2.json",
+   "url": "https://ecshweb.pchome.com.tw/search/v4.3/all/results?q=RTX%205080%2016G%20%E9%A1%AF%E7%A4%BA%E5%8D%A1&page=1&sort=prc%2Fac&price=40000-100000",
+   "status": 200,
+   "total": 519,
+   "n": 20,
+   "min": 40059,
+   "max": 41290
+  },
+  {
+   "name": "v-iphone-prcdc-p1.json",
+   "url": "https://ecshweb.pchome.com.tw/search/v4.3/all/results?q=Apple%20iPhone%2018%20Pro%20Max%20256G&page=1&sort=prc%2Fdc",
+   "status": 200,
+   "total": 121,
+   "n": 20,
+   "min": 43900,
+   "max": 50400
+  },
+  {
+   "name": "v-iphone-prcdc-p2.json",
+   "url": "https://ecshweb.pchome.com.tw/search/v4.3/all/results?q=Apple%20iPhone%2018%20Pro%20Max%20256G&page=2&sort=prc%2Fdc",
+   "status": 200,
+   "total": 121,
+   "n": 20,
+   "min": 38900,
+   "max": 43900
+  },
+  {
+   "name": "v-iphone-prcdc-p3.json",
+   "url": "https://ecshweb.pchome.com.tw/search/v4.3/all/results?q=Apple%20iPhone%2018%20Pro%20Max%20256G&page=3&sort=prc%2Fdc",
+   "status": 200,
+   "total": 121,
+   "n": 20,
+   "min": 35600,
+   "max": 38900
+  },
+  {
+   "name": "v-iphone-price.json",
+   "url": "https://ecshweb.pchome.com.tw/search/v4.3/all/results?q=iPhone%2018%20Pro%20Max&page=1&sort=sale%2Fdc&price=40000-80000",
+   "status": 200,
+   "total": 20,
+   "n": 20,
+   "min": 49900,
+   "max": 72400
+  },
+  {
+   "name": "v-5090-price.json",
+   "url": "https://ecshweb.pchome.com.tw/search/v4.3/all/results?q=RTX%205090&page=1&sort=prc%2Fac&price=80000-300000",
+   "status": 200,
+   "total": 39,
+   "n": 20,
+   "min": 155900,
+   "max": 209999
+  },
+  {
+   "name": "v-4kx.json",
+   "url": "https://ecshweb.pchome.com.tw/search/v4.3/all/results?q=Game%20Capture%204K%20X&page=1&sort=sale%2Fdc",
+   "status": 200,
+   "total": 0,
+   "n": 0,
+   "min": null,
+   "max": null
+  },
+  {
+   "name": "v-facecam.json",
+   "url": "https://ecshweb.pchome.com.tw/search/v4.3/all/results?q=Facecam%204K&page=1&sort=sale%2Fdc",
+   "status": 200,
+   "total": 59,
+   "n": 20,
+   "min": 25,
+   "max": 5990
+  }
+ ]
+}

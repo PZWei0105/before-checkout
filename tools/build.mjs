@@ -28,7 +28,8 @@ const ENUM={category:['gpu','phone','peripheral'],status:['on-sale','preorder','
   level:['big','some','none','worse','na'],succ:['official','credible','rumor','none'],sev:['high','medium','low'],iss:['ongoing','fixed'],evtype:['sale','launch']};
 const USES=E.USES.map(u=>u[0]);
 const reDate=/^\d{4}-\d{2}-\d{2}$/,reEta=/^\d{4}-\d{2}(-\d{2})?$/,reId=/^[a-z0-9]+(?:-[a-z0-9]+)*$/;
-const KNOWN=new Set(['id','name','brand','category','kind','tagline','status','launchDate','cycleMonths','checkedAt','lastRequest','price','specs','tests','gain','gainBasis','needs','successor','issues','alternatives','brief','learn','sources','priceLog']);
+const KNOWN=new Set(['id','name','brand','category','kind','tagline','status','launchDate','cycleMonths','checkedAt','lastRequest','track','price','specs','tests','gain','gainBasis','needs','successor','issues','alternatives','brief','learn','sources','priceLog']);
+const SRC_LABEL={pchome:'PChome 24h',coolpc:'原價屋'};
 const twDate=d=>new Date(d.getTime()+8*36e5).toISOString().slice(0,10);
 
 function readJSON(file){
@@ -94,6 +95,77 @@ function checkProduct(fn,p){
     const last=p.priceLog[p.priceLog.length-1];
     if(last&&isObj(P)&&P.now!=null&&chk&&last.d===twDate(chk)&&last.p!==P.now)warn(f,`今天的 priceLog（${last.p}）和 price.now（${P.now}）不一致`)}}
   for(const k of Object.keys(p))if(!KNOWN.has(k))warn(f,`多了不認識的欄位「${k}」（App 不會用到）`);
+  checkTrack(f,p.track);
+}
+function checkTrack(f,t){
+  if(t==null)return;
+  if(!isObj(t)){err(f,'track 要是物件');return}
+  if(t.band!=null&&!(Array.isArray(t.band)&&t.band.length===2&&t.band.every(x=>typeof x==='number'&&x>0)&&t.band[0]<t.band[1]))err(f,'track.band 要是 [最低價, 最高價]');
+  const srcs=Object.keys(t).filter(k=>k!=='band');
+  if(!srcs.length)warn(f,'track 沒有設定任何來源');
+  for(const k of srcs){
+    if(!SRC_LABEL[k]){err(f,`track.${k} 不是支援的來源（只能用 pchome、coolpc）`);continue}
+    const c=t[k];if(!isObj(c)){err(f,`track.${k} 要是物件`);continue}
+    if(k==='pchome'&&!(typeof c.q==='string'&&c.q.trim()))err(f,'track.pchome.q 要填搜尋關鍵字');
+    if(k==='coolpc'&&!(typeof c.cat==='string'&&c.cat.trim()))err(f,'track.coolpc.cat 要填原價屋的分類（例如 顯示卡、影音、視訊）');
+    for(const a of ['must','any','not'])if(c[a]!=null&&!(Array.isArray(c[a])&&c[a].every(x=>typeof x==='string')))err(f,`track.${k}.${a} 要是字串陣列`);
+    if(!Array.isArray(c.must)||!c.must.length)warn(f,`track.${k}.must 沒填，容易比對到別的商品`);
+  }
+}
+
+/* ---- 自動追價：data/prices/<id>.json 合併進商品 ---- */
+const avg=a=>a.reduce((s,x)=>s+x,0)/a.length;
+const twFmt=iso=>{const t=new Date(Date.parse(iso)+8*36e5);return `${t.getUTCMonth()+1}/${t.getUTCDate()} ${String(t.getUTCHours()).padStart(2,'0')}:${String(t.getUTCMinutes()).padStart(2,'0')}`};
+function readPrices(){
+  const dir=path.join(ROOT,'data','prices');const m={};let runs=[];
+  if(!fs.existsSync(dir))return {prices:m,runs};
+  for(const fn of fs.readdirSync(dir).filter(f=>f.endsWith('.json'))){
+    try{const j=JSON.parse(fs.readFileSync(path.join(dir,fn),'utf8'));if(fn==='_runs.json')runs=Array.isArray(j)?j:[];else if(j&&j.id)m[j.id]=j}
+    catch(e){warn('data/prices/'+fn,'讀不到（'+e.message+'），這次先不用')}
+  }
+  return {prices:m,runs};
+}
+function mergeAuto(p,a,nowMs){
+  const P={...(p.price||{})};
+  const L=a.latest&&a.latest.status==='ok'&&Number.isFinite(a.latest.p)&&Date.parse(a.latest.at)?a.latest:null;
+  const secAt=E.pd(p.checkedAt);const secAge=secAt?(nowMs-secAt.getTime())/864e5:Infinity;
+  const cands=[];
+  if(typeof P.now==='number'&&secAge<=7)cands.push({by:'secretary',p:P.now});
+  if(L&&(nowMs-Date.parse(L.at))/864e5<=3)cands.push({by:'auto',p:L.p});
+  if(cands.length){
+    const best=cands.sort((x,y)=>x.p-y.p||(x.by==='secretary'?-1:1))[0];
+    if(best.by==='auto'){
+      P.secNow=typeof P.now==='number'?{p:P.now,src:P.nowSource||null,url:P.nowUrl||null}:null;
+      P.now=L.p;P.nowSource=`${L.srcLabel}（自動追價 ${twFmt(L.at)}${L.cond?'・'+L.cond:''}）`;P.nowUrl=L.url||null;
+    }
+    P.nowBy=best.by;
+  }else P.nowBy=typeof P.now==='number'?'secretary':null;
+  const daily=(Array.isArray(a.daily)?a.daily:[]).filter(x=>x&&/^\d{4}-\d{2}-\d{2}$/.test(x.d)&&Number.isFinite(x.p));
+  // 近 90 天低點：自動追價＋秘書紀錄，累積滿 30 天才採用
+  const cutoff=new Date(nowMs-90*864e5).toISOString().slice(0,10);
+  const pts=[...daily,...(Array.isArray(p.priceLog)?p.priceLog:[])].filter(x=>x&&x.d>=cutoff&&Number.isFinite(x.p));
+  if(pts.length){
+    const first=pts.map(x=>x.d).sort()[0];const span=(nowMs-Date.parse(first+'T00:00:00+08:00'))/864e5;
+    if(span>=30){P.low90=Math.min(...pts.map(x=>x.p));P.low90Source=`自動追價＋秘書紀錄（近 ${Math.min(90,Math.round(span))} 天）`}
+  }
+  // 走勢：自動追價滿 10 筆，最近 3 筆平均對照前兩週平均
+  if(daily.length>=10){
+    const end=Date.parse(daily[daily.length-1].d);
+    const win=daily.filter(x=>{const t=Date.parse(x.d);return t<=end-4*864e5&&t>=end-17*864e5});
+    if(win.length>=3){
+      const ch=(avg(daily.slice(-3).map(x=>x.p))-avg(win.map(x=>x.p)))/avg(win.map(x=>x.p))*100;
+      P.trendSec={trend:P.trend,note:P.trendNote||null};
+      P.trend=ch>3?'up':ch<-3?'down':'flat';
+      P.trendNote=`自動追價：最近 3 次平均比前兩週${ch>=0?'高':'低'} ${Math.abs(ch).toFixed(1)}%`;
+      P.trendSources=[];P.trendBy='auto';
+    }
+  }
+  p.price=P;
+  p.auto={status:a.status||'pending',checkedAt:a.checkedAt||null,
+    latest:L?{p:L.p,at:L.at,src:L.srcLabel,title:L.title,url:L.url||null,cond:L.cond||null}:null,
+    held:a.status==='held'&&a.held?{p:a.held.p,at:a.held.at,src:a.held.srcLabel,title:a.held.title,url:a.held.url||null,ref:a.held.ref,change:a.held.change}:null,
+    sources:Object.fromEntries(Object.entries(a.sources||{}).map(([k,s])=>[k,{label:SRC_LABEL[k]||k,status:s.status,n:s.n??null,best:s.best||null}])),
+    daily:daily.slice(-120)};
 }
 function checkCalendar(c){
   const f='data/calendar.json';
@@ -124,16 +196,31 @@ for(const fn of files){const p=readJSON(path.join(pdir,fn));if(p){checkProduct(f
 const calendar=readJSON(path.join(ROOT,'data','calendar.json'));if(calendar)checkCalendar(calendar);
 const profile=readJSON(path.join(ROOT,'data','profile.json'));if(profile)checkProfile(profile);
 
+/* ---- 自動追價合併（判定表與網站都用合併後的價格） ---- */
+const {prices,runs}=readPrices();
+const nowMs=Date.now();
+const merged=errors.length?[]:products.map(p=>{const q=JSON.parse(JSON.stringify(p));
+  if(prices[p.id])mergeAuto(q,prices[p.id],nowMs);else if(p.track)q.auto={status:'pending'};
+  delete q.track;return q});
+
 console.log(`\n下單前 資料檢查：${products.length} 件商品、${calendar&&Array.isArray(calendar.events)?calendar.events.length:0} 個檔期\n`);
 if(!errors.length&&profile&&calendar){
   const pr=E.normProfile({...profile,budget:{gpu:null,phone:null,peripheral:null}});
-  console.log('雲端預設設定下的判定（PZ 手機上的預算與設定可能不同）：');
-  for(const p of products){
+  console.log('雲端預設設定下的判定（PZ 手機上的預算與設定可能不同；價格「＊」＝採用自動追價）：');
+  for(const p of merged){
     const r=E.evaluate(p,pr,{},{calendar:calendar.events});
     const hits=r.lines.filter(l=>l.status==='hit').map(l=>l.id).join(',')||'-';
-    console.log(`  ${p.id.padEnd(26)} ${E.V[r.verdict].label.padEnd(5,'　')} 觸發 ${hits.padEnd(9)} ${E.money(p.price&&p.price.now).padEnd(13)} ${E.ageText(p.checkedAt)}`);
+    const price=E.money(p.price&&p.price.now)+(p.price&&p.price.nowBy==='auto'?'＊':'');
+    console.log(`  ${p.id.padEnd(26)} ${E.V[r.verdict].label.padEnd(5,'　')} 觸發 ${hits.padEnd(9)} ${price.padEnd(14)} ${E.ageText(p.checkedAt)}`);
   }
   console.log('');
+  const tracked=merged.filter(p=>p.auto);
+  if(tracked.length){
+    console.log(`自動追價：${tracked.length} 件有設定${runs[0]?`，最近一次 ${runs[0].at}（${runs[0].mode}）`:'，還沒跑過'}`);
+    for(const p of tracked){const a=p.auto;
+      console.log(`  ${p.id.padEnd(26)} ${String(a.status).padEnd(7)} ${a.latest?`${a.latest.p}（${a.latest.src}${a.latest.cond?'・'+a.latest.cond:''}）`:'—'}${a.held?`  待秘書確認 ${a.held.p}（${(a.held.change*100).toFixed(1)}%）`:''}`)}
+    console.log('');
+  }
 }
 for(const w of warns)console.log(w);
 for(const e of errors)console.log(e);
@@ -143,9 +230,10 @@ console.log(`\n✓ 資料檢查通過${warns.length?`（${warns.length} 個提�
 /* ---- build site ---- */
 if(OUT){
   const read=f=>fs.readFileSync(path.join(ROOT,f),'utf8');
-  const buildId=crypto.createHash('sha256').update(JSON.stringify({profile,calendar,products})+read('app.js')+read('engine.js')+read('app.css')+read('index.html')+read('sw.js')).digest('hex').slice(0,12);
+  const tracker=runs[0]?{lastRun:runs[0],recent:runs.slice(0,10).map(r=>({at:r.at,mode:r.mode,sources:r.sources}))}:null;
+  const buildId=crypto.createHash('sha256').update(JSON.stringify({profile,calendar,merged,tracker})+read('app.js')+read('engine.js')+read('app.css')+read('index.html')+read('sw.js')).digest('hex').slice(0,12);
   const latest=products.map(p=>E.pd(p.checkedAt)).filter(Boolean).sort((a,b)=>b-a)[0];
-  const bundle={buildId,builtAt:new Date().toISOString(),dataAt:latest?latest.toISOString():null,profile,calendar,products};
+  const bundle={buildId,builtAt:new Date().toISOString(),dataAt:latest?latest.toISOString():null,profile,calendar,tracker,products:merged};
   fs.rmSync(OUT,{recursive:true,force:true});
   fs.mkdirSync(path.join(OUT,'data'),{recursive:true});
   for(const f of ['index.html','app.css','app.js','engine.js','manifest.webmanifest'])fs.copyFileSync(path.join(ROOT,f),path.join(OUT,f));

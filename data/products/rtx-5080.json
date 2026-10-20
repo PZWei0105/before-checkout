@@ -9,6 +9,37 @@
   "launchDate": "2025-01-30",
   "cycleMonths": 27,
   "checkedAt": "2026-10-20T17:50:00+08:00",
+  "track": {
+    "band": [
+      40000,
+      100000
+    ],
+    "pchome": {
+      "q": "RTX 5080 16G 顯示卡",
+      "pages": 3,
+      "must": [
+        "5080",
+        "16G"
+      ],
+      "not": [
+        "@pc",
+        "@bundle",
+        "@acc",
+        "@used",
+        "SUPER"
+      ]
+    },
+    "coolpc": {
+      "cat": "顯示卡",
+      "must": [
+        "RTX5080"
+      ],
+      "not": [
+        "@used",
+        "SUPER"
+      ]
+    }
+  },
   "price": {
     "currency": "TWD",
     "now": 53990,

@@ -9,6 +9,36 @@
   "launchDate": "2025-03-06",
   "cycleMonths": 27,
   "checkedAt": "2026-10-20T17:50:00+08:00",
+  "track": {
+    "band": [
+      20000,
+      50000
+    ],
+    "pchome": {
+      "q": "RX 9070 XT 顯示卡",
+      "pages": 3,
+      "must": [
+        "9070XT"
+      ],
+      "not": [
+        "@pc",
+        "@bundle",
+        "@acc",
+        "@used",
+        "GRE"
+      ]
+    },
+    "coolpc": {
+      "cat": "顯示卡",
+      "must": [
+        "9070XT"
+      ],
+      "not": [
+        "@used",
+        "GRE"
+      ]
+    }
+  },
   "price": {
     "currency": "TWD",
     "now": 27190,

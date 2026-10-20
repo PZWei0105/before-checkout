@@ -9,6 +9,36 @@
   "launchDate": "2025-01-30",
   "cycleMonths": 27,
   "checkedAt": "2026-10-20T17:50:00+08:00",
+  "track": {
+    "band": [
+      80000,
+      300000
+    ],
+    "pchome": {
+      "q": "RTX 5090 32G 顯示卡",
+      "pages": 3,
+      "must": [
+        "5090"
+      ],
+      "not": [
+        "@pc",
+        "@bundle",
+        "@acc",
+        "@used",
+        "24G"
+      ]
+    },
+    "coolpc": {
+      "cat": "顯示卡",
+      "must": [
+        "5090"
+      ],
+      "not": [
+        "@used",
+        "@bundle"
+      ]
+    }
+  },
   "price": {
     "currency": "TWD",
     "now": 159990,

@@ -9,6 +9,35 @@
   "launchDate": "2021-07-15",
   "cycleMonths": 52,
   "checkedAt": "2026-10-20T17:34:00+08:00",
+  "track": {
+    "band": [
+      3500,
+      8000
+    ],
+    "pchome": {
+      "q": "Elgato Stream Deck MK.2",
+      "pages": 1,
+      "must": [
+        "STREAMDECKMK2"
+      ],
+      "not": [
+        "@acc",
+        "@used",
+        "SCISSOR",
+        "剪刀"
+      ]
+    },
+    "coolpc": {
+      "cat": "影音",
+      "must": [
+        "STREAMDECKMK2"
+      ],
+      "not": [
+        "@used",
+        "SCISSOR"
+      ]
+    }
+  },
   "price": {
     "currency": "TWD",
     "now": 4910,

@@ -1,12 +1,18 @@
 name: deploy
 
+# 推到 main：檢查資料、打包、部署。
+# 每小時醒來一次：tools/track.mjs 自己判斷要不要追價（每天 09、21 點；大促前 3 天到隔天每小時），
+#   有新價格就存回 repo 並重新部署；不是追價時段就直接結束。
+# 手動（Actions 頁面的 Run workflow）或 commit 訊息含「[追價]」：立刻追價一次。
 on:
   push:
     branches: [main]
+  schedule:
+    - cron: '7 * * * *'
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -15,11 +21,45 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  track:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, '[追價]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    outputs:
+      changed: ${{ steps.t.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - id: t
+        name: 自動追價
+        run: node tools/track.mjs ${{ github.event_name != 'schedule' && '--force' || '' }}
+      - name: 把價格存回 repo
+        if: steps.t.outputs.changed == 'true'
+        run: |
+          git config user.name "下單前追價機器人"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/prices
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -q -m "自動追價 $(TZ=Asia/Taipei date +'%m/%d %H:%M')"
+          for i in 1 2 3; do
+            if git pull --rebase -q origin main && git push -q origin HEAD:main; then exit 0; fi
+            sleep 5
+          done
+          exit 1
+
   build:
+    needs: track
+    if: always() && (github.event_name == 'push' || needs.track.outputs.changed == 'true')
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -31,6 +71,7 @@ jobs:
 
   deploy:
     needs: build
+    if: always() && needs.build.result == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     environment:

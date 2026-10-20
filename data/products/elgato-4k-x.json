@@ -9,6 +9,36 @@
   "launchDate": "2024-02-01",
   "cycleMonths": 48,
   "checkedAt": "2026-10-20T17:50:00+08:00",
+  "track": {
+    "band": [
+      5000,
+      12000
+    ],
+    "pchome": {
+      "q": "Elgato 4K X",
+      "pages": 2,
+      "must": [
+        "ELGATO",
+        "4KX"
+      ],
+      "not": [
+        "@acc",
+        "@used",
+        "PRO",
+        "4KS"
+      ]
+    },
+    "coolpc": {
+      "cat": "影音",
+      "must": [
+        "ELGATO",
+        "4KX"
+      ],
+      "not": [
+        "@used"
+      ]
+    }
+  },
   "price": {
     "currency": "TWD",
     "now": 7990,

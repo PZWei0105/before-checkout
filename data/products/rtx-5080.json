@@ -1,0 +1,373 @@
+{
+  "id": "rtx-5080",
+  "name": "NVIDIA GeForce RTX 5080",
+  "brand": "NVIDIA",
+  "category": "gpu",
+  "kind": "桌機顯示卡",
+  "tagline": "次旗艦，與你筆電 5090 Laptop 同晶片的桌機版",
+  "status": "on-sale",
+  "launchDate": "2025-01-30",
+  "cycleMonths": 27,
+  "checkedAt": "2026-10-20T17:50:00+08:00",
+  "price": {
+    "currency": "TWD",
+    "now": 53990,
+    "nowSource": "PChome 24h 2026-10-20（ZOTAC SOLID CORE OC／MSI VENTUS 3X OC）",
+    "nowUrl": "https://24h.pchome.com.tw/search/?q=RTX5080",
+    "range": [
+      51990,
+      56990
+    ],
+    "ref": 35990,
+    "refLabel": "NVIDIA 台灣首發建議售價（起，2025-01）",
+    "low90": null,
+    "low90Source": null,
+    "trend": "up",
+    "trendNote": "台灣 PChome 最低 53,990 元，是首發建議價 35,990 元的 1.5 倍；Yahoo 上 42,990～48,990 元的平價款全數補貨中或售完，BigGo 顯示技嘉 WINDFORCE +3,090、PNY +6,999 等近期漲價。全球：華碩、技嘉 8 月每張調漲通路價約 207～222 美元；Amazon 追蹤款 9/12 由 1,299 升至 1,619 美元（+24.6%）；中國通路起價 12,000 人民幣，比參考價高 44.6%。",
+    "trendSources": [
+      {
+        "title": "TheNextWeb：華碩、技嘉 RTX 5080 通路價每張漲約 207～222 美元",
+        "url": "https://thenextweb.com/news/asus-gigabyte-rtx-50-gpu-price-hike-dram-crisis"
+      },
+      {
+        "title": "Hardware Busters：RTX 5080 售價已高於 5090 首發價",
+        "url": "https://hwbusters.com/news/an-rtx-5080-now-costs-more-than-an-rtx-5090-did-at-launch/"
+      },
+      {
+        "title": "VideoCardPrices：9/12 美國價格追蹤",
+        "url": "https://videocardprices.com/digest/2026-09-12/"
+      },
+      {
+        "title": "遊民星空（快科技）：中國 RTX 5080 通路起價 12,000 人民幣",
+        "url": "https://www.gamersky.com/hardware/202608/2181650.shtml"
+      },
+      {
+        "title": "BigGo 比價：RTX 5080（近期漲價標籤）",
+        "url": "https://biggo.com.tw/s/RTX+5080/"
+      }
+    ]
+  },
+  "specs": [
+    {
+      "k": "CUDA 核心",
+      "plain": "和你筆電同為 GB203 晶片，核心數只多約 2%",
+      "v": "10,752"
+    },
+    {
+      "k": "顯示記憶體",
+      "plain": "比你筆電少 8GB，頻寬只高約 7%",
+      "v": "16GB GDDR7，256-bit，960 GB/s"
+    },
+    {
+      "k": "顯示卡功耗",
+      "plain": "約是筆電上限 175W 的兩倍，效能差距主要來自這裡",
+      "v": "360W"
+    },
+    {
+      "k": "建議電源",
+      "plain": "組桌機時電源需 850W 起跳",
+      "v": "850W 以上（符合 PCIe CEM 5.1）"
+    },
+    {
+      "k": "影片編碼器",
+      "plain": "與你筆電同代，直播與匯出畫質不會因此變好",
+      "v": "2 組第 9 代 NVENC"
+    },
+    {
+      "k": "供電接頭",
+      "plain": "同樣是 16-pin 接頭，安裝時務必插到底",
+      "v": "1×12V-2x6（450W 以上）或 3×8-pin 轉接"
+    }
+  ],
+  "tests": [
+    {
+      "claim": "桌機 5080 對 5090 Laptop：Time Spy 33,000 對 25,015；1440p Ultra 平均 165 對 136 fps；4K 96 對 81 fps",
+      "src": "NanoReview",
+      "url": "https://nanoreview.net/ru/gpu-compare/geforce-rtx-5090-mobile-vs-geforce-rtx-5080"
+    },
+    {
+      "claim": "實測最快的 5090 Laptop 版本，遊戲效能僅落後桌機 5080 約 5%",
+      "src": "Notebookcheck",
+      "url": "https://www.notebookcheck.org/NVIDIA-GeForce-RTX-5090-Laptop.1072516.0.html"
+    },
+    {
+      "claim": "5090 Laptop 在原生畫面《電馭叛客 2077》僅略輸華碩桌機 RTX 5070 Ti",
+      "src": "HotHardware",
+      "url": "https://hothardware.com/reviews/nvidia-geforce-rtx-5090-mobile-gpu-preview"
+    },
+    {
+      "claim": "5080 在 4K 比 4080 Super 快約 11%、1440p 約 4%，功耗低 4%～19%",
+      "src": "TechSpot",
+      "url": "https://www.techspot.com/review/2947-nvidia-geforce-rtx-5080/"
+    },
+    {
+      "claim": "本地 LLM 生字速度約為桌機 5090 的 62%",
+      "src": "Hardware Corner",
+      "url": "https://www.hardware-corner.net/gpu-llm-benchmarks/rtx-5090/"
+    }
+  ],
+  "gain": {
+    "gaming": {
+      "level": "some",
+      "pct": 21,
+      "why": "1440p 平均 165 對 136 fps（+21%）、Time Spy 約 +32%；同為 GB203，差在功耗"
+    },
+    "mobileGaming": {
+      "level": "na",
+      "pct": null,
+      "why": "桌機顯示卡與手機遊戲無關"
+    },
+    "localAI": {
+      "level": "worse",
+      "pct": -33,
+      "why": "VRAM 16GB 比現有 24GB 少三分之一，大模型放不下；頻寬僅多約 7%"
+    },
+    "editing": {
+      "level": "none",
+      "pct": null,
+      "why": "同顆 GB203、同代 NVENC；VRAM 減為 16GB，重度 4K 時間軸可能吃緊"
+    },
+    "streaming": {
+      "level": "none",
+      "pct": null,
+      "why": "2 組第 9 代 NVENC，與筆電同代，直播畫質無差異"
+    },
+    "photo": {
+      "level": "none",
+      "pct": null,
+      "why": "相片編修對 GPU 需求有限，現有 5090 Laptop 已足夠"
+    },
+    "daily": {
+      "level": "na",
+      "pct": null,
+      "why": "日常文書、上網不受顯示卡影響"
+    }
+  },
+  "gainBasis": "對比你的 ROG Strix SCAR 18（RTX 5090 Laptop 24GB，175W）",
+  "needs": {
+    "desktop": true,
+    "note": "需整台組裝桌機；顯示卡功耗 360W，建議 850W 以上、符合 PCIe CEM 5.1 的電源，供電為 12V-2x6（450W 以上）或 3×8-pin 轉接。"
+  },
+  "successor": {
+    "eta": "2027-01",
+    "name": "GeForce RTX 5080 Super（24GB）",
+    "note": "NVIDIA 未公布。Benchlife（6 月）稱延至 CES 2027 發表；MLID 規格傳聞為同核心數、24GB GDDR7、415W、效能 +7～14%。但 VideoCardz（7/21）指 NVIDIA 要求板卡廠暫緩，因 3GB GDDR7 顆粒每顆約 60～70 美元、約為 2GB 的三倍，未給新時程；8～10 月未查到更新。下一代 RTX 6080 可信說法在 2028 年。（最新可信報導指 NVIDIA 已要求板卡廠暫緩、沒有新時程，所以這裡列為傳聞級，不進判定；一旦官方或兩家以上媒體給出新時程，重查就會改判。）",
+    "sources": [
+      {
+        "title": "Lowyat（引 VideoCardz）：RTX 50 Super 因 3GB GDDR7 成本暫緩",
+        "url": "https://www.lowyat.net/2026/399166/nvidia-board-rtx-50-super-series-hold/"
+      },
+      {
+        "title": "TweakTown（引 Benchlife）：RTX 50 Super 傳 2027 年初",
+        "url": "https://tweaktown.com/news/112093/geforce-rtx-50-super-series-is-now-rumored-to-be-coming-in-early-2027/index.html"
+      },
+      {
+        "title": "Notebookcheck：RTX 50 Super 規格與效能傳聞",
+        "url": "https://www.notebookcheck.net/There-is-still-hope-Nvidia-GeForce-RTX-50-Super-performance-and-specifications-leak-points-to-good-price-performance.1319876.0.html"
+      },
+      {
+        "title": "PCGH：次世代顯示卡傳聞整理（Super 延至 CES 2027）",
+        "url": "https://www.pcgameshardware.de/Grafikkarten-Grafikkarte-97980/News/GPU-Rumors-RDNA-5-RTX-50-Super-Intel-Arc-Analysis-1545000/"
+      },
+      {
+        "title": "TweakTown：RTX 50 Super 1 月傳無限期延後",
+        "url": "https://www.tweaktown.com/news/109694/geforce-rtx-50-super-series-delayed-indefinitely-as-nvidia-informs-its-partners/"
+      }
+    ],
+    "status": "rumor"
+  },
+  "issues": [
+    {
+      "note": "功耗 360W，案例遠少於 5090，但 2025-02 已有公版 5080 在電源端熔毀；2025-12 另有公版卡扣首次拔線即斷，NVIDIA 判定人為損壞而拒絕更換。",
+      "severity": "medium",
+      "status": "ongoing",
+      "title": "12V-2x6／16-pin 接頭風險",
+      "url": "https://www.tweaktown.com/news/103255/its-not-just-the-geforce-rtx-5090-weve-now-got-melting-connectors-on-the-rtx-5080/index.html"
+    },
+    {
+      "note": "9 月的 Game Ready 616.56 在部分 8-bit 螢幕閃爍，RTX 20 以後各代都受影響；NVIDIA 已承認，截至 9/22 修正版仍在測試，之後狀態未能確認。",
+      "severity": "low",
+      "status": "ongoing",
+      "title": "驅動 616.56 畫面閃爍",
+      "url": "https://shattered.io/nvidia-driver-616-56-flicker-bug-2026/"
+    },
+    {
+      "note": "2025 年初 RTX 50 在 4K 144Hz 與部分 DP 螢幕會黑畫面，已由 572.60／572.65 驅動及 VBIOS 更新修正。",
+      "severity": "low",
+      "status": "fixed",
+      "title": "上市初期黑畫面",
+      "url": "https://www.pcgameshardware.de/Geforce-RTX-5090-Grafikkarte-281029/News/Hotfix-gegen-Blackscreens-1467242/"
+    }
+  ],
+  "alternatives": [
+    {
+      "name": "現有 RTX 5090 Laptop（SCAR 18）",
+      "price": 0,
+      "why": "同顆 GB203 晶片，遊戲只差約兩成，VRAM 還多 8GB"
+    },
+    {
+      "name": "AMD Radeon RX 9070 XT",
+      "price": 27190,
+      "why": "約半價，Time Spy 約為 5080 的九成；但沒有 CUDA，AI 工具支援較弱"
+    },
+    {
+      "name": "RTX 5080 Super 24GB（傳聞）",
+      "price": null,
+      "why": "傳 VRAM 增至 24GB、效能 +7～14%；7 月傳因記憶體成本暫緩"
+    }
+  ],
+  "brief": "桌機 5080 與你筆電的 5090 Laptop 是同一顆 GB203 晶片，差在功耗（360W 對 175W）：遊戲約快兩成、3DMark 約快三成，但顯示記憶體從 24GB 降到 16GB，本地 AI 與重度剪輯反而退步。台灣價格已從首發建議價 35,990 元漲到 PChome 53,990 元起，Yahoo 上 4.3～4.9 萬元的平價款全數補貨中或售完，板卡廠 8 月也再度調漲通路價。補足 24GB 的 RTX 5080 Super 原傳 CES 2027 發表，但 7 月起傳出因 3GB GDDR7 顆粒成本約為 2GB 的三倍而暫緩，就算推出也很難便宜。加上你沒有桌機，整體花費換到的主要只是約兩成的遊戲效能。",
+  "learn": [
+    {
+      "explain": "桌機 RTX 5080 與你筆電 RTX 5090 Laptop 用的是同一顆晶片，差別在功耗與時脈，所以效能差距沒有型號看起來大。",
+      "term": "GB203 晶片"
+    },
+    {
+      "explain": "顯示卡可使用的最大功率。同一顆晶片功耗越高、時脈越能拉高；你的筆電上限 175W，桌機 5080 為 360W。",
+      "term": "TGP（顯示卡功耗）"
+    },
+    {
+      "explain": "NVIDIA 在同世代中期推出的強化版。這次傳聞重點是加大記憶體（5080 Super 為 24GB），效能提升有限。",
+      "term": "Super 改款"
+    }
+  ],
+  "sources": [
+    {
+      "date": "2026-10-20",
+      "title": "PChome 24h 搜尋 API：RTX5080（依價格排序）",
+      "url": "https://ecshweb.pchome.com.tw/search/v4.3/all/results?q=RTX5080&page=1&sort=prc/ac"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "Yahoo購物中心 RTX 5080 搜尋結果（依價格排序）",
+      "url": "https://tw.buy.yahoo.com/search/product?p=RTX5080+16G+%E9%A1%AF%E7%A4%BA%E5%8D%A1&sort=price"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "BigGo 比價：RTX 5080",
+      "url": "https://biggo.com.tw/s/RTX+5080/"
+    },
+    {
+      "date": "2025-01-28",
+      "title": "電腦王阿達：RTX 5090／5080 台灣建議售價",
+      "url": "https://www.kocpc.com.tw/archives/584679"
+    },
+    {
+      "date": "2025-01-29",
+      "title": "工商時報：華碩 RTX 5080 台灣建議售價與開賣時間",
+      "url": "https://www.ctee.com.tw/news/20250129700221-430502"
+    },
+    {
+      "date": null,
+      "title": "NVIDIA 台灣：GeForce RTX 5080 規格",
+      "url": "https://www.nvidia.com/zh-tw/geforce/graphics-cards/50-series/rtx-5080/"
+    },
+    {
+      "date": null,
+      "title": "Wikipedia：GeForce RTX 50 series（上市日、MSRP、頻寬）",
+      "url": "https://en.wikipedia.org/wiki/GeForce_RTX_50_series"
+    },
+    {
+      "date": null,
+      "title": "NanoReview：RTX 5090 Laptop 對桌機 RTX 5080",
+      "url": "https://nanoreview.net/ru/gpu-compare/geforce-rtx-5090-mobile-vs-geforce-rtx-5080"
+    },
+    {
+      "date": null,
+      "title": "Notebookcheck：RTX 5090 Laptop 規格與跑分",
+      "url": "https://www.notebookcheck.org/NVIDIA-GeForce-RTX-5090-Laptop.1072516.0.html"
+    },
+    {
+      "date": "2025-03-27",
+      "title": "HotHardware：RTX 5090 Laptop 評測",
+      "url": "https://hothardware.com/reviews/nvidia-geforce-rtx-5090-mobile-gpu-preview"
+    },
+    {
+      "date": "2025-01-29",
+      "title": "TechSpot：RTX 5080 評測",
+      "url": "https://www.techspot.com/review/2947-nvidia-geforce-rtx-5080/"
+    },
+    {
+      "date": null,
+      "title": "Hardware Corner：RTX 5090 本地 LLM 跑分（含 5080 相對值）",
+      "url": "https://www.hardware-corner.net/gpu-llm-benchmarks/rtx-5090/"
+    },
+    {
+      "date": "2025-03-28",
+      "title": "Notebookcheck：RTX 5090 Laptop 分析（16GB 剪輯實例）",
+      "url": "https://www.notebookcheck.net/Nvidia-GeForce-RTX-5090-Laptop-Analysis-Faster-but-there-is-more-to-come.988519.0.html"
+    },
+    {
+      "date": "2026-08-05",
+      "title": "TheNextWeb：華碩、技嘉調漲 RTX 50 價格",
+      "url": "https://thenextweb.com/news/asus-gigabyte-rtx-50-gpu-price-hike-dram-crisis"
+    },
+    {
+      "date": "2026-07-30",
+      "title": "Hardware Busters：RTX 5080 售價高於 5090 首發價",
+      "url": "https://hwbusters.com/news/an-rtx-5080-now-costs-more-than-an-rtx-5090-did-at-launch/"
+    },
+    {
+      "date": "2026-09-12",
+      "title": "VideoCardPrices：美國價格追蹤 9/12",
+      "url": "https://videocardprices.com/digest/2026-09-12/"
+    },
+    {
+      "date": "2026-08-02",
+      "title": "遊民星空（快科技）：中國 RTX 50 通路價",
+      "url": "https://www.gamersky.com/hardware/202608/2181650.shtml"
+    },
+    {
+      "date": "2026-07-21",
+      "title": "Lowyat：RTX 50 Super 暫緩",
+      "url": "https://www.lowyat.net/2026/399166/nvidia-board-rtx-50-super-series-hold/"
+    },
+    {
+      "date": "2026-06-09",
+      "title": "TweakTown：RTX 50 Super 傳 2027 年初",
+      "url": "https://tweaktown.com/news/112093/geforce-rtx-50-super-series-is-now-rumored-to-be-coming-in-early-2027/index.html"
+    },
+    {
+      "date": "2026-06-11",
+      "title": "Notebookcheck：RTX 50 Super 規格傳聞",
+      "url": "https://www.notebookcheck.net/There-is-still-hope-Nvidia-GeForce-RTX-50-Super-performance-and-specifications-leak-points-to-good-price-performance.1319876.0.html"
+    },
+    {
+      "date": "2026-06-11",
+      "title": "PCGH：顯示卡傳聞整理",
+      "url": "https://www.pcgameshardware.de/Grafikkarten-Grafikkarte-97980/News/GPU-Rumors-RDNA-5-RTX-50-Super-Intel-Arc-Analysis-1545000/"
+    },
+    {
+      "date": "2026-01-13",
+      "title": "TweakTown：RTX 50 Super 無限期延後",
+      "url": "https://www.tweaktown.com/news/109694/geforce-rtx-50-super-series-delayed-indefinitely-as-nvidia-informs-its-partners/"
+    },
+    {
+      "date": "2025-02-13",
+      "title": "TweakTown：RTX 5080 也出現接頭熔毀",
+      "url": "https://www.tweaktown.com/news/103255/its-not-just-the-geforce-rtx-5090-weve-now-got-melting-connectors-on-the-rtx-5080/index.html"
+    },
+    {
+      "date": "2025-12-06",
+      "title": "Tom's Hardware（Yahoo 轉載）：NVIDIA 拒換卡扣斷裂的 RTX 5080",
+      "url": "https://tech.yahoo.com/computing/articles/nvidia-refuses-replace-rtx-5080-162756374.html"
+    },
+    {
+      "date": "2026-09-22",
+      "title": "Shattered：NVIDIA 616.56 驅動閃爍問題",
+      "url": "https://shattered.io/nvidia-driver-616-56-flicker-bug-2026/"
+    },
+    {
+      "date": "2025-03-01",
+      "title": "PCGH：RTX 50 黑畫面 Hotfix",
+      "url": "https://www.pcgameshardware.de/Geforce-RTX-5090-Grafikkarte-281029/News/Hotfix-gegen-Blackscreens-1467242/"
+    }
+  ],
+  "priceLog": [
+    {
+      "d": "2026-10-20",
+      "p": 53990,
+      "src": "PChome 24h 2026-10-20（ZOTAC SOLID CORE O"
+    }
+  ]
+}

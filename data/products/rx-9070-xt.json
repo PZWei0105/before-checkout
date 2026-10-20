@@ -1,0 +1,331 @@
+{
+  "id": "rx-9070-xt",
+  "name": "AMD Radeon RX 9070 XT",
+  "brand": "AMD",
+  "category": "gpu",
+  "kind": "桌機顯示卡",
+  "tagline": "AMD 現役最高階，價格最親民的 16GB 遊戲卡",
+  "status": "on-sale",
+  "launchDate": "2025-03-06",
+  "cycleMonths": 27,
+  "checkedAt": "2026-10-20T17:50:00+08:00",
+  "price": {
+    "currency": "TWD",
+    "now": 27190,
+    "nowSource": "原價屋蝦皮商城（Sapphire PURE RX 9070 XT），BigGo 比價快照 2026-10-20；庫存未逐筆確認",
+    "nowUrl": "https://biggo.com.tw/s/RX+9070+XT/",
+    "range": [
+      25590,
+      33000
+    ],
+    "ref": 22990,
+    "refLabel": "台灣首發起價（原價屋 2025-03-06 上市價；美國 MSRP 599 美元）",
+    "low90": null,
+    "low90Source": null,
+    "trend": "up",
+    "trendNote": "台灣原價屋蝦皮最低約 27,190 元，比首發起價 22,990 元高約 18%；PChome 直營最低 30,990 元，BigGo 顯示技嘉 GAMING +3,100～+4,000、AORUS ELITE +6,500 等近期漲價。全球：華碩 8 月調漲 9070 XT 通路價 170 美元；美國售價升至約 800 美元（MSRP 599）；eBay 10 月最低均價 777 美元，較前三個月 +11.5%。AMD 10/1 在中國調漲 RX 9070／9060 XT，9070 XT 暫未動，是三張中漲勢最緩的。",
+    "trendSources": [
+      {
+        "title": "TheNextWeb：華碩 RX 9070 XT 通路價漲 170 美元",
+        "url": "https://thenextweb.com/news/asus-gigabyte-rtx-50-gpu-price-hike-dram-crisis"
+      },
+      {
+        "title": "TechNews：美國 RX 9070 XT 漲至約 800 美元",
+        "url": "https://finance.technews.tw/2026/09/29/your-old-gpu-could-be-worth-more-than-you-think/"
+      },
+      {
+        "title": "GPU Poet：RX 9070 XT 2026 年 10 月 eBay 價格",
+        "url": "https://gpupoet.com/gpu/learn/price/october-2026/amd-radeon-rx-9070-xt"
+      },
+      {
+        "title": "Guru3D：AMD 10/1 中國調漲 RX 9000，9070 XT 未動",
+        "url": "https://www.guru3d.com/story/amd-radeon-rx-9000-graphics-card-prices-reportedly-on-the-rise-again-as-vram-costs-increase/"
+      },
+      {
+        "title": "BigGo 比價：RX 9070 XT（近期漲價標籤）",
+        "url": "https://biggo.com.tw/s/RX+9070+XT/"
+      }
+    ]
+  },
+  "specs": [
+    {
+      "k": "運算單元",
+      "plain": "AMD 目前桌機最高階的 RDNA 4 晶片",
+      "v": "64 CU／4,096 串流處理器"
+    },
+    {
+      "k": "顯示記憶體",
+      "plain": "容量與頻寬都低於你的筆電（24GB／896 GB/s）",
+      "v": "16GB GDDR6，256-bit，640 GB/s"
+    },
+    {
+      "k": "Infinity Cache",
+      "plain": "大快取用來彌補較低的記憶體頻寬，對遊戲有幫助",
+      "v": "64MB"
+    },
+    {
+      "k": "典型功耗／建議電源",
+      "plain": "比 RTX 5080 省一些，一般中高階電源即可",
+      "v": "304W／750W"
+    },
+    {
+      "k": "供電接頭",
+      "plain": "多數款式不用 16-pin 接頭，熔毀風險較低",
+      "v": "2×8-pin（公版規格）"
+    },
+    {
+      "k": "媒體引擎",
+      "plain": "可直播、錄影與匯出，但沒有 NVENC 與 CUDA",
+      "v": "AV1／HEVC／H.264 硬體編解碼"
+    }
+  ],
+  "tests": [
+    {
+      "claim": "RX 9070 XT 的 3DMark：Time Spy 30,530、Steel Nomad 6,258、Port Royal 18,753；175W 的 5090 Laptop 工程樣品為 Steel Nomad 6,156、Port Royal 17,063",
+      "src": "Notebookcheck",
+      "url": "https://www.notebookcheck.net/Nvidia-GeForce-RTX-5090-Laptop-Analysis-Faster-but-there-is-more-to-come.988519.0.html"
+    },
+    {
+      "claim": "與你同型號的 SCAR 18 G835LX 在 175W 模式 Time Spy 顯示分數 24,599（9070 XT 約高 24%）",
+      "src": "Notebookcheck",
+      "url": "https://www.notebookcheck.net/The-18-inch-gamer-with-great-mini-LED-and-an-RTX-5090-Laptop-Asus-Strix-SCAR-18-G835LX-review.990635.0.html"
+    },
+    {
+      "claim": "跑 Llama 3.1 8B 約 90 tok/s；Windows 版 PyTorch 仍是公開預覽，ComfyUI 僅部分支援",
+      "src": "InsiderLLM",
+      "url": "https://insiderllm.com/guides/amd-vs-nvidia-local-ai-rocm/"
+    }
+  ],
+  "gain": {
+    "gaming": {
+      "level": "none",
+      "pct": 7,
+      "why": "對 175W 筆電：3DMark 僅 +2%～+24%（Steel Nomad 最小），且無 DLSS 多重影格生成"
+    },
+    "mobileGaming": {
+      "level": "na",
+      "pct": null,
+      "why": "桌機顯示卡與手機遊戲無關"
+    },
+    "localAI": {
+      "level": "worse",
+      "pct": -33,
+      "why": "16GB／640 GB/s 皆低於筆電（24GB／896 GB/s）；Windows 版 PyTorch 仍為預覽"
+    },
+    "editing": {
+      "level": "worse",
+      "pct": null,
+      "why": "沒有 CUDA，VRAM 16GB 少於現有 24GB；依賴 CUDA 的外掛與 AI 功能無法使用"
+    },
+    "streaming": {
+      "level": "none",
+      "pct": null,
+      "why": "支援 AV1／HEVC／H.264 硬體編碼，但現有筆電已有第 9 代 NVENC"
+    },
+    "photo": {
+      "level": "none",
+      "pct": null,
+      "why": "相片編修對 GPU 需求有限，現有 5090 Laptop 已足夠"
+    },
+    "daily": {
+      "level": "na",
+      "pct": null,
+      "why": "日常文書、上網不受顯示卡影響"
+    }
+  },
+  "gainBasis": "對比你的 ROG Strix SCAR 18（RTX 5090 Laptop 24GB，175W）",
+  "needs": {
+    "desktop": true,
+    "note": "需整台組裝桌機；典型功耗 304W，建議 750W 以上電源；公版規格為 2×8-pin，部分非公版（如 Sapphire Nitro+）改用 12V-2x6。"
+  },
+  "successor": {
+    "eta": null,
+    "name": "RDNA 5 世代 Radeon（傳 RX 10000 系列）",
+    "note": "AMD 未公布。Computex 2026 板卡廠估 2027 年第二～三季，保守者說 2028 年初；Kepler_L2（10/12）稱不會早於 Computex 2027；MLID 稱 2027 年中。2026 年內不預期有新 Radeon。eta 留空：各方說法只到季度或半年。",
+    "sources": [
+      {
+        "title": "Tom's Hardware：板卡廠預期 RDNA 5 於 2027 下半年",
+        "url": "https://www.tomshardware.com/pc-components/gpus/amds-rdna-5-gaming-gpus-are-coming-late-next-year-according-to-aibs-at-computex-manufacturers-expect-new-team-red-cards-in-the-second-half-of-2027-alongside-nvidia"
+      },
+      {
+        "title": "Geeknetic：Kepler_L2 稱 RDNA 5 不早於 Computex 2027",
+        "url": "https://www.geeknetic.es/Noticia/40426/Las-tarjetas-Radeon-con-RDNA-5-no-se-lanzaran-hasta-al-menos-el-proximo-COMPUTEX.html"
+      },
+      {
+        "title": "TweakTown：MLID 稱 RDNA 5 於 2027 年中推出",
+        "url": "https://tweaktown.com/news/112289/amds-rdna-5-radeon-gpus-will-launch-in-mid-2027-per-new-leak/index.html"
+      },
+      {
+        "title": "Digital Citizen：RDNA 5 可能晚到 2027 年底",
+        "url": "https://www.digitalcitizen.life/amd-rdna-5-radeon-gpus-may-not-arrive-until-late-2027/"
+      },
+      {
+        "title": "TweakTown：2026 年不預期有新 Radeon（Board Channels）",
+        "url": "https://www.tweaktown.com/news/109694/geforce-rtx-50-super-series-delayed-indefinitely-as-nvidia-informs-its-partners/"
+      }
+    ],
+    "status": "credible"
+  },
+  "issues": [
+    {
+      "note": "僅限採用 12V-2x6 的款式（如 Sapphire Nitro+、ASRock Taichi）；至 2025 年底只有零星數例，多涉及 3×8-pin 轉接線，未見大規模瑕疵。",
+      "severity": "low",
+      "status": "ongoing",
+      "title": "部分非公版 12V-2x6 接頭熔毀",
+      "url": "https://www.guru3d.com/story/sapphire-rx-9070-xt-reportedly-suffers-melted-12v2x6-connector/"
+    },
+    {
+      "note": "ROCm 7.2 起官方支援 RDNA 4，但 Windows 版 PyTorch 仍為公開預覽，ComfyUI 等影像生成工具僅部分支援。",
+      "severity": "medium",
+      "status": "ongoing",
+      "title": "Windows 上 AI 軟體支援仍在補齊",
+      "url": "https://insiderllm.com/guides/amd-vs-nvidia-local-ai-rocm/"
+    }
+  ],
+  "alternatives": [
+    {
+      "name": "現有 RTX 5090 Laptop（SCAR 18）",
+      "price": 0,
+      "why": "遊戲效能大致同級，且保有 DLSS、CUDA 與 24GB 顯示記憶體"
+    },
+    {
+      "name": "NVIDIA GeForce RTX 5080（桌機）",
+      "price": 53990,
+      "why": "CUDA 與 DLSS 生態完整、遊戲略快，但價格約 2 倍、VRAM 同為 16GB"
+    }
+  ],
+  "brief": "9070 XT 的遊戲效能和你 175W 的 5090 Laptop 大致同級（3DMark 依項目 +2%～+24%），換過去還會失去 DLSS 多重影格生成。顯示記憶體 16GB、頻寬 640 GB/s 都低於現有筆電，Windows 上的 ROCm／PyTorch 仍屬預覽，本地 LLM 可用 LM Studio、Ollama，但影像與影片生成工具的支援不完整。價格面是三張中漲幅最小的：原價屋約 27,190 元起、比首發高約 18%，AMD 10 月在中國調價時 9070 XT 也暫未動。若目的是超越現有筆電的效能，這張卡幅度有限；它的定位比較接近用最低門檻多一台能玩 3A 的桌機。",
+  "learn": [
+    {
+      "explain": "AMD 對應 NVIDIA CUDA 的 AI／運算軟體平台。Windows 版仍在補齊，許多 AI 工具以 CUDA 為優先。",
+      "term": "ROCm"
+    },
+    {
+      "explain": "RTX 50 系列專屬功能，用 AI 在真實畫面之間插入多張生成畫面來提高幀數；AMD 顯示卡無法使用。",
+      "term": "DLSS 多重影格生成"
+    },
+    {
+      "explain": "AMD 顯示卡上的大容量快取，用來彌補較低的記憶體頻寬；對遊戲有幫助，對需要搬運大量資料的 AI 模型幫助較小。",
+      "term": "Infinity Cache"
+    }
+  ],
+  "sources": [
+    {
+      "date": "2026-10-20",
+      "title": "BigGo 比價：RX 9070 XT（含原價屋蝦皮商城）",
+      "url": "https://biggo.com.tw/s/RX+9070+XT/"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "PChome 24h 搜尋 API：RX9070XT（依價格排序）",
+      "url": "https://ecshweb.pchome.com.tw/search/v4.3/all/results?q=RX9070XT&page=1&sort=prc/ac"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "Yahoo購物中心 RX 9070 XT 搜尋結果",
+      "url": "https://tw.buy.yahoo.com/search/product?p=RX9070XT%E9%A1%AF%E7%A4%BA%E5%8D%A1"
+    },
+    {
+      "date": "2025-03-06",
+      "title": "原價屋：RX 9070 系列台灣上市價",
+      "url": "https://coolpc.com.tw/tw/shop/gpu/amd-radeon-rx-9070-9070xt/"
+    },
+    {
+      "date": null,
+      "title": "AMD：Radeon RX 9070 XT 規格",
+      "url": "https://www.amd.com/en/products/graphics/desktops/radeon/9000-series/amd-radeon-rx-9070xt.html"
+    },
+    {
+      "date": null,
+      "title": "Wikipedia：Radeon RX 9000 series（上市日、MSRP）",
+      "url": "https://en.wikipedia.org/wiki/Radeon_RX_9000_series"
+    },
+    {
+      "date": "2025-03-28",
+      "title": "Notebookcheck：RTX 5090 Laptop 分析（含 RX 9070 XT 跑分）",
+      "url": "https://www.notebookcheck.net/Nvidia-GeForce-RTX-5090-Laptop-Analysis-Faster-but-there-is-more-to-come.988519.0.html"
+    },
+    {
+      "date": "2025-04-02",
+      "title": "Notebookcheck：ROG Strix SCAR 18 G835LX 評測",
+      "url": "https://www.notebookcheck.net/The-18-inch-gamer-with-great-mini-LED-and-an-RTX-5090-Laptop-Asus-Strix-SCAR-18-G835LX-review.990635.0.html"
+    },
+    {
+      "date": null,
+      "title": "GPUPrix：RTX 5090 Laptop 對 RX 9070 XT（綜合評分，方法未公開）",
+      "url": "https://gpuprix.com/compare/geforce-rtx-5090-laptop-vs-radeon-rx-9070-xt"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "InsiderLLM：AMD 與 NVIDIA 本地 AI（ROCm 現況）",
+      "url": "https://insiderllm.com/guides/amd-vs-nvidia-local-ai-rocm/"
+    },
+    {
+      "date": "2026-01-21",
+      "title": "AMD：Windows 版 PyTorch（ROCm 7.2）發行說明",
+      "url": "https://www.amd.com/en/resources/support-articles/release-notes/RN-AMDGPU-WINDOWS-PYTORCH-7-2.html"
+    },
+    {
+      "date": "2026-08-05",
+      "title": "TheNextWeb：華碩、技嘉調漲 RTX 50／RX 9000 價格",
+      "url": "https://thenextweb.com/news/asus-gigabyte-rtx-50-gpu-price-hike-dram-crisis"
+    },
+    {
+      "date": "2026-09-29",
+      "title": "TechNews：記憶體缺貨推升顯示卡價格",
+      "url": "https://finance.technews.tw/2026/09/29/your-old-gpu-could-be-worth-more-than-you-think/"
+    },
+    {
+      "date": null,
+      "title": "GPU Poet：RX 9070 XT 2026 年 10 月價格",
+      "url": "https://gpupoet.com/gpu/learn/price/october-2026/amd-radeon-rx-9070-xt"
+    },
+    {
+      "date": "2026-10-08",
+      "title": "Guru3D：AMD RX 9000 中國售價再漲",
+      "url": "https://www.guru3d.com/story/amd-radeon-rx-9000-graphics-card-prices-reportedly-on-the-rise-again-as-vram-costs-increase/"
+    },
+    {
+      "date": "2026-06-07",
+      "title": "Tom's Hardware：RDNA 5 時程（Computex 2026 板卡廠）",
+      "url": "https://www.tomshardware.com/pc-components/gpus/amds-rdna-5-gaming-gpus-are-coming-late-next-year-according-to-aibs-at-computex-manufacturers-expect-new-team-red-cards-in-the-second-half-of-2027-alongside-nvidia"
+    },
+    {
+      "date": "2026-10-12",
+      "title": "Geeknetic：RDNA 5 不早於 Computex 2027",
+      "url": "https://www.geeknetic.es/Noticia/40426/Las-tarjetas-Radeon-con-RDNA-5-no-se-lanzaran-hasta-al-menos-el-proximo-COMPUTEX.html"
+    },
+    {
+      "date": "2026-06-21",
+      "title": "TweakTown：RDNA 5 傳 2027 年中",
+      "url": "https://tweaktown.com/news/112289/amds-rdna-5-radeon-gpus-will-launch-in-mid-2027-per-new-leak/index.html"
+    },
+    {
+      "date": "2026-06-09",
+      "title": "Digital Citizen：RDNA 5 可能晚到 2027 年底",
+      "url": "https://www.digitalcitizen.life/amd-rdna-5-radeon-gpus-may-not-arrive-until-late-2027/"
+    },
+    {
+      "date": "2025-12-31",
+      "title": "Guru3D：Sapphire RX 9070 XT Nitro+ 接頭熔毀",
+      "url": "https://www.guru3d.com/story/sapphire-rx-9070-xt-reportedly-suffers-melted-12v2x6-connector/"
+    },
+    {
+      "date": "2025-11-02",
+      "title": "3DNews：Sapphire RX 9070 XT Nitro+ 第二例熔毀",
+      "url": "https://3dnews.ru/1131778/stalo-izvestno-o-vtorom-sluchae-plavleniya-konnektora-12v26-u-sapphire-radeon-rx-9070-xt-nitro"
+    },
+    {
+      "date": "2025-11-03",
+      "title": "Guru3D：又一例 RX 9070 XT 12V-2x6 熔毀",
+      "url": "https://www.guru3d.com/story/another-meltdown-reported-this-time-on-sapphire-rx-9070-xt/"
+    }
+  ],
+  "priceLog": [
+    {
+      "d": "2026-10-20",
+      "p": 27190,
+      "src": "原價屋蝦皮商城（Sapphire PURE RX 9070 XT），BigGo "
+    }
+  ]
+}

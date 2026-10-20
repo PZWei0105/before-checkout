@@ -1,0 +1,30 @@
+{
+  "name": "PZ",
+  "updatedAt": "2026-10-20T18:40:00+08:00",
+  "gear": {
+    "laptop": "ASUS ROG Strix SCAR 18（G835）· Intel Core Ultra 9 275HX · RTX 5090 Laptop 24GB · 64GB DDR5 · 2TB NVMe（約 800GB 可用）· 18 吋，可輸出 4K 電視",
+    "others": "專業直播麥克風（型號待補）",
+    "phones": [
+      "iPhone 17 Pro Max",
+      "ROG Phone 9 Pro"
+    ]
+  },
+  "desktopStatus": "none",
+  "uses": [
+    "gaming",
+    "mobileGaming",
+    "localAI",
+    "editing",
+    "streaming"
+  ],
+  "urgency": "flexible",
+  "thr": {
+    "bigGain": 30,
+    "freshDays": 7,
+    "pricePremium": 8,
+    "saleDays": 30,
+    "smallGain": 10,
+    "successorMonths": 4
+  },
+  "notes": "常玩 Marvel Snap、傳說對決。規劃用筆電開遊戲直播台（已有專業直播麥克風）。會在筆電上跑本機 AI 模型與影片生成，也經營 YouTube 遊戲頻道。"
+}

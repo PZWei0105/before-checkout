@@ -1,0 +1,414 @@
+{
+  "id": "elgato-4k-x",
+  "name": "Elgato Game Capture 4K X",
+  "brand": "Elgato（Corsair）",
+  "category": "peripheral",
+  "kind": "影像擷取卡",
+  "tagline": "外接旗艦擷取盒：4K144 擷取＋HDMI 2.1 直通",
+  "status": "on-sale",
+  "launchDate": "2024-02-01",
+  "cycleMonths": 48,
+  "checkedAt": "2026-10-20T17:50:00+08:00",
+  "price": {
+    "currency": "TWD",
+    "now": 7990,
+    "nowSource": "蝦皮商城 CORSAIR 官方授權旗艦店、Yahoo購物中心（公司貨），BigGo 比價 2026-10-20",
+    "nowUrl": "https://biggo.com.tw/s/elgato+4K+X/",
+    "range": [
+      7792,
+      7990
+    ],
+    "ref": 7990,
+    "refLabel": "台灣授權通路一致標價（未見公開建議售價；Elgato 台灣官網 metadata 的 8,152.52 為美元換算值）",
+    "low90": null,
+    "low90Source": null,
+    "trend": "flat",
+    "trendNote": "台灣官方旗艦館標價持平 7,990；酷澎 7,792 是小漲 95 後的價格，且標題未註明公司貨。美國官網 2026-07 由 US$229.99 調為 US$249.99（約 +8.7%），台灣尚未跟漲。PChome 搜尋未見 4K X（僅有 4K Pro 9,170），BigGo 也未列 momo 通路。",
+    "trendSources": [
+      {
+        "title": "BigGo 比價：Elgato 4K X",
+        "url": "https://biggo.com.tw/s/elgato+4K+X/"
+      },
+      {
+        "title": "Front Desk Review：Elgato 4K X 價格紀錄",
+        "url": "https://frontdeskreview.com/product/capture-cards/elgato-game-capture-4k-x/"
+      },
+      {
+        "title": "Elgato 美國官網 4K X 產品頁",
+        "url": "https://www.elgato.com/us/en/p/game-capture-4k-x"
+      }
+    ]
+  },
+  "specs": [
+    {
+      "k": "擷取上限",
+      "plain": "iPhone 經 USB-C 最高只輸出 4K60，這些高刷新上限是為 PC／主機準備，接手機用不完",
+      "v": "4K144（SDR）、1440p144、1080p240；HDR 最高 4K30、1440p60、1080p120"
+    },
+    {
+      "k": "HDMI 直通",
+      "plain": "可同步把畫面送到螢幕零延遲遊玩；如果你是看著手機本身操作，這項用不到",
+      "v": "HDMI 2.1，最高 4K144（DSC 壓縮螢幕為 4K120），支援 VRR、HDR10"
+    },
+    {
+      "k": "連接介面",
+      "plain": "SCAR 18 有 2 個 Thunderbolt 5 與 3 個 10Gbps USB-A，頻寬足夠，不會被降規",
+      "v": "USB-C，建議 USB 3.2 Gen 2（10Gbps）；Gen 1（5Gbps）可用但須降解析度"
+    },
+    {
+      "k": "HDR 擷取",
+      "plain": "HDR 錄影是加分項，不是直播手遊的必要條件",
+      "v": "HDR10，僅限 Windows；可把 HDR 訊號轉成 SDR 錄製"
+    },
+    {
+      "k": "相容主機",
+      "plain": "可用 iPad 當錄影主機；官方未列 iPhone 可當主機，iPhone 只能當訊號來源",
+      "v": "Windows 10 64 位元、macOS、iPadOS 17 以上（USB-C iPad）"
+    },
+    {
+      "k": "軟體",
+      "plain": "第一次設定要裝 Elgato 軟體，之後照一般 OBS 來源使用",
+      "v": "首次使用須先裝 4K Capture Utility（韌體也由它更新），之後可在 OBS 直接選用"
+    },
+    {
+      "k": "供電",
+      "plain": "筆電一條線就能用，外出直播也方便",
+      "v": "USB 匯流排供電，無需外接電源"
+    }
+  ],
+  "tests": [
+    {
+      "claim": "以 Elgato 擷取程式當遊玩畫面會多出數格延遲；改用 HDMI 直通到螢幕，格鬥遊戲也能精準操作",
+      "src": "Dexerto",
+      "url": "https://www.dexerto.com/tech/elgato-game-capture-4k-x-review-2509698/"
+    },
+    {
+      "claim": "4K120 錄影順暢、無掉格，在多台筆電與桌機上結果一致",
+      "src": "CGMagazine",
+      "url": "https://www.cgmagonline.com/review/hardware/elgato-game-capture-4k-x"
+    },
+    {
+      "claim": "4K 擷取時機身明顯發熱、無運轉噪音；4K 錄影依預設檔位約 34–140Mbps，每小時約 15–62GB",
+      "src": "Basic Tutorials",
+      "url": "https://basic-tutorials.de/tests/peripherie/elgato-4k-x/"
+    },
+    {
+      "claim": "擷取程式偶爾顯示無訊號或找不到裝置，重新插拔多半可排除",
+      "src": "Windows Central",
+      "url": "https://www.windowscentral.com/accessories/elgato-4k-x-2024-review"
+    }
+  ],
+  "gain": {
+    "gaming": {
+      "level": "na",
+      "pct": null,
+      "why": "筆電本機玩 PC 遊戲由 OBS 直接擷取螢幕，不經擷取卡；日後若買主機才會用到"
+    },
+    "mobileGaming": {
+      "level": "none",
+      "pct": null,
+      "why": "不改變手遊遊玩本身；錄素材時 iPhone 有內建螢幕錄影，ROG Phone 可用 scrcpy 錄影"
+    },
+    "localAI": {
+      "level": "na",
+      "pct": null,
+      "why": "與本機 AI 無關"
+    },
+    "editing": {
+      "level": "none",
+      "pct": null,
+      "why": "多一條錄素材的管道，但不影響剪輯效能與流程"
+    },
+    "streaming": {
+      "level": "some",
+      "pct": null,
+      "why": "ROG Phone 已能用免費 scrcpy 上機；4K X 主要新增 iPhone 有線上機，以及日後接主機的能力"
+    },
+    "photo": {
+      "level": "na",
+      "pct": null,
+      "why": "與攝影無關"
+    },
+    "daily": {
+      "level": "na",
+      "pct": null,
+      "why": "日常使用不需要擷取卡"
+    }
+  },
+  "gainBasis": "對比你目前：沒有擷取卡；ROG Phone 9 Pro 可用免費 scrcpy 有線投到筆電（Android 15，可轉送音訊），iPhone 17 Pro Max 目前沒有有線進 OBS 的路徑",
+  "needs": {
+    "desktop": false,
+    "note": "需 USB 3.2 Gen 2（10Gbps）連接埠：SCAR 18 的 Thunderbolt 5 或 USB-A 皆符合，建議直插、不經 Hub。iPhone 17 Pro Max 需 USB-C 轉 HDMI 轉接器（Elgato 建議 Apple USB-C 數位 AV 多埠轉接器，台灣 NT$2,190）加 HDMI 線；iPhone 若開靜音或連 AirPods／藍牙耳機，遊戲聲音不會進擷取卡。ROG Phone 9 Pro 要用側邊 USB-C 埠（USB 3.2 Gen 1，可輸出影像）。直通到螢幕需另備第二條 HDMI 2.1 線（盒內不附）。"
+  },
+  "successor": {
+    "eta": null,
+    "name": "未公布",
+    "note": "截至 2026-10 未見 4K X 後繼機：Corsair 2026 Q2 財報會議談的 Elgato 內容只有 Marketplace 與 Stream Deck，2026-10 新品是 Wave Go 麥克風；2026-02 西班牙媒體仍稱 4K X 為 Elgato 最高階擷取裝置。2025-07 推出的 4K S 是較低階 4K60 機種，不是取代者。上一款外接 4K 機種 4K60 S+ 於 CES 2020 發表，到 4K X 約 4 年。",
+    "sources": [
+      {
+        "title": "Corsair 2026 Q2 財報電話會議逐字稿（Benzinga）",
+        "url": "https://www.benzinga.com/node/62315385"
+      },
+      {
+        "title": "Corsair 新聞室（2026-10-13 Wave Go）",
+        "url": "https://www.corsair.com/eu/en/press"
+      },
+      {
+        "title": "Profesional Review：4K X 2026 年低價",
+        "url": "https://www.profesionalreview.com/2026/02/09/la-mejor-capturadora-de-elgato-cae-de-precio-consigue-elgato-4k-x-a-su-precio-mas-bajo-del-ano/amp/"
+      },
+      {
+        "title": "PCWorld：Elgato 推出 4K S",
+        "url": "https://www.pcworld.com/article/2856673/elgato-launches-4k-60fps-capture-card-thats-cheaper-than-its-predecessor.html"
+      },
+      {
+        "title": "TechPowerUp Elgato 新聞標籤（4K60 S+ 於 CES 2020 發表）",
+        "url": "https://techpowerup.com/news-tags/Elgato?page=2"
+      }
+    ],
+    "status": "none"
+  },
+  "issues": [
+    {
+      "note": "2026-02-25 韌體 25.02.10 修正，同時改善直通畫面色階斷層；到手後先用 4K Capture Utility 更新韌體",
+      "severity": "medium",
+      "status": "fixed",
+      "title": "接 5Gbps USB 埠時音訊過大或失真",
+      "url": "https://help.elgato.com/hc/it/articles/32818070989329-Elgato-Game-Capture-4K-X-Aggiornamento-firmware"
+    },
+    {
+      "note": "評測中出現無訊號／找不到裝置，重新插拔或重開機可排除；未見官方標示已修正",
+      "severity": "low",
+      "status": "ongoing",
+      "title": "擷取程式偶發偵測不到裝置",
+      "url": "https://www.windowscentral.com/accessories/elgato-4k-x-2024-review"
+    },
+    {
+      "note": "評測中關閉 Synapse 即恢復；若有 Razer 周邊軟體需留意",
+      "severity": "low",
+      "status": "ongoing",
+      "title": "與 Razer Synapse 衝突導致無畫面輸出",
+      "url": "https://www.dexerto.com/tech/elgato-game-capture-4k-x-review-2509698/"
+    },
+    {
+      "note": "評測指 4K 擷取時明顯變熱，長時間直播注意擺放通風",
+      "severity": "low",
+      "status": "ongoing",
+      "title": "4K 擷取時機身發熱",
+      "url": "https://basic-tutorials.de/tests/peripherie/elgato-4k-x/"
+    },
+    {
+      "note": "Elgato 表示遊戲可正常擷取，有版權保護的影音 App 不行；Apple 也提醒部分 App 不支援轉接器輸出。Marvel Snap、傳說對決在 iPhone 有線輸出下的實際表現查無實測，建議先接螢幕試",
+      "severity": "low",
+      "status": "ongoing",
+      "title": "iPhone 有線輸出：受保護內容與部分 App 不出畫面",
+      "url": "https://support.apple.com/en-ie/108399"
+    }
+  ],
+  "alternatives": [
+    {
+      "name": "圓剛 Live Gamer ULTRA 2.1（GC553G2）",
+      "price": 7990,
+      "why": "同級 4K144 擷取與直通、UVC 免驅動；台灣品牌，PChome／momo 皆有貨"
+    },
+    {
+      "name": "圓剛 Live Gamer ULTRA S（GC553Pro）",
+      "price": 4590,
+      "why": "4K60 擷取＋1440p144 直通，5Gbps 埠即可；iPhone 最高只輸出 4K60"
+    },
+    {
+      "name": "scrcpy（免費，限 ROG Phone 等 Android）",
+      "price": 0,
+      "why": "USB 有線投影含音訊，官方稱延遲約 35–70ms；不需 root，但 iPhone 不適用"
+    }
+  ],
+  "brief": "4K X 仍是 Elgato 現役外接旗艦（2024-02 上市），到 2026-10 沒有後繼機消息，買了不會馬上被換代。但它的 4K144 與 HDMI 2.1 直通是為 PC／主機高刷新設計，Elgato 自己的說明是 iPhone 經 USB-C 最高輸出 4K60、用 4K X 接 iPhone 沒有額外好處；只接手機的話，4K60 級的圓剛 GC553Pro（NT$4,590）或 Elgato 4K S（NT$5,990，台灣現貨少）就涵蓋。你的主力手遊在 ROG Phone 9 Pro，scrcpy 免費就能有線上機並帶聲音；Marvel Snap 是直式遊戲，走擷取卡會左右黑邊，scrcpy 直接給直式視窗反而好排版。擷取卡真正新增的是 iPhone 上機（另需 NT$2,190 轉接器）與日後接主機；美國官網 2026-07 已漲到 US$249.99，台灣仍持平 7,990，雙11 前後可再觀察通路折扣。",
+  "learn": [
+    {
+      "explain": "HDMI 的防拷加密。受保護的畫面（如影音串流 App）擷取卡會抓成黑畫面；Elgato 表示一般遊戲可正常擷取。",
+      "term": "HDCP"
+    },
+    {
+      "explain": "擷取卡把訊號一份送電腦錄影、一份原樣送螢幕，讓你看螢幕玩時不吃錄影軟體的延遲。",
+      "term": "直通（Passthrough）"
+    },
+    {
+      "explain": "USB 影像裝置標準，電腦把擷取卡當成 webcam 辨識，不必另裝驅動就能在 OBS 選用。",
+      "term": "UVC"
+    }
+  ],
+  "sources": [
+    {
+      "date": "2024-02-01",
+      "title": "HotHardware：Elgato 發表 4K X 與 4K Pro",
+      "url": "https://hothardware.com/news/elgato-releases-4k-x-and-4k-pro-capture-cards"
+    },
+    {
+      "date": null,
+      "title": "Elgato 台灣官網：Game Capture 4K X",
+      "url": "https://www.elgato.com/tw/zh/p/game-capture-4k-x"
+    },
+    {
+      "date": null,
+      "title": "Elgato 說明：4K X 系統需求",
+      "url": "https://help.elgato.com/hc/en-us/articles/23635913547021-Elgato-Game-Capture-4K-X-System-Requirements"
+    },
+    {
+      "date": "2026-02-25",
+      "title": "Elgato 說明：4K X 韌體更新紀錄",
+      "url": "https://help.elgato.com/hc/it/articles/32818070989329-Elgato-Game-Capture-4K-X-Aggiornamento-firmware"
+    },
+    {
+      "date": null,
+      "title": "Elgato 說明：USB 3.0 連線疑難排解",
+      "url": "https://help.elgato.com/hc/en-us/articles/46631647808913-General-USB-3-0-Troubleshooting"
+    },
+    {
+      "date": "2024-03-27",
+      "title": "Windows Central：4K X 評測",
+      "url": "https://www.windowscentral.com/accessories/elgato-4k-x-2024-review"
+    },
+    {
+      "date": "2024-02-01",
+      "title": "Dexerto：4K X 評測",
+      "url": "https://www.dexerto.com/tech/elgato-game-capture-4k-x-review-2509698/"
+    },
+    {
+      "date": "2024-02-15",
+      "title": "CGMagazine：4K X 評測",
+      "url": "https://www.cgmagonline.com/review/hardware/elgato-game-capture-4k-x"
+    },
+    {
+      "date": "2024-02-01",
+      "title": "Basic Tutorials：4K X 評測",
+      "url": "https://basic-tutorials.de/tests/peripherie/elgato-4k-x/"
+    },
+    {
+      "date": null,
+      "title": "GGRecon：4K X 評測",
+      "url": "https://www.ggrecon.com/reviews/elgato-game-capture-4k-x-review/"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "BigGo 比價：Elgato 4K X",
+      "url": "https://biggo.com.tw/s/elgato+4K+X/"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "BigGo 比價：10GBH9901",
+      "url": "https://biggo.com.tw/s/10GBH9901/"
+    },
+    {
+      "date": "2026-07-25",
+      "title": "Front Desk Review：4K X 價格紀錄",
+      "url": "https://frontdeskreview.com/product/capture-cards/elgato-game-capture-4k-x/"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "Elgato 美國官網：4K X",
+      "url": "https://www.elgato.com/us/en/p/game-capture-4k-x"
+    },
+    {
+      "date": "2026-02-09",
+      "title": "Profesional Review：4K X 2026 年低價",
+      "url": "https://www.profesionalreview.com/2026/02/09/la-mejor-capturadora-de-elgato-cae-de-precio-consigue-elgato-4k-x-a-su-precio-mas-bajo-del-ano/amp/"
+    },
+    {
+      "date": "2026-10-13",
+      "title": "Benzinga：Corsair 2026 Q2 財報電話會議",
+      "url": "https://www.benzinga.com/node/62315385"
+    },
+    {
+      "date": "2026-10-13",
+      "title": "Corsair 新聞室",
+      "url": "https://www.corsair.com/eu/en/press"
+    },
+    {
+      "date": "2025-07-23",
+      "title": "PCWorld：Elgato 推出 4K S",
+      "url": "https://www.pcworld.com/article/2856673/elgato-launches-4k-60fps-capture-card-thats-cheaper-than-its-predecessor.html"
+    },
+    {
+      "date": null,
+      "title": "Elgato 台灣官網：Game Capture 4K S",
+      "url": "https://www.elgato.com/tw/zh/p/game-capture-4k-s"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "BigGo 比價：Elgato 4K S",
+      "url": "https://biggo.com.tw/s/elgato+4K+S/"
+    },
+    {
+      "date": null,
+      "title": "Elgato：如何直播或錄製 iPhone 遊戲畫面",
+      "url": "https://www.elgato.com/explorer/products/capture/how-to-stream-or-record-iphone-gameplay/"
+    },
+    {
+      "date": null,
+      "title": "Apple 支援：數位 AV 轉接器說明",
+      "url": "https://support.apple.com/en-ie/108399"
+    },
+    {
+      "date": null,
+      "title": "Apple：iPhone 17 Pro 技術規格",
+      "url": "https://www.apple.com/uk/iphone-17-pro/specs"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "Apple 台灣：USB-C 數位 AV 多埠轉接器",
+      "url": "https://www.apple.com/tw/shop/product/MW5M3FE/A/usb-c-digital-av-multiport-adapter"
+    },
+    {
+      "date": null,
+      "title": "ASUS：ROG Strix SCAR 18（2025）G835 規格",
+      "url": "https://rog.asus.com/us/laptops/rog-strix/rog-strix-scar-18-2025/spec/"
+    },
+    {
+      "date": null,
+      "title": "Notebookcheck：ROG Phone 9 Pro 評測",
+      "url": "https://www.notebookcheck.net/Asus-ROG-Phone-9-Pro-review-This-smartphone-is-the-first-choice-for-every-gamer.924300.0.html"
+    },
+    {
+      "date": null,
+      "title": "scrcpy GitHub",
+      "url": "https://github.com/Genymobile/scrcpy"
+    },
+    {
+      "date": "2026-07-12",
+      "title": "scrcpy 版本發布（4.1）",
+      "url": "https://github.com/Genymobile/scrcpy/releases"
+    },
+    {
+      "date": null,
+      "title": "圓剛：GC553G2 產品頁",
+      "url": "https://www.avermedia.com/TW/product-detail/GC553G2"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "PChome 24h：圓剛 GC553G2",
+      "url": "https://24h.pchome.com.tw/prod/DMAAAW-A900GNO7R"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "BigGo 比價：GC553G2",
+      "url": "https://biggo.com.tw/s/GC553G2/"
+    },
+    {
+      "date": null,
+      "title": "圓剛：GC553Pro 產品頁",
+      "url": "https://www.avermedia.com/product-detail/capture-card-GC553Pro"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "BigGo 比價：GC553Pro",
+      "url": "https://biggo.com.tw/s/GC553Pro/"
+    }
+  ],
+  "priceLog": [
+    {
+      "d": "2026-10-20",
+      "p": 7990,
+      "src": "蝦皮商城 CORSAIR 官方授權旗艦店、Yahoo購物中心（公司貨），BigG"
+    }
+  ]
+}

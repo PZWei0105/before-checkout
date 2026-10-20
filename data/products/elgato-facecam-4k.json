@@ -1,0 +1,363 @@
+{
+  "id": "elgato-facecam-4k",
+  "name": "Elgato Facecam 4K",
+  "brand": "Elgato（Corsair）",
+  "category": "peripheral",
+  "kind": "網路攝影機",
+  "tagline": "直播取向 4K60 網路攝影機，首款可裝 49mm 濾鏡",
+  "status": "on-sale",
+  "launchDate": "2025-07-29",
+  "cycleMonths": 32,
+  "checkedAt": "2026-10-20T17:50:00+08:00",
+  "price": {
+    "currency": "TWD",
+    "now": 6490,
+    "nowSource": "酷澎（公司貨 10WAF9901），BigGo 比價 2026-10-20",
+    "nowUrl": "https://biggo.com.tw/s/10WAF9901/",
+    "range": [
+      6490,
+      6590
+    ],
+    "ref": 6590,
+    "refLabel": "台灣授權通路一致標價（官方旗艦館、momo、Yahoo 等；未見公開建議售價，Elgato 台灣官網 metadata 的 6,521.95 為美元換算值）",
+    "low90": null,
+    "low90Source": null,
+    "trend": "flat",
+    "trendNote": "台灣標價維持 6,590，但 momo、Yahoo購物中心、friDay、揚聲堡等 listing 已下架，現貨集中在酷澎（6,490，近期小漲 105）；蝦皮商城官方館 listing 狀態在 BigGo 兩次查詢顯示不一，PChome 搜尋無 Facecam。美國官網仍為 US$199.99，2026-02 曾在 Amazon 特價 US$159.99。",
+    "trendSources": [
+      {
+        "title": "BigGo 比價：Elgato Facecam 4K",
+        "url": "https://biggo.com.tw/s/elgato+facecam+4K/"
+      },
+      {
+        "title": "Elgato 美國官網 Facecam 4K 產品頁",
+        "url": "https://www.elgato.com/us/en/p/facecam-4k"
+      },
+      {
+        "title": "Slickdeals：Facecam 4K 特價 US$159.99（2026-02）",
+        "url": "https://slickdeals.net/f/19166638-elgato-facecam-4k-60fps-usb-c-studio-webcam-159-99-free-shipping"
+      }
+    ]
+  },
+  "specs": [
+    {
+      "k": "感光元件",
+      "plain": "以 webcam 來說是大尺寸感光元件，細節較好，但暗處仍需補光",
+      "v": "1/1.8 吋 Sony STARVIS 2 CMOS"
+    },
+    {
+      "k": "解析度／影格率",
+      "plain": "要 4K60 得走壓縮格式；臉部小視窗通常用不到 4K",
+      "v": "最高 4K60（MJPG）；無壓縮 NV12 最高 4K30、1440p60"
+    },
+    {
+      "k": "HDR",
+      "plain": "開 HDR 會降到 30fps，動作多的畫面要取捨",
+      "v": "支援 HDR，各解析度最高 30fps（4K30）"
+    },
+    {
+      "k": "鏡頭",
+      "plain": "適合固定坐在桌前；景深深、背景也清楚，可加裝一般相機濾鏡",
+      "v": "定焦 f/4.0、90° 視角，1.2 公尺內保持清晰；49mm 濾鏡螺紋"
+    },
+    {
+      "k": "麥克風",
+      "plain": "你已有專業直播麥克風，這點不影響",
+      "v": "無內建麥克風"
+    },
+    {
+      "k": "連接介面",
+      "plain": "SCAR 18 的 USB 埠都符合",
+      "v": "USB-C，建議 USB 3.0 以上"
+    },
+    {
+      "k": "軟體與特效",
+      "plain": "你的 RTX 5090 可直接用；開特效時 Camera Hub 預覽會降為 1080p60",
+      "v": "Camera Hub 手動曝光／白平衡；NVIDIA Broadcast 去背與眼神校正需 RTX 顯卡"
+    }
+  ],
+  "tests": [
+    {
+      "claim": "只靠螢幕光源的昏暗環境下，HDR 仍保有細節、噪點少；開 NVIDIA 特效時 Camera Hub 預覽降為 1080p60",
+      "src": "CGMagazine",
+      "url": "https://www.cgmagonline.com/review/hardware/elgato-facecam-4k-webcam"
+    },
+    {
+      "claim": "4K 畫質與評測者的 Canon M50 相機架設相當或更好，花費約三分之一；暗處仍明顯有顆粒",
+      "src": "GamingTrend",
+      "url": "https://gamingtrend.com/reviews/elgato-facecam-4k-review-dslr-quality-at-a-fraction-of-the-price"
+    },
+    {
+      "claim": "f/4 光圈在昏暗環境噪點重、降噪後偏糊；光線充足時色彩好、快速動作仍清晰",
+      "src": "Sports Gamers Online",
+      "url": "https://www.sportsgamersonline.com/news/reviews/elgato-facecam-4k-review-the-4k-60fps-king-with-some-trade-offs/amp/"
+    }
+  ],
+  "gain": {
+    "gaming": {
+      "level": "na",
+      "pct": null,
+      "why": "與遊戲效能無關"
+    },
+    "mobileGaming": {
+      "level": "na",
+      "pct": null,
+      "why": "與手遊遊玩無關"
+    },
+    "localAI": {
+      "level": "na",
+      "pct": null,
+      "why": "與本機 AI 無關"
+    },
+    "editing": {
+      "level": "none",
+      "pct": null,
+      "why": "可錄口播素材，但 iPhone 也能直接拍；不影響剪輯流程"
+    },
+    "streaming": {
+      "level": "some",
+      "pct": null,
+      "why": "4K60 專用鏡頭常駐、不占手機；但兩支手機已可免費當鏡頭，屬便利性升級"
+    },
+    "photo": {
+      "level": "na",
+      "pct": null,
+      "why": "與攝影無關"
+    },
+    "daily": {
+      "level": "none",
+      "pct": null,
+      "why": "視訊會議用筆電內建 1080p 鏡頭已可應付；Facecam 4K 也沒有麥克風"
+    }
+  },
+  "gainBasis": "對比你目前：筆電內建 1080p 紅外線鏡頭；iPhone 17 Pro Max 可經 Camo 等 App 當 webcam（免費版 720p）；ROG Phone 9 Pro 可用 Windows 11 內建手機鏡頭功能或 scrcpy 相機模式",
+  "needs": {
+    "desktop": false,
+    "note": "USB-C，建議接 USB 3.0 以上連接埠；4K60 需選 MJPG 格式；NVIDIA Broadcast 特效需 RTX 顯卡（你的 RTX 5090 符合）；f/4 光圈需搭配補光燈；無內建麥克風，盒內也沒有隱私鏡頭蓋。"
+  },
+  "successor": {
+    "eta": null,
+    "name": "未公布",
+    "note": "截至 2026-10 未見 Facecam 4K 後繼機：Elgato 2026 年最新硬體是 Wave Go 麥克風（2026-10-13），官方活動頁也未列新 webcam。4K60 這一階從 Facecam Pro（2022-11）到 Facecam 4K（2025-07）約 32 個月。搜尋曾出現一則「Facecam Pro 2026 refresh」第三方趨勢頁標題，但無法開啟驗證，不列為傳聞。",
+    "sources": [
+      {
+        "title": "Corsair 新聞室（2026-10-13 Wave Go）",
+        "url": "https://www.corsair.com/eu/en/press"
+      },
+      {
+        "title": "Elgato 活動與新聞頁",
+        "url": "https://www.elgato.com/us/en/explorer/news/events/"
+      },
+      {
+        "title": "Corsair 新聞稿：Facecam 4K 上市",
+        "url": "https://www.corsair.com/newsroom/press-release/elgatos-latest-facecam-takes-4k60-video-mainstream"
+      },
+      {
+        "title": "IT之家：Elgato Facecam Pro 發表（2022-11）",
+        "url": "https://www.ithome.com/0/650/814.htm"
+      }
+    ],
+    "status": "none"
+  },
+  "issues": [
+    {
+      "note": "BigGo 顯示 momo、Yahoo購物中心、friDay、揚聲堡等 6,590 listing 已下架，現貨以酷澎為主、PChome 無上架；購買時確認公司貨與保固",
+      "severity": "medium",
+      "status": "ongoing",
+      "title": "台灣通路貨源縮減",
+      "url": "https://biggo.com.tw/s/elgato+facecam+4K/"
+    },
+    {
+      "note": "f/4 光圈是設計取捨，評測建議搭配補光燈",
+      "severity": "medium",
+      "status": "ongoing",
+      "title": "暗光噪點明顯",
+      "url": "https://www.sportsgamersonline.com/news/reviews/elgato-facecam-4k-review-the-4k-60fps-king-with-some-trade-offs/amp/"
+    },
+    {
+      "note": "規格限制，開 HDR 就無法 60fps",
+      "severity": "low",
+      "status": "ongoing",
+      "title": "HDR 只有 30fps",
+      "url": "https://www.cgmagonline.com/review/hardware/elgato-facecam-4k-webcam"
+    },
+    {
+      "note": "評測指出盒內沒有遮蓋，需自備",
+      "severity": "low",
+      "status": "ongoing",
+      "title": "未附隱私鏡頭蓋",
+      "url": "https://gamingtrend.com/reviews/elgato-facecam-4k-review-dslr-quality-at-a-fraction-of-the-price"
+    }
+  ],
+  "alternatives": [
+    {
+      "name": "iPhone 17 Pro Max 當 webcam（Camo）",
+      "price": 0,
+      "why": "免費版 720p30 無浮水印，Pro 版可到 4K60 但需付費；直播時手機被占用，長時間建議接電"
+    },
+    {
+      "name": "Elgato Facecam MK.2",
+      "price": 4590,
+      "why": "1080p60、HDR 1080p30、軟體平移縮放；官方旗艦館有貨，便宜約 2,000"
+    },
+    {
+      "name": "Logitech MX Brio",
+      "price": 6990,
+      "why": "4K30／1080p60、f/2.0 光圈、內建雙麥克風與隱私蓋；偏會議取向，通路多"
+    }
+  ],
+  "brief": "Facecam 4K 是 Elgato 目前最新的直播 webcam（2025-07），STARVIS 2 感光元件加 4K60，是同價位少數能跑 4K60 的選擇，你的 RTX 5090 也能直接用 NVIDIA 去背特效。代價是 f/4 光圈暗處噪點重、HDR 只有 30fps，沒有補光燈很難發揮。台灣貨源正在縮：momo、Yahoo、friDay 都已下架，現貨主要在酷澎（6,490），買前確認公司貨保固；同價位的 Logitech MX Brio（6,990）通路多、光圈 f/2.0，但只有 4K30。若先求有：Windows 內建手機鏡頭功能只支援 Android，ROG Phone 9 Pro 可直接用，iPhone 則要靠 Camo 免費版（720p），Elgato EpocCam 已停售；代價是直播時手機被綁住，且延遲與發熱目前查無可靠實測。",
+  "learn": [
+    {
+      "explain": "數字越小進光越多。f/4 的進光量只有 f/2 的四分之一，所以 Facecam 4K 在暗處更依賴補光。",
+      "term": "光圈 f 值"
+    },
+    {
+      "explain": "鏡頭先把每格畫面壓縮再傳到電腦，省 USB 頻寬但畫質略降；Facecam 4K 要 4K60 就得用這個格式。",
+      "term": "MJPG"
+    },
+    {
+      "explain": "同時保留亮部與暗部細節，臉不會因背後的螢幕或窗光而變暗；Facecam 4K 開 HDR 會降到 30fps。",
+      "term": "HDR"
+    }
+  ],
+  "sources": [
+    {
+      "date": "2025-07-29",
+      "title": "Corsair 新聞稿：Facecam 4K 上市",
+      "url": "https://www.corsair.com/newsroom/press-release/elgatos-latest-facecam-takes-4k60-video-mainstream"
+    },
+    {
+      "date": "2025-07-29",
+      "title": "CGMagazine：Facecam 4K 評測",
+      "url": "https://www.cgmagonline.com/review/hardware/elgato-facecam-4k-webcam"
+    },
+    {
+      "date": "2025-08-07",
+      "title": "GamingTrend：Facecam 4K 評測",
+      "url": "https://gamingtrend.com/reviews/elgato-facecam-4k-review-dslr-quality-at-a-fraction-of-the-price"
+    },
+    {
+      "date": null,
+      "title": "Sports Gamers Online：Facecam 4K 評測",
+      "url": "https://www.sportsgamersonline.com/news/reviews/elgato-facecam-4k-review-the-4k-60fps-king-with-some-trade-offs/amp/"
+    },
+    {
+      "date": null,
+      "title": "Elgato 台灣官網：Facecam 4K",
+      "url": "https://www.elgato.com/tw/zh/p/facecam-4k"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "Elgato 美國官網：Facecam 4K",
+      "url": "https://www.elgato.com/us/en/p/facecam-4k"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "BigGo 比價：Elgato Facecam 4K",
+      "url": "https://biggo.com.tw/s/elgato+facecam+4K/"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "BigGo 比價：10WAF9901",
+      "url": "https://biggo.com.tw/s/10WAF9901/"
+    },
+    {
+      "date": "2026-02-02",
+      "title": "Slickdeals：Facecam 4K US$159.99",
+      "url": "https://slickdeals.net/f/19166638-elgato-facecam-4k-60fps-usb-c-studio-webcam-159-99-free-shipping"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "BigGo 比價：Facecam MK.2",
+      "url": "https://biggo.com.tw/s/facecam+mk.2/"
+    },
+    {
+      "date": null,
+      "title": "Elgato 台灣官網：Facecam MK.2",
+      "url": "https://www.elgato.com/tw/zh/p/facecam-mk2"
+    },
+    {
+      "date": "2024-03-29",
+      "title": "IT之家：Facecam MK.2 發表",
+      "url": "https://www.ithome.com/0/758/853.htm"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "BigGo 比價：Logitech MX Brio",
+      "url": "https://biggo.com.tw/s/MX+Brio/"
+    },
+    {
+      "date": "2024-03-06",
+      "title": "Notebookcheck：Logitech MX Brio 上市",
+      "url": "https://www.notebookcheck.net/Logitech-launches-MX-Brio-4K-webcam-for-199-99.810226.0.html"
+    },
+    {
+      "date": "2024-09-24",
+      "title": "T客邦：Logitech MX Brio 評測",
+      "url": "https://www.techbang.com/posts/116763-logitech-mx-brio-4k-ultra-hd"
+    },
+    {
+      "date": null,
+      "title": "Logitech 台灣：MX Brio 產品頁",
+      "url": "https://www.logitech.com/zh-tw/products/webcams/mx-brio-4k-webcam.html"
+    },
+    {
+      "date": null,
+      "title": "OBS 知識庫：智慧型手機鏡頭指南",
+      "url": "https://obsproject.com/kb/smartphone-camera-guide"
+    },
+    {
+      "date": null,
+      "title": "Camo 方案與價格",
+      "url": "https://camo.com/pricing"
+    },
+    {
+      "date": null,
+      "title": "Elgato 說明：EpocCam 已停售",
+      "url": "https://help.elgato.com/hc/zh-tw/articles/360051786731-EpocCam-%E6%94%AF%E6%8F%B4%E7%9A%84%E8%A7%A3%E6%9E%90%E5%BA%A6%E5%92%8C%E5%B9%80%E7%8E%87"
+    },
+    {
+      "date": null,
+      "title": "Microsoft 支援：使用行動裝置的相機",
+      "url": "https://support.microsoft.com/da-DK/Windows/apps/phonelink/use-your-mobile-device-s-camera"
+    },
+    {
+      "date": "2024-05-02",
+      "title": "PCWorld：Windows 11 手機當 webcam（不支援 iPhone）",
+      "url": "https://www.pcworld.com/article/2311397/use-your-smartphone-as-a-webcam-for-windows-11.html"
+    },
+    {
+      "date": null,
+      "title": "DroidCam OBS 外掛",
+      "url": "https://droidcam.app/obs/"
+    },
+    {
+      "date": null,
+      "title": "scrcpy GitHub（相機鏡像需 Android 12 以上）",
+      "url": "https://github.com/Genymobile/scrcpy"
+    },
+    {
+      "date": null,
+      "title": "ASUS：ROG Strix SCAR 18（2025）G835 規格",
+      "url": "https://rog.asus.com/us/laptops/rog-strix/rog-strix-scar-18-2025/spec/"
+    },
+    {
+      "date": "2026-10-13",
+      "title": "Corsair 新聞室",
+      "url": "https://www.corsair.com/eu/en/press"
+    },
+    {
+      "date": null,
+      "title": "Elgato 活動與新聞頁",
+      "url": "https://www.elgato.com/us/en/explorer/news/events/"
+    }
+  ],
+  "priceLog": [
+    {
+      "d": "2026-10-20",
+      "p": 6490,
+      "src": "酷澎（公司貨 10WAF9901），BigGo 比價 2026-10-20"
+    }
+  ]
+}

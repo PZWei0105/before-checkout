@@ -1,0 +1,385 @@
+{
+  "id": "iphone-18-pro-max",
+  "name": "iPhone 18 Pro Max",
+  "brand": "Apple",
+  "category": "phone",
+  "kind": "旗艦手機",
+  "tagline": "A20 Pro 散熱大改、主鏡頭首度可變光圈",
+  "status": "on-sale",
+  "launchDate": "2026-09-18",
+  "cycleMonths": 12,
+  "checkedAt": "2026-10-20T17:50:00+08:00",
+  "price": {
+    "currency": "TWD",
+    "now": 48890,
+    "nowSource": "傑昇通信門市空機價（256GB，2026-10-20 更新）；Apple 台灣官網為 49,900",
+    "nowUrl": "https://www.jyes.com.tw/en/product/Apple-iPhone-18-Pro-Max-256G",
+    "range": [
+      48890,
+      93900
+    ],
+    "ref": 49900,
+    "refLabel": "Apple 台灣官網售價（256GB）",
+    "low90": 48890,
+    "low90Source": "傑昇通信 2026-10-20 門市空機價（上市約一個月，無更早低點紀錄）",
+    "trend": "flat",
+    "trendNote": "Apple 官網售價與 9/10 公布時相同（256GB 49,900、512GB 56,900、1TB 71,900、2TB 93,900）；傑昇 10/20 門市價 256GB 48,890、512GB 56,390，通路僅低約 1–2%。與前代相比起價 +5,000（17 Pro Max 首發 44,900），1TB +13,000、2TB +21,000。",
+    "trendSources": [
+      {
+        "title": "科技新報：iPhone 18 Pro／Pro Max 台灣售價調漲",
+        "url": "https://technews.tw/2026/09/10/iphone-18-pro-pro-max-price-increase/"
+      },
+      {
+        "title": "NOWnews：iPhone 18 Pro Max 起價 49,900（前代 44,900）",
+        "url": "https://www.nownews.com/news/6873728"
+      },
+      {
+        "title": "傑昇通信 iPhone 18 Pro Max 256G 門市價",
+        "url": "https://www.jyes.com.tw/en/product/Apple-iPhone-18-Pro-Max-256G"
+      },
+      {
+        "title": "傑昇通信 iPhone 18 Pro Max 512G 門市價",
+        "url": "https://www.jyes.com.tw/en/product/Apple-iPhone-18-Pro-Max-512G"
+      }
+    ]
+  },
+  "specs": [
+    {
+      "k": "晶片",
+      "plain": "Geekbench 6 多核比 17 Pro Max 快約 28%；一般 App 操作感受差異不大。",
+      "v": "A20 Pro（2nm，6 核 CPU／7 核 GPU，雙 16 核神經網路引擎），RAM 12GB 與前代相同"
+    },
+    {
+      "k": "散熱",
+      "plain": "3DMark 壓力測試穩定度 79.4%（前代 65.2%），長時間遊戲或高規格錄影較不降速。",
+      "v": "均熱板面積為前代 3 倍，記憶體改放晶片旁"
+    },
+    {
+      "k": "主鏡頭",
+      "plain": "可實體控制景深，拍產品特寫時前後都能清楚；依光圈值換算，最大光圈進光約多 45%。",
+      "v": "48MP、24mm，可變光圈 f/1.48／1.8／2.8／4.0（前代固定 f/1.78）"
+    },
+    {
+      "k": "電池與充電",
+      "plain": "官方數字多 16%，但媒體實測網頁續航只多 3%；快充需 60W 以上充電器。",
+      "v": "影片播放最長 43 小時（前代 37 小時）；60W 有線約 15 分鐘充到 50%（前代 40W 約 20 分鐘）"
+    },
+    {
+      "k": "行動網路",
+      "plain": "C2 官方稱較省電，但單一實測顯示強訊號下網速略低、斷訊後重連較慢。",
+      "v": "台灣規格頁列 Apple C2 數據機（前代為高通 X80；美版 Pro Max 仍用 X80）"
+    },
+    {
+      "k": "外觀與重量",
+      "plain": "螢幕沒有升級，機身重了約 16–18g，長時間手持拍攝較吃力。",
+      "v": "6.9 吋、3,000 尼特螢幕沿用；動態島縮小、可同時顯示 3 個即時動態；249g（前代約 231–233g）"
+    },
+    {
+      "k": "售價",
+      "plain": "同容量比前代貴 5,000–21,000 元，容量越大漲越多。",
+      "v": "256GB 49,900 起（+5,000）；1TB 71,900（+13,000）、2TB 93,900（+21,000）"
+    }
+  ],
+  "tests": [
+    {
+      "claim": "5G 網頁瀏覽續航測試：18 Pro Max 18 小時 27 分，17 Pro Max 17 小時 54 分，只多約 3%。",
+      "src": "Tom's Guide",
+      "url": "https://www.tomsguide.com/phones/iphones/iphone-18-pro-max-and-18-pro-battery-life-tested-the-results-are-surprising"
+    },
+    {
+      "claim": "Geekbench 6 單／多核 4,741／12,789（17 Pro Max 3,871／9,968）；3DMark Solar Bay 17,850 對 12,260，Wild Life Extreme 壓測穩定度 79.4% 對 65.2%。",
+      "src": "Tom's Guide",
+      "url": "https://www.tomsguide.com/phones/iphones/iphone-18-pro-benchmarks-apple-just-built-the-most-powerful-phones-weve-ever-seen"
+    },
+    {
+      "claim": "DXOMARK 測 iPhone 18 Pro（後鏡頭與 Pro Max 相同）總分 172、全球第二，錄影 176 為該站最高；17 Pro 為 168。望遠拍照 143 仍落後對手。",
+      "src": "DXOMARK（tech-ish 整理）",
+      "url": "https://tech-ish.com/2026/09/20/iphone-18-pro-gets-dxomarks-highest-video-score-but-trails-huawei-overall/"
+    },
+    {
+      "claim": "混合重度使用（遊戲、YouTube、錄影）續航 11 小時 40 分，OnePlus 15（7,300mAh）為 13 小時 33 分；18 Pro Max 電池約 5,391mAh。",
+      "src": "Notebookcheck（引用 TechDroider）",
+      "url": "https://www.notebookcheck.net/iPhone-18-Pro-Max-vs-OnePlus-15-battery-life-test-Apple-optimizations-shine.1406537.0.html"
+    },
+    {
+      "claim": "18 Pro（C2）對 17 Pro（高通）：強 5G 下載平均低約 20 Mbps、上傳低約 30 Mbps；完全斷訊後重連平均 5.2 秒對 1.5 秒；地下室弱訊號反而較快。",
+      "src": "ZEERA Wireless 整理 Bilibili 何同學實測",
+      "url": "https://zeerawireless.com/blogs/news/iphone-18-pro-c2-vs-iphone-17-pro-signal-speed-test"
+    }
+  ],
+  "gain": {
+    "gaming": {
+      "level": "na",
+      "pct": null,
+      "why": "手機不影響你的 PC 遊戲體驗。"
+    },
+    "mobileGaming": {
+      "level": "none",
+      "pct": null,
+      "why": "3DMark Solar Bay 高 46%、壓測穩定度 79% 對 65%，但 Snap 與傳說對決原本就滿幀"
+    },
+    "localAI": {
+      "level": "none",
+      "pct": null,
+      "why": "Apple 稱 AI 算力翻倍，但新版 Siri 暫不支援繁中；你的本地模型跑在 RTX 5090 筆電"
+    },
+    "editing": {
+      "level": "none",
+      "pct": null,
+      "why": "Geekbench 6 多核快 28%，但錄影規格大致同前代，剪輯主力仍在筆電"
+    },
+    "streaming": {
+      "level": "none",
+      "pct": null,
+      "why": "長時間跑遊戲較不降頻，但直播由筆電負責；C2 單一實測上傳低約 30 Mbps"
+    },
+    "photo": {
+      "level": "some",
+      "pct": null,
+      "why": "新增 f/1.48–f/4 可變光圈，可實體控制景深；但 DXOMARK 總分僅 172 對前代 168"
+    },
+    "daily": {
+      "level": "none",
+      "pct": 3,
+      "why": "網頁續航實測 18:27 對 17:54 僅多 3%；60W 快充 15 分鐘到 50%，但重到 249g"
+    }
+  },
+  "gainBasis": "對比你的 iPhone 17 Pro Max",
+  "needs": {
+    "desktop": false,
+    "note": "要達到約 15 分鐘充到 50%，需 60W 以上 USB-C 充電器與線材。"
+  },
+  "successor": {
+    "eta": "2027-09",
+    "name": "2027 年 iPhone 20 週年 Pro／Pro Max（名稱未定：iPhone 19 Pro、20 Pro 或 XX）",
+    "note": "Bloomberg（Gurman）報導 20 週年改款仍按計畫於 2027 年 9 月發表，改為金屬中框搭配前後曲面玻璃；Omdia 與多家外媒預期標準版 iPhone 18 延到 2027 年春季。",
+    "sources": [
+      {
+        "title": "Notebookcheck：Bloomberg 稱 20 週年 iPhone 改款仍在進行",
+        "url": "https://www.notebookcheck.net/Apple-iPhone-20-Pro-20th-anniversary-iPhone-redesign-not-dead-but-different-Bloomberg-reports.1365545.0.html"
+      },
+      {
+        "title": "Macworld：iPhone 19 可能像 iPhone 9 一樣被跳過",
+        "url": "https://macworld.com/article/2951318/the-iphone-19-might-suffer-the-same-fate-as-the-iphone-9.html"
+      },
+      {
+        "title": "PhoneArena：Apple 2027 年預計推出的六款 iPhone",
+        "url": "https://www.phonearena.com/news/the-six-iphone-models-that-apple-is-set-to-release-in-2027_id181564"
+      }
+    ],
+    "status": "credible"
+  },
+  "issues": [
+    {
+      "note": "9/20 起陸續有 18 Pro／Pro Max 用戶回報通話聽筒爆裂聲；iOS 27.0.1 未修正，Apple 尚未回應。",
+      "severity": "medium",
+      "status": "ongoing",
+      "title": "聽筒爆音、雜音",
+      "url": "https://tech-ish.com/2026/10/14/every-iphone-18-pro-problem-so-far-and-which-ones-apple-has-fixed/"
+    },
+    {
+      "note": "Face ID 掃描失敗後畫面凍結並重開機；9/28 推出的 iOS 27.0.1 已修正，同版也修好 f/1.48 部分 2 倍照片色偏。",
+      "severity": "medium",
+      "status": "fixed",
+      "title": "Face ID 失敗後當機重開",
+      "url": "https://tech-ish.com/2026/10/14/every-iphone-18-pro-problem-so-far-and-which-ones-apple-has-fixed/"
+    },
+    {
+      "note": "Apple 10 月初證實，已發生者無軟體解法、只能換機；報導集中在美國 AT&T 用戶，且美版 Pro Max 用高通 X80，台灣規格頁列 C2。",
+      "severity": "low",
+      "status": "ongoing",
+      "title": "美國 AT&T 版 Pro Max 完全斷網",
+      "url": "https://phonecompass.com/news/iphone-18-pro-max-cellular-defect/"
+    },
+    {
+      "note": "勃根地紅與黑色機身有用戶回報後鏡頭周圍淺色環，屬外觀問題；Apple 未回應，部分用戶獲換機。",
+      "severity": "low",
+      "status": "ongoing",
+      "title": "鏡頭周圍出現淺色圈",
+      "url": "https://tech-ish.com/2026/10/14/every-iphone-18-pro-problem-so-far-and-which-ones-apple-has-fixed/"
+    },
+    {
+      "note": "單一創作者實測：完全斷訊後重連平均 5.2 秒，前代 1.5 秒；強訊號網速略低，但弱訊號表現較好。",
+      "severity": "low",
+      "status": "ongoing",
+      "title": "C2 數據機斷訊後重連較慢",
+      "url": "https://zeerawireless.com/blogs/news/iphone-18-pro-c2-vs-iphone-17-pro-signal-speed-test"
+    }
+  ],
+  "alternatives": [
+    {
+      "name": "保留 iPhone 17 Pro Max",
+      "price": null,
+      "why": "螢幕、RAM、三顆 48MP 鏡頭規格相同；差在可變光圈、散熱與 60W 快充"
+    },
+    {
+      "name": "iPhone 18 Pro（256GB）",
+      "price": 44900,
+      "why": "同 A20 Pro 與可變光圈、便宜 5,000；但壓測穩定度 62.8%，網頁續航少約 2 小時"
+    },
+    {
+      "name": "iPhone Duo（256GB）",
+      "price": 74900,
+      "why": "蘋果首款摺疊，7.6 吋內螢幕適合看腳本、預覽剪輯；10/23 台灣開賣，貴 25,000"
+    }
+  ],
+  "brief": "這代是「散熱＋相機機構」的年改：A20 Pro 實測 Geekbench 6 多核快 28%、3DMark 壓測穩定度 79.4% 對 65.2%，但網頁續航只多 3%，三顆 48MP 鏡頭、12GB RAM 與 6.9 吋螢幕都沿用，真正的新東西是主鏡頭可變光圈（f/1.48–f/4）和 60W 快充。台灣起價漲 5,000 到 49,900，上市一個月通路空機只低約 1,000 元；Apple Trade In 10 月對 iPhone 17 Pro Max 最高折抵 36,200（依檢測），以官網價計換機實付約 13,700 起。早期問題以美國 AT&T 版斷網（美版 Pro Max 仍用高通 X80）與聽筒爆音最受關注，台灣版標示 Apple C2，單一實測顯示強訊號網速略低、斷訊後重連較慢。Bloomberg 指 2027 年 9 月有 20 週年改款設計，是下一個較大的換機節點；蘋果首款摺疊 iPhone Duo 則 10/23 在台開賣、74,900 起。",
+  "learn": [
+    {
+      "explain": "鏡頭內葉片可改變開口大小：開大進光多、背景較糊；收小前後都清楚，適合拍產品特寫或在強光下控制亮度。",
+      "term": "可變光圈"
+    },
+    {
+      "explain": "手機內的扁平散熱腔，把晶片熱量快速攤開；面積越大，長時間遊戲或錄影越不容易降速。",
+      "term": "均熱板（VC）"
+    },
+    {
+      "explain": "Apple 自製的行動網路晶片，在台灣版取代前代的高通 X80；官方稱較省電，訊號與網速仍待更多實測。",
+      "term": "C2 數據機"
+    }
+  ],
+  "sources": [
+    {
+      "date": null,
+      "title": "Apple 台灣：購買 iPhone 18 Pro／Pro Max",
+      "url": "https://www.apple.com/tw/shop/buy-iphone/iphone-18-pro"
+    },
+    {
+      "date": null,
+      "title": "Apple 台灣：iPhone 18 Pro 技術規格",
+      "url": "https://www.apple.com/tw/iphone-18-pro/specs/"
+    },
+    {
+      "date": null,
+      "title": "SOGI：iPhone 18 Pro 系列與 Duo 台灣上市時間與價格",
+      "url": "https://www.sogi.com.tw/articles/apple-iphone-18-pro/6269623"
+    },
+    {
+      "date": "2026-09-10",
+      "title": "SOGI：iPhone 18 Pro Max 台灣售價與上市資訊",
+      "url": "https://www.sogi.com.tw/articles/apple-iphone-18-pro-max/6269618"
+    },
+    {
+      "date": "2026-09-10",
+      "title": "科技新報：iPhone 18 Pro／Pro Max 漲價",
+      "url": "https://technews.tw/2026/09/10/iphone-18-pro-pro-max-price-increase/"
+    },
+    {
+      "date": "2026-09-10",
+      "title": "NOWnews：iPhone 18 Pro 系列台灣售價",
+      "url": "https://www.nownews.com/news/6873728"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "傑昇通信：iPhone 18 Pro Max 256G 門市價",
+      "url": "https://www.jyes.com.tw/en/product/Apple-iPhone-18-Pro-Max-256G"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "傑昇通信：iPhone 18 Pro Max 512G 門市價",
+      "url": "https://www.jyes.com.tw/en/product/Apple-iPhone-18-Pro-Max-512G"
+    },
+    {
+      "date": "2026-10-08",
+      "title": "SOGI：10 月 Apple Trade In 舊換新金額整理",
+      "url": "https://www.sogi.com.tw/articles/apple-sale/6269822"
+    },
+    {
+      "date": "2026-09-12",
+      "title": "Tom's Guide：iPhone 18 Pro Max vs 17 Pro Max 差異",
+      "url": "https://www.tomsguide.com/phones/iphones/iphone-18-pro-max-vs-iphone-17-pro-max-comparison"
+    },
+    {
+      "date": "2026-09-16",
+      "title": "Tom's Guide：iPhone 18 Pro Max／18 Pro 續航實測",
+      "url": "https://www.tomsguide.com/phones/iphones/iphone-18-pro-max-and-18-pro-battery-life-tested-the-results-are-surprising"
+    },
+    {
+      "date": "2026-09-16",
+      "title": "TechRadar：iPhone 18 Pro Max 實驗室續航測試",
+      "url": "https://www.techradar.com/phones/iphone/does-the-iphone-18-pro-max-really-have-the-largest-increase-in-battery-life-ever-our-lab-tests-results-are-in-heres-how-it-compares"
+    },
+    {
+      "date": "2026-09-17",
+      "title": "Tom's Guide：iPhone 18 Pro 跑分",
+      "url": "https://www.tomsguide.com/phones/iphones/iphone-18-pro-benchmarks-apple-just-built-the-most-powerful-phones-weve-ever-seen"
+    },
+    {
+      "date": "2026-09-17",
+      "title": "iDevice：18 Pro Max 持續效能優於 18 Pro",
+      "url": "https://idevice.com/the-iphone-18-pro-max-holds-its-speed-far-better-than-the-18-pro"
+    },
+    {
+      "date": "2026-09-23",
+      "title": "Notebookcheck：iPhone 18 Pro Max vs OnePlus 15 續航",
+      "url": "https://www.notebookcheck.net/iPhone-18-Pro-Max-vs-OnePlus-15-battery-life-test-Apple-optimizations-shine.1406537.0.html"
+    },
+    {
+      "date": "2026-09-20",
+      "title": "tech-ish：iPhone 18 Pro DXOMARK 成績",
+      "url": "https://tech-ish.com/2026/09/20/iphone-18-pro-gets-dxomarks-highest-video-score-but-trails-huawei-overall/"
+    },
+    {
+      "date": "2026-10-14",
+      "title": "tech-ish：iPhone 18 Pro 已知問題與修正狀況",
+      "url": "https://tech-ish.com/2026/10/14/every-iphone-18-pro-problem-so-far-and-which-ones-apple-has-fixed/"
+    },
+    {
+      "date": "2026-10-07",
+      "title": "PhoneCompass：iPhone 18 Pro Max 行動網路故障",
+      "url": "https://phonecompass.com/news/iphone-18-pro-max-cellular-defect/"
+    },
+    {
+      "date": "2026-09-17",
+      "title": "ZEERA：iPhone 18 Pro C2 對 17 Pro 訊號實測整理",
+      "url": "https://zeerawireless.com/blogs/news/iphone-18-pro-c2-vs-iphone-17-pro-signal-speed-test"
+    },
+    {
+      "date": "2026-09-19",
+      "title": "iClarified：美版 18 Pro Max 拆解確認使用高通 X80",
+      "url": "https://www.iclarified.com/102279/iphone-18-pro-max-teardown-confirms-us-model-uses-qualcomm-x80-instead-of-apple-c2"
+    },
+    {
+      "date": "2026-09-09",
+      "title": "MacRumors：iPhone 18 Pro 與 Pro Max 數據機不同",
+      "url": "https://www.macrumors.com/2026/09/09/iphone-18-pro-different-modem/"
+    },
+    {
+      "date": null,
+      "title": "iThinkDifferent：iPhone 17 Pro Max 拆解確認高通 X80 數據機",
+      "url": "https://www.ithinkdiff.com/iphone-17-pro-max-snapdragon-x80-modem/"
+    },
+    {
+      "date": "2026-10-16",
+      "title": "中央社：台灣大 myfone 10/16 開放預購 iPhone Duo",
+      "url": "https://www.cna.com.tw/business/chinese/447172"
+    },
+    {
+      "date": "2026-09-10",
+      "title": "科技新報：iPhone Duo 台灣售價 74,900 起",
+      "url": "https://technews.tw/2026/09/10/iphone-duo-affordable/"
+    },
+    {
+      "date": "2026-09-09",
+      "title": "MacRumors：iPhone Duo 價格與上市日期",
+      "url": "https://macrumors.com/2026/09/09/iphone-duo-pricing-pre-orders-release-date"
+    },
+    {
+      "date": "2026-08-11",
+      "title": "Notebookcheck：Bloomberg 談 2027 年 20 週年 iPhone",
+      "url": "https://www.notebookcheck.net/Apple-iPhone-20-Pro-20th-anniversary-iPhone-redesign-not-dead-but-different-Bloomberg-reports.1365545.0.html"
+    },
+    {
+      "date": "2025-10-23",
+      "title": "Macworld：iPhone 19 命名與 2027 時程",
+      "url": "https://macworld.com/article/2951318/the-iphone-19-might-suffer-the-same-fate-as-the-iphone-9.html"
+    }
+  ],
+  "priceLog": [
+    {
+      "d": "2026-10-20",
+      "p": 48890,
+      "src": "傑昇通信門市空機價（256GB，2026-10-20 更新）；Apple 台灣官"
+    }
+  ]
+}

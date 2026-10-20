@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>下單前</title>
+<meta name="description" content="PZ 專屬的購買判定秘書：顯卡、手機、周邊，現在該不該買。">
+<meta name="theme-color" content="#E3E7EB" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F1317" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="下單前">
+<meta name="format-detection" content="telephone=no">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="icons/icon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DotGothic16&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@700;900&display=swap">
+<link rel="stylesheet" href="app.css">
+<script>try{if(sessionStorage.getItem('bc.splash')||matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('no-splash');else sessionStorage.setItem('bc.splash','1')}catch(e){}</script>
+</head>
+<body>
+<div id="splash" aria-hidden="true">
+  <div class="sp-box">
+    <span class="sp-seal"><span>下</span><span>單</span><span>前</span></span>
+    <span class="sp-vfd">BEFORE CHECKOUT</span>
+  </div>
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <filter id="ink" x="-8%" y="-8%" width="116%" height="116%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="11" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="1.5" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
+
+<header class="topbar" id="topbar">
+  <div class="wrap">
+    <h1 class="sr">下單前</h1>
+    <span class="seal" aria-hidden="true"><span>下</span><span>單</span><span>前</span></span>
+    <div class="brand"><b>購買判定秘書</b><span>BEFORE CHECKOUT</span></div>
+    <button id="sync" class="pill" type="button" data-act="sync" aria-label="同步最新資料"><i></i><span>連線中</span></button>
+  </div>
+</header>
+
+<div id="ptr" class="ptr" aria-hidden="true">
+  <span class="ptr-slot"></span>
+  <div class="ptr-paper"><b id="ptr-t">下拉同步</b><span id="ptr-s">PULL TO SYNC</span></div>
+</div>
+
+<main class="wrap">
+  <!-- 簡報 -->
+  <section id="view-brief" class="view" aria-label="今日簡報">
+    <div id="install"></div>
+    <button type="button" class="vfd board" id="board" data-act="board"></button>
+    <article class="memo paper zz-b" id="memo">
+      <div class="memo-h"><span class="eyebrow">今日簡報</span><time id="memo-date" class="mono small muted"></time></div>
+      <p class="memo-t" id="memo-text">正在整理你的清單…</p>
+      <div class="tally" id="tally"></div>
+    </article>
+
+    <section class="card dispatch" aria-labelledby="d-h">
+      <div class="card-h"><h2 id="d-h">委託秘書</h2><span class="eyebrow">DISPATCH</span></div>
+      <p class="muted small">想查新東西，或準備下單前想要最新價格，就開一張委託單。秘書查完會更新到這裡，通常 5–10 分鐘。</p>
+      <ol class="how">
+        <li><b>填好委託</b>按下面的按鈕，委託單會複製好</li>
+        <li><b>貼到 Claude</b>任何一個新對話，貼上送出</li>
+        <li><b>下拉同步</b>查完回到這裡，判定就出來了</li>
+      </ol>
+      <form id="f-dispatch" autocomplete="off">
+        <label class="field"><span class="sr">想查的商品</span>
+          <input class="input" id="d-q" maxlength="80" placeholder="例如：RTX 5070 Ti、Galaxy S26 Ultra、Stream Deck"></label>
+        <div class="seg" id="d-cat" role="radiogroup" aria-label="類別"></div>
+        <label class="field"><span class="sr">補充說明</span>
+          <input class="input" id="d-note" maxlength="140" placeholder="（選填）想拿來做什麼、在意什麼"></label>
+        <button class="btn btn-seal" id="d-go" type="submit">開委託單並複製</button>
+      </form>
+      <ol class="tickets" id="tickets"></ol>
+    </section>
+
+    <section class="card" aria-labelledby="up-h">
+      <div class="card-h"><h2 id="up-h">接下來</h2><span class="eyebrow">CALENDAR</span></div>
+      <ol class="tl" id="upcoming"><li><span class="d">—</span><span class="t"><b>載入中</b></span><span></span></li></ol>
+    </section>
+
+    <section class="card" aria-labelledby="at-h">
+      <div class="card-h"><h2 id="at-h">要你注意</h2><span class="eyebrow">WATCH</span></div>
+      <ul class="attn" id="attention"><li>載入中</li></ul>
+    </section>
+  </section>
+
+  <!-- 清單 -->
+  <section id="view-list" class="view" aria-label="清單" hidden>
+    <div class="card-h"><h2>判定清單</h2><span class="eyebrow" id="list-count"></span></div>
+    <div class="filters">
+      <div class="seg" id="f-cat" role="radiogroup" aria-label="依類別篩選"></div>
+      <div class="chips" id="f-v" aria-label="依判定篩選"></div>
+    </div>
+    <div class="stubs" id="stubs"><div class="empty">清單載入中…</div></div>
+  </section>
+
+  <!-- 守則 -->
+  <section id="view-rules" class="view" aria-label="守則" hidden>
+    <section class="card">
+      <div class="card-h"><h2>判定怎麼來</h2><span class="eyebrow">RULEBOOK</span></div>
+      <p class="muted">秘書只負責把事實查清楚，判定交給下面這套規則。規則依序檢查，先觸發的那一級就是結果；每一條都看得到證據。</p>
+      <div class="flow">
+        <span class="stamp sm v-skip">不用買</span><em>→</em>
+        <span class="stamp sm v-next">等新一代</span><em>→</em>
+        <span class="stamp sm v-wait">再等等</span><em>→ 都沒觸發 →</em>
+        <span class="stamp sm v-buy">現在買</span>
+      </div>
+    </section>
+    <section class="card" aria-labelledby="thr-h">
+      <div class="card-h"><h2 id="thr-h">你的門檻</h2><span class="eyebrow">THRESHOLDS</span></div>
+      <form id="f-thr" class="thr"></form>
+    </section>
+    <section class="card">
+      <h2>判定規則</h2>
+      <dl class="rulebook" id="rulebook"></dl>
+    </section>
+    <section class="card">
+      <h2>秘書的查證原則</h2>
+      <ol class="principles">
+        <li>規格以官方公布為準；效能看兩家以上媒體的實測數字。</li>
+        <li>價格只看台灣可信通路的全新品：品牌官方商店、PChome、momo、原價屋、蝦皮商城官方店、BigGo 比價。</li>
+        <li>新一代消息分三級：官方發表、可信消息（兩家以上可靠媒體或長期準確的爆料者）、傳聞。傳聞只列出，不進判定。</li>
+        <li>查不到的數字一律留白，不估、不編。</li>
+        <li>不分潤、不放購物連結、不收業配；來源連結只為了讓你查核。</li>
+      </ol>
+    </section>
+  </section>
+
+  <!-- 我 -->
+  <section id="view-me" class="view" aria-label="我的裝備與需求" hidden>
+    <div id="me-banner"></div>
+    <form id="f-me" class="view"></form>
+    <div id="me-extra" class="view"></div>
+  </section>
+</main>
+
+<nav class="tabbar" aria-label="主要分頁">
+  <div class="tabs">
+    <button class="tab" type="button" data-act="tab" data-view="brief" aria-current="page">
+      <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l3 3v15H6z"/><path d="M9 10h6M9 14h6M9 18h4"/></svg>簡報</button>
+    <button class="tab" type="button" data-act="tab" data-view="list">
+      <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-2-1.4-2 1.4-2-1.4-2 1.4-2-1.4L6 21z"/><path d="M9 8h6M9 12h6M9 16h3"/></svg>清單</button>
+    <button class="tab" type="button" data-act="tab" data-view="rules">
+      <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M8 20h8M5 7h14"/><path d="M5 7 2.5 13a2.7 2.7 0 0 0 5 0zM19 7l-2.5 6a2.7 2.7 0 0 0 5 0z"/></svg>守則</button>
+    <button class="tab" type="button" data-act="tab" data-view="me">
+      <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4.5 20.5c1.4-3.7 4.3-5.5 7.5-5.5s6.1 1.8 7.5 5.5"/></svg>我</button>
+  </div>
+</nav>
+
+<div id="sheet" class="sheet" role="dialog" aria-modal="true" aria-labelledby="sh-title" hidden>
+  <div class="sheet-top"><div class="wrap">
+    <button class="btn-ghost" type="button" data-act="close" aria-label="返回">← 返回</button>
+    <span class="sh-title" id="sh-title"></span>
+    <button class="btn-ghost" type="button" id="sh-refresh" data-act="refresh">請秘書重查</button>
+  </div></div>
+  <div class="wrap sheet-body">
+    <div id="sh-handoff"></div>
+    <div id="sh-vfd"></div>
+    <div id="sh-receipt"></div>
+    <section class="card" id="sh-whatif" aria-labelledby="wi-h">
+      <div class="card-h"><h3 id="wi-h">試算：換個條件看看</h3><span class="eyebrow">WHAT IF</span></div>
+      <div class="seg" id="wi-urg" role="radiogroup" aria-label="急迫度"></div>
+      <label class="field"><span id="wi-blabel">這次的預算</span>
+        <input class="input mono" id="wi-budget" type="number" inputmode="numeric" min="0" step="500" placeholder="不設上限"></label>
+      <p class="small muted">試算不會改你的設定。<button type="button" class="btn-link" data-act="save-wi">存成我的設定</button></p>
+    </section>
+    <div id="sh-sections" class="sheet-body" style="padding:0"></div>
+    <section class="card" id="sh-ask" aria-labelledby="ask-h">
+      <div class="card-h"><h3 id="ask-h">問秘書</h3><span class="eyebrow">ASK</span></div>
+      <p class="small muted">看不懂哪裡、想換個角度想，就問。App 會把這張判定單、你的裝備和問題整理成一段話複製好，貼到 Claude 對話，秘書就能針對你的情況回答。</p>
+      <div class="chips" id="ask-sugg"></div>
+      <form class="ask-form" id="f-ask">
+        <label class="sr" for="ask-in">你的問題</label>
+        <textarea class="input" id="ask-in" rows="2" maxlength="400" placeholder="例如：用白話說，它跟我現在的差在哪？"></textarea>
+        <div class="row"><button class="btn btn-seal" type="submit">整理問題並複製</button><a class="btn" href="https://claude.ai/new" target="_blank" rel="noopener">開啟 Claude ↗</a></div>
+      </form>
+    </section>
+    <div id="sh-sources"></div>
+  </div>
+</div>
+
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+<noscript><p class="wrap">這個 App 需要開啟 JavaScript。</p></noscript>
+<script src="engine.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,376 @@
+{
+  "id": "rtx-5090",
+  "name": "NVIDIA GeForce RTX 5090",
+  "brand": "NVIDIA",
+  "category": "gpu",
+  "kind": "桌機顯示卡",
+  "tagline": "消費級最強旗艦，32GB 顯示記憶體兼顧遊戲與本地 AI",
+  "status": "on-sale",
+  "launchDate": "2025-01-30",
+  "cycleMonths": 27,
+  "checkedAt": "2026-10-20T17:50:00+08:00",
+  "price": {
+    "currency": "TWD",
+    "now": 159990,
+    "nowSource": "Yahoo購物中心 2026-10-20（MSI RTX 5090 32G VENTUS 3X OC，可下單）",
+    "nowUrl": "https://tw.buy.yahoo.com/search/product?p=RTX5090%E9%A1%AF%E7%A4%BA%E5%8D%A1",
+    "range": [
+      159990,
+      180090
+    ],
+    "ref": 71990,
+    "refLabel": "NVIDIA 台灣首發建議售價（起，2025-01）",
+    "low90": null,
+    "low90Source": null,
+    "trend": "up",
+    "trendNote": "台灣現貨最低 159,990 元，是首發建議價 71,990 元的 2.2 倍；Yahoo 上標價 9.5～11 萬的單卡全數售完，PChome 已無單賣。全球：華碩、技嘉 8 月第二度調漲通路價，DIGITIMES 傳 RTX 50 最高漲 30%；TechNews 引 Tom's Hardware 指 RTX 50 自 6 月約漲 39%、5090 自 2 月漲逾 41%，美國 9 月初最低約 5,199 美元，歐洲最低破 5,000 歐元。主因是 AI 需求排擠 GDDR7／DRAM 產能，業界預期延續到 2027。",
+    "trendSources": [
+      {
+        "title": "TheNextWeb：華碩、技嘉 8 月二度調漲 RTX 50／RX 9000 通路價",
+        "url": "https://thenextweb.com/news/asus-gigabyte-rtx-50-gpu-price-hike-dram-crisis"
+      },
+      {
+        "title": "DIGITIMES：RTX 50 傳最高調漲 30%（台積電、GDDR7 雙漲）",
+        "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=763921"
+      },
+      {
+        "title": "TechNews：RTX 5090 第三方售價破 19 萬元（引 Tom's Hardware 價格追蹤）",
+        "url": "https://technews.tw/2026/09/16/rtx-5090-price-past-190000/"
+      },
+      {
+        "title": "Guru3D：RTX 5090 歐洲街價突破 5,000 歐元",
+        "url": "https://www.guru3d.com/story/geforce-rtx-5090-street-prices-in-eu-now-exceed/"
+      },
+      {
+        "title": "Galaxus：記憶體危機使顯示卡明顯漲價（NVIDIA 卡進貨價 7 月底約 +25%）",
+        "url": "https://www.galaxus.de/en/page/memory-crisis-gpus-are-now-also-becoming-significantly-more-expensive-43395"
+      }
+    ]
+  },
+  "specs": [
+    {
+      "k": "CUDA 核心",
+      "plain": "約是你筆電 RTX 5090 Laptop（10,496）的 2.1 倍，算力差距主要來自這裡",
+      "v": "21,760"
+    },
+    {
+      "k": "顯示記憶體",
+      "plain": "比筆電多 8GB、頻寬是筆電 896 GB/s 的 2 倍，跑大型本地模型最有感",
+      "v": "32GB GDDR7，512-bit，1,792 GB/s"
+    },
+    {
+      "k": "顯示卡功耗",
+      "plain": "是筆電 GPU 上限 175W 的三倍多，散熱、噪音與電費都要算進去",
+      "v": "575W"
+    },
+    {
+      "k": "建議系統電源",
+      "plain": "組桌機時電源要一步到位，並使用原生 12V-2x6 線材",
+      "v": "1,000W"
+    },
+    {
+      "k": "影片編碼器",
+      "plain": "多組編碼器可同時處理直播與高碼率錄影",
+      "v": "3 組第 9 代 NVENC"
+    },
+    {
+      "k": "供電接頭",
+      "plain": "熔毀風險集中在這個接頭，務必插到底、盡量避免轉接線",
+      "v": "1×12V-2x6（600W）或 4×8-pin 轉接"
+    }
+  ],
+  "tests": [
+    {
+      "claim": "桌機 5090 的 3DMark Time Spy 顯示分數中位數 46,193、Steel Nomad 14,376；RTX 5090 Laptop 分別為 24,483、6,034",
+      "src": "Notebookcheck",
+      "url": "https://www.notebookcheck.net/GeForce-RTX-5070-Ti-Laptop-vs-GeForce-RTX-5090-vs-GeForce-RTX-5090-Laptop_12926_12931_12928.247598.0.html"
+    },
+    {
+      "claim": "《決勝時刻：黑色行動 7》QHD Ultra：桌機 5090 92 fps、5090 Laptop 47 fps；4K Ultra 為 56 對 26 fps",
+      "src": "Notebookcheck",
+      "url": "https://www.notebookcheck.net/GeForce-RTX-5070-Ti-Laptop-vs-GeForce-RTX-5090-vs-GeForce-RTX-5090-Laptop_12926_12931_12928.247598.0.html"
+    },
+    {
+      "claim": "與你同型號的 SCAR 18 G835LX 在 175W 模式：Time Spy 顯示分數 24,599、《電馭叛客 2077》QHD 最高畫質 106.8 fps",
+      "src": "Notebookcheck",
+      "url": "https://www.notebookcheck.net/The-18-inch-gamer-with-great-mini-LED-and-an-RTX-5090-Laptop-Asus-Strix-SCAR-18-G835LX-review.990635.0.html"
+    },
+    {
+      "claim": "4K 遊戲 5090 比 5080 快約 36%～60%（如《刺客教條：幻景》+36.3%、FF XIV +52.7%）",
+      "src": "Club386",
+      "url": "https://www.club386.com/nvidia-geforce-rtx-5080-vs-geforce-rtx-5090"
+    },
+    {
+      "claim": "llama.cpp 跑 Qwen3 32B Q4、4K 上下文生字 61.4 tok/s；桌機 5080 的生字速度約為 5090 的 62%",
+      "src": "Hardware Corner",
+      "url": "https://www.hardware-corner.net/gpu-llm-benchmarks/rtx-5090/"
+    }
+  ],
+  "gain": {
+    "gaming": {
+      "level": "big",
+      "pct": 88,
+      "why": "Time Spy 46,193 對你機型 175W 實測 24,599（+88%）；QHD 遊戲實測約 2 倍"
+    },
+    "mobileGaming": {
+      "level": "na",
+      "pct": null,
+      "why": "桌機顯示卡與手機遊戲無關"
+    },
+    "localAI": {
+      "level": "big",
+      "pct": 61,
+      "why": "32GB 可放 24GB 塞不下的 32B Q5／Q6；生字速度以頻寬相近的 5080 推估 +61% 以上"
+    },
+    "editing": {
+      "level": "big",
+      "pct": null,
+      "why": "CUDA 核心約 2.1 倍、32GB、3 組 NVENC，特效、降噪與算圖受惠最大"
+    },
+    "streaming": {
+      "level": "none",
+      "pct": null,
+      "why": "與筆電同為第 9 代 NVENC，直播畫質不變；3 組編碼器便於同時直播與錄影"
+    },
+    "photo": {
+      "level": "none",
+      "pct": null,
+      "why": "相片編修對 GPU 需求有限，現有 5090 Laptop 已足夠"
+    },
+    "daily": {
+      "level": "na",
+      "pct": null,
+      "why": "日常文書、上網不受顯示卡影響"
+    }
+  },
+  "gainBasis": "對比你的 ROG Strix SCAR 18（RTX 5090 Laptop 24GB，175W）",
+  "needs": {
+    "desktop": true,
+    "note": "需整台組裝桌機；NVIDIA 標示顯示卡功耗 575W、系統電源 1,000W，需 600W 規格的原生 12V-2x6 線材（或 4×8-pin 轉接）。記憶體缺貨同時推高 DDR5 與主機板價格。"
+  },
+  "successor": {
+    "eta": null,
+    "name": "GeForce RTX 6090（Rubin 世代）",
+    "note": "NVIDIA 未公布。可靠爆料者 kopite7kimi（9/21）稱 Rubin 遊戲卡是 2028 年產品，MEGAsizeGPU、Kepler_L2 也否認 2027；The Information（2 月）指 RTX 60 量產恐延至 2028。MLID 主張 2027 上半年，屬少數說法。eta 留空：可信說法只到年份。5090 不在 RTX 50 Super 改款傳聞名單內。",
+    "sources": [
+      {
+        "title": "Notebookcheck：kopite7kimi 反駁 MLID，稱 Rubin 遊戲卡為 2028 年產品",
+        "url": "https://www.notebookcheck.net/Reliable-leaker-contradicts-Moore-s-Law-Is-Dead-s-Nvidia-RTX-6090-release-date.1404442.0.html"
+      },
+      {
+        "title": "GodisaGeek：RTX 6090 傳 2027 上半年，多名爆料者質疑",
+        "url": "https://godisageek.com/2026/09/nvidia-rtx-6090-h1-2027-rumor/"
+      },
+      {
+        "title": "Guru3D：報導指 NVIDIA 2026 年不推新遊戲卡（引 The Information）",
+        "url": "https://www.guru3d.com/story/report-no-new-nvidia-rtx-gaming-gpus-in-2026-whatsoever/"
+      },
+      {
+        "title": "Tom's Hardware：板卡廠預期 RDNA 5 於 2027 下半年，RTX 60 傳 2027 底至 2028 初",
+        "url": "https://www.tomshardware.com/pc-components/gpus/amds-rdna-5-gaming-gpus-are-coming-late-next-year-according-to-aibs-at-computex-manufacturers-expect-new-team-red-cards-in-the-second-half-of-2027-alongside-nvidia"
+      }
+    ],
+    "status": "credible"
+  },
+  "issues": [
+    {
+      "note": "上市一年多仍陸續傳出案例；2026 年 6 月 Club386 測試用的 5090 公版卡接頭熔毀。NVIDIA 堅稱符合 ATX 3.1、建議用原生線材，未推出硬體修正。",
+      "severity": "high",
+      "status": "ongoing",
+      "title": "12V-2x6／16-pin 供電接頭熔毀",
+      "url": "https://www.gizmochina.com/2026/06/24/another-rtx-5090-faces-power-connector-meltdown-during-testing/"
+    },
+    {
+      "note": "美國有 42 名買家遭 999 美元假低價詐騙，也出現被掏空核心的二手卡；台灣比價站也有 81,000 元這類遠低於行情的離群報價。",
+      "severity": "medium",
+      "status": "ongoing",
+      "title": "缺貨下的詐騙與掏空卡",
+      "url": "https://technews.tw/2026/09/16/rtx-5090-price-past-190000/"
+    },
+    {
+      "note": "9 月的 Game Ready 616.56 在部分 8-bit 螢幕閃爍，RTX 20 以後各代都受影響；NVIDIA 已承認，截至 9/22 修正版仍在測試，之後狀態未能確認。",
+      "severity": "low",
+      "status": "ongoing",
+      "title": "驅動 616.56 畫面閃爍",
+      "url": "https://shattered.io/nvidia-driver-616-56-flicker-bug-2026/"
+    },
+    {
+      "note": "2025 年初 RTX 50 在 4K 144Hz 與部分 DP 螢幕會黑畫面，已由 572.60／572.65 驅動及板卡廠 VBIOS 更新修正。",
+      "severity": "low",
+      "status": "fixed",
+      "title": "上市初期黑畫面",
+      "url": "https://www.pcgameshardware.de/Geforce-RTX-5090-Grafikkarte-281029/News/Hotfix-gegen-Blackscreens-1467242/"
+    }
+  ],
+  "alternatives": [
+    {
+      "name": "現有 RTX 5090 Laptop（SCAR 18）",
+      "price": 0,
+      "why": "已有 24GB 與第 9 代 NVENC；QHD《電馭叛客 2077》最高畫質約 107 fps"
+    },
+    {
+      "name": "NVIDIA GeForce RTX 5080（桌機）",
+      "price": 53990,
+      "why": "價格約三分之一，4K 遊戲約為 5090 的六～七成，但只有 16GB"
+    },
+    {
+      "name": "RTX 5080 Super 24GB（傳聞）",
+      "price": null,
+      "why": "傳 CES 2027 發表、VRAM 與筆電同為 24GB；7 月傳暫緩，價格未知"
+    }
+  ],
+  "brief": "桌機 5090 是三張中唯一能讓你的遊戲效能接近翻倍的選項（Time Spy 約 +88%），32GB／1,792 GB/s 也能跑筆電放不下的 32B 高精度模型。代價是台灣現貨 159,990 元起、約首發建議價的 2.2 倍，而且你得從零組一台需 1,000W 電源的桌機，DDR5 與主機板也正因記憶體缺貨漲價。這波漲價的主因是 AI 需求吃掉 GDDR7 產能，加上中國業者整板收購 5090 做 AI 伺服器，業界預期壓力延續到 2027，目前看不到回落訊號。另一方面，可信消息指 RTX 60 要到 2028 年，5090 也不在 Super 改款名單，旗艦地位還會維持很久。對你而言，真正拉開差距的是本地 AI；QHD 遊戲與直播，筆電現況已能應付。",
+  "learn": [
+    {
+      "explain": "RTX 50 高階卡用的 16-pin 供電接頭。沒插到底或使用轉接線時，電流可能集中在少數針腳而過熱熔毀。",
+      "term": "12V-2x6 接頭"
+    },
+    {
+      "explain": "顯示卡每秒能搬運的資料量。本地大型語言模型的生字速度主要受頻寬限制，頻寬越高、出字越快。",
+      "term": "記憶體頻寬"
+    },
+    {
+      "explain": "AI 資料中心搶走記憶體產能，GDDR7 與 DDR5 變貴，顯示卡和整台電腦的成本都跟著上漲。",
+      "term": "GDDR7 缺貨"
+    }
+  ],
+  "sources": [
+    {
+      "date": "2026-10-20",
+      "title": "Yahoo購物中心 RTX 5090 搜尋結果（含補貨中／已售完標示）",
+      "url": "https://tw.buy.yahoo.com/search/product?p=RTX5090%E9%A1%AF%E7%A4%BA%E5%8D%A1"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "BigGo 比價：RTX 5090",
+      "url": "https://biggo.com.tw/s/RTX+5090/"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "PChome 24h 搜尋 API：RTX5090 32G（僅整機，無單賣顯示卡）",
+      "url": "https://ecshweb.pchome.com.tw/search/v4.3/all/results?q=RTX5090%2032G&page=1&sort=prc/ac"
+    },
+    {
+      "date": "2025-01-28",
+      "title": "電腦王阿達：RTX 5090／5080 台灣建議售價",
+      "url": "https://www.kocpc.com.tw/archives/584679"
+    },
+    {
+      "date": null,
+      "title": "NVIDIA 台灣：GeForce RTX 5090 規格",
+      "url": "https://www.nvidia.com/zh-tw/geforce/graphics-cards/50-series/rtx-5090/"
+    },
+    {
+      "date": null,
+      "title": "Notebookcheck：桌機 RTX 5090 對 RTX 5090 Laptop 跑分比較",
+      "url": "https://www.notebookcheck.net/GeForce-RTX-5070-Ti-Laptop-vs-GeForce-RTX-5090-vs-GeForce-RTX-5090-Laptop_12926_12931_12928.247598.0.html"
+    },
+    {
+      "date": "2025-04-02",
+      "title": "Notebookcheck：ROG Strix SCAR 18 G835LX 評測",
+      "url": "https://www.notebookcheck.net/The-18-inch-gamer-with-great-mini-LED-and-an-RTX-5090-Laptop-Asus-Strix-SCAR-18-G835LX-review.990635.0.html"
+    },
+    {
+      "date": null,
+      "title": "Notebookcheck：RTX 5090 Laptop 規格與跑分",
+      "url": "https://www.notebookcheck.org/NVIDIA-GeForce-RTX-5090-Laptop.1072516.0.html"
+    },
+    {
+      "date": "2025-01-29",
+      "title": "Club386：RTX 5080 對 RTX 5090",
+      "url": "https://www.club386.com/nvidia-geforce-rtx-5080-vs-geforce-rtx-5090"
+    },
+    {
+      "date": null,
+      "title": "Hardware Corner：RTX 5090 本地 LLM 跑分",
+      "url": "https://www.hardware-corner.net/gpu-llm-benchmarks/rtx-5090/"
+    },
+    {
+      "date": "2026-10-13",
+      "title": "LLM Hardware：RTX 5090 對 4090 本地 LLM（可容納模型）",
+      "url": "https://llmhardware.io/guides/rtx-5090-vs-4090-llm-guide"
+    },
+    {
+      "date": "2026-08-05",
+      "title": "TheNextWeb：華碩、技嘉調漲 RTX 50 價格",
+      "url": "https://thenextweb.com/news/asus-gigabyte-rtx-50-gpu-price-hike-dram-crisis"
+    },
+    {
+      "date": "2026-08-04",
+      "title": "DIGITIMES：RTX 50 傳最高調漲 30%",
+      "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=763921"
+    },
+    {
+      "date": "2026-08-04",
+      "title": "Galaxus：記憶體危機推升顯示卡價格",
+      "url": "https://www.galaxus.de/en/page/memory-crisis-gpus-are-now-also-becoming-significantly-more-expensive-43395"
+    },
+    {
+      "date": "2026-09-14",
+      "title": "Guru3D：RTX 5090 歐洲街價破 5,000 歐元",
+      "url": "https://www.guru3d.com/story/geforce-rtx-5090-street-prices-in-eu-now-exceed/"
+    },
+    {
+      "date": "2026-09-16",
+      "title": "TechNews：RTX 5090 售價破 19 萬元",
+      "url": "https://technews.tw/2026/09/16/rtx-5090-price-past-190000/"
+    },
+    {
+      "date": "2026-09-05",
+      "title": "T客邦：RTX 50 價格飆漲（TechSpot 十國價格報告）",
+      "url": "https://www.techbang.com/posts/132927-nvidia-rtx-50-series-price-surge-rtx-5090"
+    },
+    {
+      "date": "2026-09-29",
+      "title": "TechNews：記憶體缺貨推升顯示卡與 DDR5 價格",
+      "url": "https://finance.technews.tw/2026/09/29/your-old-gpu-could-be-worth-more-than-you-think/"
+    },
+    {
+      "date": "2026-09-21",
+      "title": "Notebookcheck：kopite7kimi 稱 Rubin 遊戲卡 2028",
+      "url": "https://www.notebookcheck.net/Reliable-leaker-contradicts-Moore-s-Law-Is-Dead-s-Nvidia-RTX-6090-release-date.1404442.0.html"
+    },
+    {
+      "date": "2026-09-16",
+      "title": "GodisaGeek：RTX 6090 時程爭議",
+      "url": "https://godisageek.com/2026/09/nvidia-rtx-6090-h1-2027-rumor/"
+    },
+    {
+      "date": "2026-02-06",
+      "title": "Guru3D：2026 年無新 RTX 遊戲卡（引 The Information）",
+      "url": "https://www.guru3d.com/story/report-no-new-nvidia-rtx-gaming-gpus-in-2026-whatsoever/"
+    },
+    {
+      "date": "2026-06-07",
+      "title": "Tom's Hardware：次世代顯示卡時程（Computex 2026 板卡廠）",
+      "url": "https://www.tomshardware.com/pc-components/gpus/amds-rdna-5-gaming-gpus-are-coming-late-next-year-according-to-aibs-at-computex-manufacturers-expect-new-team-red-cards-in-the-second-half-of-2027-alongside-nvidia"
+    },
+    {
+      "date": "2026-06-24",
+      "title": "Gizmochina：又一張 RTX 5090 測試中接頭熔毀",
+      "url": "https://www.gizmochina.com/2026/06/24/another-rtx-5090-faces-power-connector-meltdown-during-testing/"
+    },
+    {
+      "date": "2026-03-01",
+      "title": "Let's Data Science：RTX 5090 接頭熔毀在緩解措施後仍持續",
+      "url": "https://www.letsdatascience.com/news/rtx-5090-connector-melting-persists-despite-mitigations-53fdeb74"
+    },
+    {
+      "date": "2026-09-22",
+      "title": "Shattered：NVIDIA 616.56 驅動閃爍問題",
+      "url": "https://shattered.io/nvidia-driver-616-56-flicker-bug-2026/"
+    },
+    {
+      "date": "2025-03-01",
+      "title": "PCGH：RTX 50 黑畫面 Hotfix",
+      "url": "https://www.pcgameshardware.de/Geforce-RTX-5090-Grafikkarte-281029/News/Hotfix-gegen-Blackscreens-1467242/"
+    }
+  ],
+  "priceLog": [
+    {
+      "d": "2026-10-20",
+      "p": 159990,
+      "src": "Yahoo購物中心 2026-10-20（MSI RTX 5090 32G VE"
+    }
+  ]
+}

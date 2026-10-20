@@ -1,0 +1,233 @@
+{
+  "id": "elgato-stream-deck-mk2",
+  "name": "Elgato Stream Deck MK.2",
+  "brand": "Elgato（Corsair）",
+  "category": "peripheral",
+  "kind": "直播控制台",
+  "tagline": "15 鍵 LCD 直播控制台，2021 年款仍是主力",
+  "status": "on-sale",
+  "launchDate": "2021-07-15",
+  "cycleMonths": 52,
+  "checkedAt": "2026-10-20T17:34:00+08:00",
+  "price": {
+    "currency": "TWD",
+    "now": 4910,
+    "nowSource": "momo 購物網（公司貨，促銷價）2026-10-20",
+    "nowUrl": "https://www.momoshop.com.tw/product/11641822",
+    "range": [
+      4910,
+      4990
+    ],
+    "ref": 4990,
+    "refLabel": "momo 標示市售價（未查到台灣官方建議售價）",
+    "low90": null,
+    "low90Source": null,
+    "trend": "unknown",
+    "trendNote": "BigGo、飛比未顯示此款 90 天走勢；PChome 同系列剪刀腳版標示價格持平，但標準版頁面未顯示價格，無法判斷近期漲跌。",
+    "trendSources": [
+      {
+        "title": "BigGo：stream deck 比價",
+        "url": "https://biggo.com.tw/s/stream+deck/"
+      }
+    ]
+  },
+  "specs": [
+    {
+      "k": "按鍵",
+      "plain": "每顆鍵都能顯示圖示，一鍵切場景、開關麥克風、放音效",
+      "v": "15 顆可自訂 LCD 按鍵"
+    },
+    {
+      "k": "連接",
+      "plain": "插筆電即用，線壞了可自己換",
+      "v": "USB 2.0，可拆式 USB-C 線"
+    },
+    {
+      "k": "尺寸／重量",
+      "plain": "比手機小，放筆電旁不佔桌面",
+      "v": "118×84×25 mm；145 g（含支架 270 g）"
+    },
+    {
+      "k": "支架",
+      "plain": "角度不能調，但可拿掉平放",
+      "v": "可拆 45 度固定角度"
+    },
+    {
+      "k": "系統",
+      "plain": "你的 SCAR 18 直接支援",
+      "v": "Windows 10（64 位元）以上、macOS 10.15 以上"
+    },
+    {
+      "k": "面板",
+      "plain": "外觀可換色，功能不變",
+      "v": "可替換面板"
+    }
+  ],
+  "tests": [
+    {
+      "claim": "Tom's Hardware 評 4/5 星，肯定內建 OBS 與 Twitch 整合，缺點是沒有音量旋鈕、不原生支援 Adobe 軟體",
+      "src": "Tom's Hardware",
+      "url": "https://www.tomshardware.com/reviews/elgato-stream-deck-mk2"
+    },
+    {
+      "claim": "Laptop Mag 給編輯推薦獎章，但指出每鍵標籤僅容約 9–10 個字元",
+      "src": "Laptop Mag",
+      "url": "https://www.laptopmag.com/reviews/elgato-stream-deck-mk2"
+    },
+    {
+      "claim": "Windows Central 認為已有一代 Stream Deck 者換 MK.2 意義不大，且影片剪輯軟體整合待加強",
+      "src": "Windows Central",
+      "url": "https://windowscentral.com/elgato-stream-deck-mk2-review"
+    }
+  ],
+  "gain": {
+    "gaming": {
+      "level": "na",
+      "pct": null,
+      "why": "不影響遊戲效能或畫面"
+    },
+    "mobileGaming": {
+      "level": "na",
+      "pct": null,
+      "why": "與手機遊戲無關"
+    },
+    "localAI": {
+      "level": "na",
+      "pct": null,
+      "why": "與本機 AI 運算無關"
+    },
+    "editing": {
+      "level": "none",
+      "pct": null,
+      "why": "可設快捷鍵，但評測指出剪輯軟體整合弱，且不原生支援 Adobe；鍵盤快捷鍵已能做到大部分"
+    },
+    "streaming": {
+      "level": "some",
+      "pct": null,
+      "why": "你目前沒有直播控制台，可一鍵切場景、靜音、放音效；無法量化百分比，鍵盤熱鍵或手機 App 可做到部分功能"
+    },
+    "photo": {
+      "level": "na",
+      "pct": null,
+      "why": "與拍照無關"
+    },
+    "daily": {
+      "level": "none",
+      "pct": null,
+      "why": "可做巨集與啟動程式，但日常用鍵盤快捷鍵即可"
+    }
+  },
+  "gainBasis": "對比你目前沒有實體直播控制台、以 SCAR 18 筆電＋鍵盤操作 OBS 的狀態",
+  "needs": {
+    "desktop": false,
+    "note": "需一個 USB 埠；需安裝 Elgato Stream Deck 軟體"
+  },
+  "successor": {
+    "eta": null,
+    "name": "無已知 MK.3",
+    "note": "2025 年 5 月 Elgato 推出的是同代剪刀腳版 MK.2（Scissor Keys），屬變體非新一代；查到的報導未提到 MK.3。一代（2017-03）到 MK.2（2021-07）相隔約 52 個月，MK.2 已上市逾 5 年。",
+    "sources": [
+      {
+        "title": "AppleInsider：Elgato 新 Stream Deck 產品線",
+        "url": "https://appleinsider.com/articles/25/05/20/elgatos-new-stream-deck-lineup-goes-way-beyond-the-desktop"
+      },
+      {
+        "title": "Elgato：Stream Deck 與 MK.2 差異",
+        "url": "https://help.elgato.com/hc/en-us/articles/4405167312397-Elgato-Stream-Deck-What-is-the-difference-between-Stream-Deck-and-Stream-Deck-MK-2"
+      }
+    ],
+    "status": "none"
+  },
+  "issues": [],
+  "alternatives": [
+    {
+      "name": "OBS 內建熱鍵＋筆電鍵盤",
+      "price": 0,
+      "why": "免費，切場景、靜音都能設，只是沒有圖示、要記組合鍵"
+    },
+    {
+      "name": "Stream Deck MK.2（Scissor Keys 剪刀腳版）",
+      "price": 4419,
+      "why": "同 15 鍵，鍵程較短，PChome 標價比 momo 標準版低約 500 元"
+    },
+    {
+      "name": "Stream Deck Mini（6 鍵）",
+      "price": 2989,
+      "why": "只需切場景、靜音等少數功能時夠用，酷澎標價"
+    }
+  ],
+  "brief": "PZ 寫的是「Stream Deck MK.2」，判定為 15 鍵標準版（薄膜鍵），2021 年 7 月上市至今仍在售。台灣今天查得的可信現價只有 momo 公司貨 4,910 元；PChome 同系列剪刀腳版 4,419 元反而較便宜，標準版頁面未顯示價格。目前沒有 MK.3 的可靠消息，2025 年的新品是同代剪刀腳變體。對你而言它是「新增功能」而非升級：你沒有直播控制台，它能讓筆電直播時一鍵切場景與靜音，但 OBS 熱鍵與免費方案也能先撐起直播台。",
+  "learn": [
+    {
+      "explain": "每顆鍵底下有小螢幕，能顯示自訂圖示與狀態，例如麥克風是否靜音，一眼就看得出來",
+      "term": "LCD 按鍵"
+    },
+    {
+      "explain": "筆電鍵盤常見的鍵軸結構，鍵程短、回彈快；Elgato 稱比薄膜鍵反應更快，適合連續快速按",
+      "term": "剪刀腳（Scissor Keys）"
+    },
+    {
+      "explain": "台灣代理商正式進口的商品，享有在地保固；momo 此款標示保固 1 年",
+      "term": "公司貨"
+    }
+  ],
+  "sources": [
+    {
+      "date": "2026-10-20",
+      "title": "momo：Elgato Stream Deck MK2 公司貨",
+      "url": "https://www.momoshop.com.tw/product/11641822"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "BigGo：stream deck 比價",
+      "url": "https://biggo.com.tw/s/stream+deck/"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "飛比價格：Stream Deck",
+      "url": "https://feebee.com.tw/s/stream%20deck/"
+    },
+    {
+      "date": "2026-06-08",
+      "title": "Elgato：Stream Deck MK.2 技術規格",
+      "url": "https://help.elgato.com/hc/zh-tw/articles/18208816152333-Elgato-Stream-Deck-MK-2-%E6%8A%80%E8%A1%93%E8%A6%8F%E6%A0%BC"
+    },
+    {
+      "date": "2026-07-09",
+      "title": "Elgato：Stream Deck 與 MK.2 差異",
+      "url": "https://help.elgato.com/hc/en-us/articles/4405167312397-Elgato-Stream-Deck-What-is-the-difference-between-Stream-Deck-and-Stream-Deck-MK-2"
+    },
+    {
+      "date": "2021-08-21",
+      "title": "Tom's Hardware：Stream Deck MK.2 評測",
+      "url": "https://www.tomshardware.com/reviews/elgato-stream-deck-mk2"
+    },
+    {
+      "date": "2021-10-09",
+      "title": "Laptop Mag：Stream Deck MK.2 評測",
+      "url": "https://www.laptopmag.com/reviews/elgato-stream-deck-mk2"
+    },
+    {
+      "date": "2021-10-11",
+      "title": "Windows Central：Stream Deck MK.2 評測",
+      "url": "https://windowscentral.com/elgato-stream-deck-mk2-review"
+    },
+    {
+      "date": "2025-05-20",
+      "title": "AppleInsider：Elgato 新 Stream Deck 產品線",
+      "url": "https://appleinsider.com/articles/25/05/20/elgatos-new-stream-deck-lineup-goes-way-beyond-the-desktop"
+    },
+    {
+      "date": "2025-05-20",
+      "title": "Tom's Hardware：Stream Deck Everywhere",
+      "url": "https://tomshardware.com/peripherals/elgato-now-lets-you-turn-any-device-you-want-into-a-stream-deck"
+    }
+  ],
+  "priceLog": [
+    {
+      "d": "2026-10-20",
+      "p": 4910,
+      "src": "momo"
+    }
+  ]
+}

@@ -1,0 +1,355 @@
+{
+  "id": "xiaomi-18-pro-max",
+  "name": "Xiaomi 18 Pro Max",
+  "brand": "Xiaomi",
+  "category": "phone",
+  "kind": "旗艦手機",
+  "tagline": "ROG 停推新機後的對照組：新驍龍、年內登台",
+  "status": "announced",
+  "launchDate": "2026-09-23",
+  "cycleMonths": 12,
+  "checkedAt": "2026-10-20T17:50:00+08:00",
+  "price": {
+    "currency": "TWD",
+    "now": 34302,
+    "nowSource": "尚未在台開賣：中國官方售價 6,999 元人民幣（12GB+256GB）× 臺灣銀行 2026-10-20 即期賣出 4.901 換算，非台灣售價",
+    "nowUrl": "https://www.notebookcheck.net/Xiaomi-18-Pro-Max-breaks-the-5-GHz-clock-barrier-as-it-packs-giant-8-500-mAh-battery.1406759.0.html",
+    "range": [
+      34302,
+      49005
+    ],
+    "ref": 34302,
+    "refLabel": "中國首發價換算（12GB+256GB 6,999 元人民幣；最高 16GB+1TB 9,999 元人民幣）；台灣售價未公布",
+    "low90": null,
+    "low90Source": null,
+    "trend": "unknown",
+    "trendNote": "台灣未定價。中國版 6,999 元人民幣起；TechAdvisor 預期國際版換算後高於中國價。同期安卓旗艦普遍調漲：三星 S26 系列今年首度漲價（第三次調價），紅魔 12 Pro+ 中國版較前代漲 1,300–1,500 元人民幣。",
+    "trendSources": [
+      {
+        "title": "TechAdvisor：Xiaomi 18 Pro 確認年內全球上市",
+        "url": "https://www.techadvisor.com/article/3243055/xiaomi-18-pro-global-2026-launch-confirmed.html"
+      },
+      {
+        "title": "SOGI：三星 S26 Ultra 10 月通路價格",
+        "url": "https://www.sogi.com.tw/articles/samsung-galaxy-s26-ultra-sale/6269823"
+      },
+      {
+        "title": "SOGI：紅魔 12 Pro+ 中國發表與售價",
+        "url": "https://www.sogi.com.tw/articles/redmagic-12-proplus/6269907"
+      },
+      {
+        "title": "臺灣銀行牌告匯率",
+        "url": "https://rate.bot.com.tw/xrt?Lang=zh-TW"
+      }
+    ]
+  },
+  "specs": [
+    {
+      "k": "晶片",
+      "plain": "比你 ROG 9 Pro 的 Snapdragon 8 Elite 新兩代；AnTuTu 約 500 萬對 329 萬。",
+      "v": "Snapdragon 8 Elite Extreme Gen 6（2nm，最高 5GHz，Adreno 850）"
+    },
+    {
+      "k": "電池與充電",
+      "plain": "ROG 9 Pro 為 5,800mAh／65W；就算國際版縮水，電量仍多約兩成。",
+      "v": "中國版 8,500mAh；100W 有線、50W 無線（國際版傳為 7,000mAh）"
+    },
+    {
+      "k": "螢幕",
+      "plain": "戶外更亮，但刷新率從 ROG 的 185Hz 降到 120Hz。",
+      "v": "6.9 吋 AMOLED、120Hz、峰值 4,000 尼特、硬體防窺；背面另有 2.9 吋副螢幕"
+    },
+    {
+      "k": "相機",
+      "plain": "畫素與望遠規格都遠高於 ROG 9 Pro（50MP 主鏡頭＋32MP 3 倍），可當第二台拍攝機。",
+      "v": "Leica 雙 2 億畫素：主鏡頭 1/1.28 吋＋3 倍潛望望遠 1/1.56 吋；5,000 萬超廣角"
+    },
+    {
+      "k": "電競設計",
+      "plain": "規格表未列類似 ROG AirTrigger 的肩鍵；官方稱重度遊戲可滿幀 1 小時，尚無獨立驗證。",
+      "v": "規格未列肩鍵或風扇；新 VC 迴路散熱＋OFFSET PoP 封裝"
+    },
+    {
+      "k": "系統",
+      "plain": "和你的 iPhone 17 Pro Max 搭配使用較方便。",
+      "v": "HyperOS 4（Android 17），支援與 Apple 裝置互傳檔案、照片與同步通知"
+    }
+  ],
+  "tests": [
+    {
+      "claim": "AnTuTu 11 總分約 500.1 萬，ROG Phone 9 Pro 約 329.1 萬（高約 52%）；Geekbench 6 單／多核 3,762／11,459，ROG 9 Pro 為 3,298／10,812。",
+      "src": "nanoreview 彙整",
+      "url": "https://nanoreview.net/en/phone-compare/xiaomi-18-pro-max-vs-xiaomi-17-pro-max"
+    },
+    {
+      "claim": "外流 Geekbench 7 成績單／多核 3,582／12,247，Vulkan 29,934；Tom's Guide 測 iPhone 18 Pro Max 為 4,025／11,525。",
+      "src": "Canaltech（外流資料）／Tom's Guide",
+      "url": "https://canaltech.com.br/smartphone/xiaomi-18-pro-max-revela-desempenho-de-sobra-em-teste-com-novo-snapdragon/"
+    }
+  ],
+  "gain": {
+    "gaming": {
+      "level": "na",
+      "pct": null,
+      "why": "手機不影響你的 PC 遊戲體驗。"
+    },
+    "mobileGaming": {
+      "level": "none",
+      "pct": null,
+      "why": "AnTuTu 高 52%，但兩款手遊在 ROG 已滿幀；規格未列肩鍵，螢幕 185→120Hz"
+    },
+    "localAI": {
+      "level": "none",
+      "pct": null,
+      "why": "高通稱 NPU 快 35%，但你的本地模型跑在 RTX 5090 筆電，手機端用不到"
+    },
+    "editing": {
+      "level": "none",
+      "pct": null,
+      "why": "剪輯在筆電完成；手機端多核差距小（Geekbench 6 多核 11,459 對 10,812）"
+    },
+    "streaming": {
+      "level": "none",
+      "pct": null,
+      "why": "直播由筆電負責；較大電池可撐長場手遊，但不是你的直播瓶頸"
+    },
+    "photo": {
+      "level": "none",
+      "pct": null,
+      "why": "雙 2 億畫素遠勝 ROG，但你主力用 iPhone 17 Pro Max 拍；尚無獨立實測"
+    },
+    "daily": {
+      "level": "some",
+      "pct": null,
+      "why": "電池 7,000–8,500mAh 對 5,800mAh，多 21–47%；尚無續航實測，日常主力仍是 iPhone"
+    }
+  },
+  "gainBasis": "對比你的 ROG Phone 9 Pro；拍照項目對比 iPhone 17 Pro Max",
+  "needs": {
+    "desktop": false,
+    "note": "台灣版上市日、售價與電池容量未定；購買時確認為台灣公司貨（NCC 審驗、原廠保固）。"
+  },
+  "successor": {
+    "eta": null,
+    "name": "下一代小米 Pro 數字旗艦",
+    "note": "小米 Pro 系列約一年一代（17 Pro Max → 18 Pro Max）；目前沒有下一代的具體消息。",
+    "sources": [],
+    "status": "none"
+  },
+  "issues": [
+    {
+      "note": "Geekbench AI 外流資料顯示國際版電池由中國版 8,500mAh 降為 7,000mAh、RAM 12GB；台灣版規格未公布。",
+      "severity": "medium",
+      "status": "ongoing",
+      "title": "國際版電池傳縮為 7,000mAh",
+      "url": "https://www.techadvisor.com/article/3257434/xiaomi-18-pro-max-global-leak-reveals-a-performance-focused-beast.html"
+    },
+    {
+      "note": "小米台灣 9/28 僅表示 18 Pro 系列年內登台；中國價換算約 34,302 元起，外媒預期國際版更貴。",
+      "severity": "medium",
+      "status": "ongoing",
+      "title": "台灣上市日與售價未公布",
+      "url": "https://www.setn.com/ampnews/1913651"
+    },
+    {
+      "note": "規格未列肩鍵或主動散熱風扇，螢幕 120Hz；本質是相機旗艦，不是 ROG 那類電競機。",
+      "severity": "low",
+      "status": "ongoing",
+      "title": "缺少電競專屬設計",
+      "url": "https://www.sogi.com.tw/articles/xiaomi-18-pro-max/6269774"
+    },
+    {
+      "note": "截至 10 月中，快科技等媒體僅做規格拆解、明言沒有實測數據；Notebookcheck 也還沒給評分。",
+      "severity": "low",
+      "status": "ongoing",
+      "title": "尚無獨立續航與散熱實測",
+      "url": "https://news.mydrivers.com/1/1157/1157609.htm"
+    }
+  ],
+  "alternatives": [
+    {
+      "name": "保留 ROG Phone 9 Pro",
+      "price": null,
+      "why": "兩款手遊仍滿幀、有 AirTrigger 與 185Hz；安全更新到 2029 年"
+    },
+    {
+      "name": "POCO F8 Ultra（台灣公司貨）",
+      "price": 19190,
+      "why": "已在台開賣的 8 Elite Gen 5 機，8 月通路最低 19,190；6,500mAh"
+    },
+    {
+      "name": "REDMAGIC 12 Pro（台灣無代理）",
+      "price": null,
+      "why": "185Hz、8,400mAh、液冷，最像 ROG 的電競機；只能代購、無台灣保固"
+    }
+  ],
+  "brief": "華碩已停止推出新手機：董事長施崇棠 1 月 16 日表示未來不再推新機型（未明說永久退出），Notebookcheck 取得的外流韌體也顯示 ROG Phone 10（代號 Boston）已取消，ROG 電競手機線沒有接班機。最接近 ROG 的紅魔 12 系列在台無代理、官方商店也不寄台灣，而本次查到的台灣公司貨高效能安卓（POCO F8 Ultra、三星 S26 Ultra）仍是上一代 8 Elite Gen 5，因此以小米台灣確認年內登台、搭載最新 8 Elite Extreme Gen 6 的 18 Pro Max 作對照；但它本質是相機旗艦，規格未列肩鍵，螢幕也只有 120Hz。你的 ROG Phone 9 Pro 依華碩支援清單（列 ROG Phone 9）有 2 次系統升級、安全更新到 2029 年、硬體維修到 2027 年；台灣已推 Android 16，Android 17 尚未推送，華碩也表示維修與保固照常。以 Snap 和傳說對決的負載，新晶片的效能餘裕用不到；真正的變數是台灣定價，以及國際版電池是否從 8,500 縮到 7,000mAh。",
+  "learn": [
+    {
+      "explain": "高通 2026 年最高階手機晶片，比一般 Gen 6 時脈更高（可達 5GHz）、GPU 與 AI 更強，各家頂規旗艦才用。",
+      "term": "Snapdragon 8 Elite Extreme Gen 6"
+    },
+    {
+      "explain": "ROG 手機側邊的超音波觸控鍵，橫握時像手把的 L/R 鍵，可對應遊戲按鈕；小米 18 Pro Max 規格未列。",
+      "term": "AirTrigger（肩鍵）"
+    },
+    {
+      "explain": "公司貨經 NCC 審驗、享台灣原廠保固；國際版代購多半只能找賣家處理，送修與退換風險自負。",
+      "term": "台灣公司貨與國際版代購"
+    }
+  ],
+  "sources": [
+    {
+      "date": "2026-09-28",
+      "title": "三立新聞：小米台灣稱 18 Pro 系列今年登台",
+      "url": "https://www.setn.com/ampnews/1913651"
+    },
+    {
+      "date": "2026-09-29",
+      "title": "SOGI：小米 18 Pro／Pro Max 規格與上市資訊",
+      "url": "https://www.sogi.com.tw/articles/xiaomi-18-pro-max/6269774"
+    },
+    {
+      "date": "2026-09-21",
+      "title": "SOGI：小米 18 Pro 系列發表前整理",
+      "url": "https://www.sogi.com.tw/articles/xiaomi-18-pro/6269710"
+    },
+    {
+      "date": "2026-09-23",
+      "title": "Notebookcheck：Xiaomi 18 Pro Max 規格與中國售價",
+      "url": "https://www.notebookcheck.net/Xiaomi-18-Pro-Max-breaks-the-5-GHz-clock-barrier-as-it-packs-giant-8-500-mAh-battery.1406759.0.html"
+    },
+    {
+      "date": "2026-09-26",
+      "title": "TechAdvisor：Xiaomi 18 Pro 確認年內全球上市",
+      "url": "https://www.techadvisor.com/article/3243055/xiaomi-18-pro-global-2026-launch-confirmed.html"
+    },
+    {
+      "date": "2026-10-09",
+      "title": "TechAdvisor：國際版 Xiaomi 18 Pro Max 外流規格",
+      "url": "https://www.techadvisor.com/article/3257434/xiaomi-18-pro-max-global-leak-reveals-a-performance-focused-beast.html"
+    },
+    {
+      "date": "2026-09-28",
+      "title": "GIGA：Xiaomi 18 Pro 全球上市時程",
+      "url": "https://www.giga.de/tech/xiaomi-geht-im-november-mit-neuem-smartphone-aufs-ganze--01M3M30TSHCSQ31B2D1QC3MS9N"
+    },
+    {
+      "date": null,
+      "title": "nanoreview：Xiaomi 18 Pro Max vs 17 Pro Max 跑分",
+      "url": "https://nanoreview.net/en/phone-compare/xiaomi-18-pro-max-vs-xiaomi-17-pro-max"
+    },
+    {
+      "date": null,
+      "title": "nanoreview：ROG Phone 9 Pro 跑分與續航",
+      "url": "https://nanoreview.net/en/phone-compare/asus-rog-phone-9-pro-vs-asus-rog-phone-8-pro"
+    },
+    {
+      "date": "2026-09-10",
+      "title": "Canaltech：Xiaomi 18 Pro Max Geekbench 外流",
+      "url": "https://canaltech.com.br/smartphone/xiaomi-18-pro-max-revela-desempenho-de-sobra-em-teste-com-novo-snapdragon/"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "快科技：小米 18 Pro Max 配置拆解（無實測）",
+      "url": "https://news.mydrivers.com/1/1157/1157609.htm"
+    },
+    {
+      "date": "2026-09-22",
+      "title": "Sammyfans：Snapdragon 8 Elite Gen 6 與 Extreme 發表",
+      "url": "https://www.sammyfans.com/2026/09/22/snapdragon-8-elite-gen-6-and-extreme-new-features/"
+    },
+    {
+      "date": "2026-01-02",
+      "title": "科技新報：華碩回應今年沒有 Zenfone、ROG Phone 新機",
+      "url": "https://technews.tw/?p=1492019"
+    },
+    {
+      "date": "2026-01-20",
+      "title": "GIGAZINE：華碩無限期暫停手機開發",
+      "url": "https://gigazine.net/gsc_news/en/20260120-asus-smartphone-business-nomore"
+    },
+    {
+      "date": "2026-01-23",
+      "title": "TechRadar：華碩執行長確認不再推出新手機",
+      "url": "https://techradar.com/pro/asus-will-no-longer-add-new-mobile-phone-models-in-the-future-ceo-confirms-no-more-zenfone-or-rog-smartphones-are-coming-as-it-pivots-to-focus-on-ai-products"
+    },
+    {
+      "date": "2026-01-06",
+      "title": "Pocket Tactics：2026 年不會有 ROG Phone 10",
+      "url": "https://www.pockettactics.com/no-asus-rog-phone-2026"
+    },
+    {
+      "date": "2026-07-23",
+      "title": "VnReview：外流韌體揭露已取消的 ROG Phone 10",
+      "url": "https://vnreview.vn/threads/rog-phone-10-bi-khai-tu-firmware-ro-ri-he-lo-toan-bo-cau-hinh-khung-cua-chiec-dien-thoai-choi-game.88375/"
+    },
+    {
+      "date": "2026-04-29",
+      "title": "ROG 官方：手機產品支援清單",
+      "url": "https://rog.asus.com/support/faq/1056885/"
+    },
+    {
+      "date": null,
+      "title": "Android Update Tracker：ROG Phone 9 Pro 更新狀態",
+      "url": "https://www.androidupdatetracker.com/p/asus-rog-phone-9-pro"
+    },
+    {
+      "date": "2025-11-15",
+      "title": "SOGI：ROG Phone 9 系列開放 Android 16 升級",
+      "url": "https://www.sogi.com.tw/articles/software-update-asus-rog9/6267114"
+    },
+    {
+      "date": "2025-01-07",
+      "title": "Technave：ROG Phone 9 Pro 評測",
+      "url": "https://technave.com/gadget/ROG-Phone-9-Pro-review--A-top-tier-gaming-smartphone-for-hardcore-gamers-41129.html"
+    },
+    {
+      "date": "2026-10-16",
+      "title": "SOGI：紅魔 12 Pro+ 發表、不會在台上市",
+      "url": "https://www.sogi.com.tw/articles/redmagic-12-proplus/6269907"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "Notebookcheck：RedMagic 12 Pro 國際版確認",
+      "url": "https://notebookcheck.net/Global-release-confirmed-RedMagic-12-Pro-launching-internationally-with-Snapdragon-8-Elite-Extreme-Gen-6.1425205.0.html"
+    },
+    {
+      "date": "2026-10-16",
+      "title": "T3：RedMagic 12 Pro 規格與上市",
+      "url": "https://www.t3.com/tech/android-phones/redmagic-12-pro-is-a-high-end-hellcat-with-a-mid-range-price-8-400mah-battery-sd-8-elite-extreme-gen-6-and-liquid-cooling"
+    },
+    {
+      "date": null,
+      "title": "REDMAGIC 官方商店配送政策",
+      "url": "https://www.redmagic.com/pages/shipping-policy"
+    },
+    {
+      "date": null,
+      "title": "飛比價格：RedMagic 11 Pro 台灣販售清單",
+      "url": "https://feebee.com.tw/all/redmagic%2011%20pro/"
+    },
+    {
+      "date": "2026-08-26",
+      "title": "SOGI：POCO F8 Ultra 8 月通路最低價",
+      "url": "https://www.sogi.com.tw/articles/poco-f8-ultra-sale/6269513"
+    },
+    {
+      "date": "2026-10-09",
+      "title": "SOGI：三星 S26 Ultra 10 月通路價格（台灣版 8 Elite Gen 5）",
+      "url": "https://www.sogi.com.tw/articles/samsung-galaxy-s26-ultra-sale/6269823"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "臺灣銀行牌告匯率",
+      "url": "https://rate.bot.com.tw/xrt?Lang=zh-TW"
+    }
+  ],
+  "priceLog": [
+    {
+      "d": "2026-10-20",
+      "p": 34302,
+      "src": "尚未在台開賣：中國官方售價 6,999 元人民幣（12GB+256GB）× 臺灣"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "下單前・購買判定秘書",
+  "short_name": "下單前",
+  "description": "PZ 專屬的購買判定秘書：顯卡、手機、周邊，現在該不該買。",
+  "lang": "zh-Hant-TW",
+  "dir": "ltr",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#E3E7EB",
+  "theme_color": "#E3E7EB",
+  "categories": ["shopping", "utilities"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "updatedAt": "2026-10-20",
+  "events": [
+    {
+      "categories": [
+        "phone"
+      ],
+      "date": "2026-10-23",
+      "name": "iPhone Duo 台灣開賣",
+      "note": "蘋果首款摺疊 iPhone，256GB 74,900 元起",
+      "type": "launch",
+      "url": "https://www.cna.com.tw/business/chinese/447172"
+    },
+    {
+      "categories": [
+        "phone"
+      ],
+      "date": "2026-11-03",
+      "name": "REDMAGIC 12 Pro 國際版",
+      "note": "最像 ROG 的電競手機，台灣無代理",
+      "type": "launch",
+      "url": "https://notebookcheck.net/Global-release-confirmed-RedMagic-12-Pro-launching-internationally-with-Snapdragon-8-Elite-Extreme-Gen-6.1425205.0.html"
+    },
+    {
+      "categories": [
+        "gpu",
+        "peripheral"
+      ],
+      "date": "2026-11-11",
+      "name": "雙11",
+      "note": "蝦皮、momo、PChome、酷澎年度大檔；2026 檔期多數未公告，去年常見全站滿額折與刷卡回饋",
+      "type": "sale",
+      "url": "https://www.businesstoday.com.tw/article/category/183030/post/202511050059/"
+    },
+    {
+      "categories": [
+        "peripheral"
+      ],
+      "date": "2026-11-27",
+      "name": "黑色星期五",
+      "note": "台灣以 Costco 黑五週為主；Elgato 海外官網促銷可當參考訊號",
+      "type": "sale",
+      "url": "https://www.awarenessdays.com/awareness-days-calendar/black-friday-2026/"
+    },
+    {
+      "categories": [
+        "peripheral"
+      ],
+      "date": "2026-12-12",
+      "name": "雙12",
+      "note": "年終檔期，力道通常比雙11 小",
+      "type": "sale",
+      "url": "https://bejias.com/article/shopping-festival-2026"
+    },
+    {
+      "categories": [
+        "gpu"
+      ],
+      "date": "2027-01-06",
+      "name": "CES 2027",
+      "note": "傳 RTX 50 Super（含 5080 Super 24GB）可能亮相；7 月另傳暫緩，NVIDIA 未證實",
+      "type": "launch",
+      "url": "https://www.pcgameshardware.de/Grafikkarten-Grafikkarte-97980/News/GPU-Rumors-RDNA-5-RTX-50-Super-Intel-Arc-Analysis-1545000/"
+    }
+  ]
+}

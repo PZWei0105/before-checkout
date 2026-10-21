@@ -14,7 +14,7 @@
  ],
  "latest": {
   "p": 53990,
-  "at": "2026-10-21T09:38:22+08:00",
+  "at": "2026-10-21T21:42:51+08:00",
   "src": "coolpc",
   "srcLabel": "原價屋",
   "title": "限搭機｛華碩 PRIME-RTX5080-16G-EVO｝2640MHz/31cm/三風扇/註五年/2.5 Slot",
@@ -23,7 +23,7 @@
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-10-21T09:38:22+08:00",
+ "checkedAt": "2026-10-21T21:42:51+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
@@ -34,8 +34,8 @@
   },
   "coolpc": {
    "status": "ok",
-   "seen": 210,
-   "n": 5,
+   "seen": 219,
+   "n": 12,
    "best": {
     "p": 53990,
     "title": "限搭機｛華碩 PRIME-RTX5080-16G-EVO｝2640MHz/31cm/三風扇/註五年/2.5 Slot",

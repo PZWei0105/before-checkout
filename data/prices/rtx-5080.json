@@ -19,7 +19,7 @@
  ],
  "latest": {
   "p": 53990,
-  "at": "2026-10-22T09:37:54+08:00",
+  "at": "2026-10-22T21:23:40+08:00",
   "src": "coolpc",
   "srcLabel": "原價屋",
   "title": "限搭機｛技嘉 RTX5080 WINDFORCE OC SFF 16G｝2670MHz/31cm/三風扇/註冊四年保",
@@ -28,7 +28,7 @@
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-10-22T09:37:54+08:00",
+ "checkedAt": "2026-10-22T21:23:40+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
@@ -39,8 +39,8 @@
   },
   "coolpc": {
    "status": "ok",
-   "seen": 218,
-   "n": 11,
+   "seen": 215,
+   "n": 8,
    "best": {
     "p": 53990,
     "title": "限搭機｛技嘉 RTX5080 WINDFORCE OC SFF 16G｝2670MHz/31cm/三風扇/註冊四年保",

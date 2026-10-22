@@ -1,0 +1,299 @@
+{
+  "id": "asus-proart-gr1x",
+  "name": "ASUS ProArt GR1X（NVIDIA RTX Spark 迷你主機）",
+  "brand": "ASUS",
+  "category": "peripheral",
+  "kind": "迷你主機（Windows on Arm／AI 代理電腦）",
+  "tagline": "128GB 統一記憶體、1.1 公升 Windows 迷你主機",
+  "status": "announced",
+  "launchDate": null,
+  "cycleMonths": 24,
+  "checkedAt": "2026-10-22T21:25:00+08:00",
+  "lastRequest": "R-B9OGKP",
+  "track": {
+    "band": [50000, 400000],
+    "pchome": {
+      "q": "ProArt GR1X",
+      "pages": 2,
+      "must": ["GR1X"],
+      "not": ["@acc", "@used", "@bundle"]
+    }
+  },
+  "price": {
+    "currency": "TWD",
+    "now": null,
+    "nowSource": "台灣尚未開賣，華碩未公布價格（2026-10-22 查）",
+    "nowUrl": "https://www.asus.com/displays-desktops/mini-pcs/proart-mini-pc-series/proart-gr1x-mini-pc/",
+    "range": null,
+    "ref": null,
+    "refLabel": "台灣未定價；同晶片參考：ProArt P14 128GB 筆電建議售價 NT$249,999（含螢幕、電池）、Surface RTX Spark Dev Box 128GB 美國 5,999 美元",
+    "low90": null,
+    "low90Source": null,
+    "trend": "unknown",
+    "trendNote": "GR1X 本身沒有價格，無從談漲跌。同晶片（GB10）機種因記憶體漲價而偏貴：DGX Spark 官方價從發表時的 3,999 美元調到 4,699 美元，華碩 Ascent GX10 曾喊到 8,299 美元、近期約 6,000 美元（9/22）。PCWorld 指 NVIDIA 想等記憶體與儲存價格穩定再定價；市場傳聞 N1X 機種約 2,500～2,900 美元起，指的是筆電等級，不能直接套到迷你主機。",
+    "trendSources": [
+      {
+        "title": "Digital Citizen：DGX Spark 價格高於 NVIDIA 官方價（RTX Spark 上市前）",
+        "url": "https://www.digitalcitizen.life/dgx-spark-prices-rise-above-nvidia-list-price-ahead-of-rtx-spark-launch/"
+      },
+      {
+        "title": "PCWorld：RTX Spark 機種價格會讓人肉痛",
+        "url": "https://www.pcworld.com/article/3156219/the-price-of-nvidia-rtx-spark-pcs-is-going-to-hurt.html"
+      },
+      {
+        "title": "StorageReview：RTX Spark 筆電開放預購；Surface RTX Spark Dev Box 128GB 5,999 美元、11 月出貨",
+        "url": "https://www.storagereview.com/zh-TW/news/nvidia-rtx-spark-pre-orders-n1x-laptop-desktop-tdp-mxc-dgx-station-for-windows"
+      }
+    ]
+  },
+  "specs": [
+    {
+      "k": "晶片",
+      "v": "NVIDIA RTX Spark N1X：20 核 Grace CPU＋6,144 核 Blackwell GPU；AI 算力最高 1 PFLOP（FP4，稀疏）",
+      "plain": "與 DGX Spark 同級晶片；實測 GPU 約 RTX 5060～5070 筆電等級，核心數遠低於你的 RTX 5090 Laptop（10,496）"
+    },
+    {
+      "k": "記憶體",
+      "v": "64GB 或 128GB LPDDR5X 統一記憶體（CPU、GPU 共用）",
+      "plain": "不是專用顯示記憶體；同晶片 Surface 筆電 128GB 版 GPU 可用約 110GB，華碩稱可跑 70B～120B 模型，你的 24GB 放不下"
+    },
+    {
+      "k": "記憶體頻寬",
+      "v": "華碩未公布；同晶片筆電版理論上限約 300GB/s、DGX Spark 為 273GB/s",
+      "plain": "你的 RTX 5090 Laptop 是 896GB/s，約為它的 3 倍；24GB 內的模型生字速度會比你的筆電慢"
+    },
+    {
+      "k": "功耗與散熱",
+      "v": "晶片 140W、附 240W USB-C 電源；雙風扇、4 條熱管，華碩稱可 24 小時運作",
+      "plain": "適合整天掛著跑 AI 代理；但 140W 遠低於你筆電 GPU 的 175W 上限，遊戲不會比筆電強"
+    },
+    {
+      "k": "尺寸與介面",
+      "v": "150×150×51mm（約 1.1 公升）、1.48kg；10GbE、HDMI 2.1、USB-C 4 個、Wi-Fi 7；雙 M.2 SSD；最多接 4 台 4K 螢幕",
+      "plain": "體積小，可當獨立的開台或代理機，不必占用筆電；無 ConnectX-7，無法兩台合併記憶體"
+    },
+    {
+      "k": "作業系統",
+      "v": "Windows（Arm 版）",
+      "plain": "x86 程式與遊戲靠模擬執行；多數能玩，但 EA Javelin 防作弊（戰地風暴）等尚未支援"
+    }
+  ],
+  "tests": [
+    {
+      "claim": "【同晶片筆電，非 GR1X】Surface Laptop Ultra：3DMark Time Spy 顯示分數 12,368、Steel Nomad 3,064，評測稱與 RTX 4070 相近；Stable Diffusion 1.5 INT8 單張 2.77 秒，FP16 總耗時 67.55 秒（RTX 5080 為 44.59 秒）",
+      "src": "Windows Central",
+      "url": "https://www.windowscentral.com/hardware/nvidia/rtx-spark-review-benchmarks-2026"
+    },
+    {
+      "claim": "【同晶片筆電】ProArt P16：Steel Nomad 3,134（RTX 5070 Laptop 為 3,075）；《電馭叛客 2077》Ultra 平均 56.8 fps，RTX 5080 Laptop 為 74.4 fps",
+      "src": "Notebookcheck",
+      "url": "https://www.notebookcheck.net/Nvidia-RTX-Spark-Analysis-Finally-an-answer-to-Apple-s-M5-Pro-M5-Max.1422820.0.html"
+    },
+    {
+      "claim": "【同晶片筆電】ProArt P16 1080p：《電馭叛客 2077》光追 Ultra 36 fps、《博德之門 3》Ultra 42 fps；RTX 5070 筆電分別為 43～45、65～69 fps，CPU 單核偏弱拖累",
+      "src": "PC Gamer",
+      "url": "https://www.pcgamer.com/hardware/gaming-laptops/nvidias-rtx-spark-makes-for-an-impressive-arm-based-gaming-laptop-but-not-one-id-recommend-you-buy-just-for-pc-gaming/"
+    },
+    {
+      "claim": "【同晶片筆電】Surface Laptop Ultra 以 Ollama 跑 Qwen3.6-35B-A3B 約 89.2 tok/s、gpt-oss:20b 約 58 tok/s；24GB 內放得下的模型，RTX 5090 筆電（Razer Blade 16）約快 2.3 倍",
+      "src": "StorageReview",
+      "url": "https://www.storagereview.com/review/microsoft-surface-laptop-ultra-for-business-review-rtx-spark-n1x"
+    }
+  ],
+  "gain": {
+    "gaming": {
+      "level": "worse",
+      "pct": -50,
+      "why": "同晶片筆電 Time Spy 顯示 12,368，你的 SCAR 18 為 24,599（約 -50%）；GR1X 140W 尚無實測"
+    },
+    "mobileGaming": {
+      "level": "na",
+      "pct": null,
+      "why": "手機遊戲與桌面主機無關"
+    },
+    "localAI": {
+      "level": "some",
+      "pct": null,
+      "why": "放得下 24GB 塞不下的 70B～120B 模型；但 24GB 內的模型速度約只有你筆電的 4 成"
+    },
+    "editing": {
+      "level": "worse",
+      "pct": null,
+      "why": "Premiere 匯出 FHD 42.0 秒，慢於 RTX 5070 Ti（39.4 秒）、5080（20.2 秒）；你的 5090 Laptop 更強（推估）"
+    },
+    "streaming": {
+      "level": "none",
+      "pct": null,
+      "why": "未見直播編碼實測，你的筆電已夠用；好處是可 24 小時獨立開台、不占筆電（華碩稱散熱支援）"
+    },
+    "photo": {
+      "level": "none",
+      "pct": null,
+      "why": "相片編修對 GPU 需求有限，現有筆電已足夠"
+    },
+    "daily": {
+      "level": "none",
+      "pct": null,
+      "why": "日常文書、上網沒差；Arm 版 Windows 的 x86 程式靠模擬，多一層相容性風險"
+    }
+  },
+  "gainBasis": "對比你的 ROG Strix SCAR 18（RTX 5090 Laptop 24GB，約 896GB/s）；所有實測皆來自同晶片筆電，GR1X 尚無獨立評測",
+  "needs": {
+    "desktop": false,
+    "note": "是完整主機，但需另備螢幕、鍵盤滑鼠；Windows on Arm，x86 程式與遊戲靠模擬。無 ConnectX-7，不能兩台串接成更大的記憶體池。"
+  },
+  "successor": {
+    "name": "RTX Spark 次世代（Vera CPU＋Rubin GPU）",
+    "status": "official",
+    "eta": null,
+    "note": "NVIDIA 6 月公布 Windows Arm 平台每兩年換一代：2028 年由 Vera CPU＋Rubin GPU 接棒。黃仁勳 8 月又稱 N2X、N3X 已在規劃，但未給時程與規格，也沒說會不會做桌機。GR1X 是 N1X 首代，距下一代約兩年。eta 留空：官方只給到年份。",
+    "sources": [
+      {
+        "title": "Guru3D：NVIDIA 承諾每兩年推出新的 Windows Arm 處理器（2026-06-01）",
+        "url": "https://guru3d.com/story/nvidia-commits-to-new-windows-arm-processors-every-two-years/"
+      },
+      {
+        "title": "TBreak：黃仁勳證實 N2X、N3X 已在規劃，未公布時程（2026-08-04）",
+        "url": "https://tbreak.com/nvidia-rtx-spark-n2x-n3x-handheld/"
+      }
+    ]
+  },
+  "issues": [
+    {
+      "title": "Windows on Arm 的遊戲與防作弊相容性",
+      "severity": "medium",
+      "status": "ongoing",
+      "note": "多數 x86 遊戲靠模擬能玩，但 EA Javelin 防作弊尚未支援（戰地風暴），EA FC27 與 F1 24 測試程式跑不起來；Windows Central 測試《碧血狂殺 2》預設 Vulkan 會當機，改 DX12 才正常。",
+      "url": "https://www.pcgamer.com/hardware/gaming-laptops/nvidias-rtx-spark-makes-for-an-impressive-arm-based-gaming-laptop-but-not-one-id-recommend-you-buy-just-for-pc-gaming/"
+    },
+    {
+      "title": "生圖與 AI 代理工具在 Windows Arm 上的相容性待驗證",
+      "severity": "medium",
+      "status": "ongoing",
+      "note": "CUDA 13.4.1 正式版已支援 RTX Spark 上的 Windows on Arm（驅動需 616.41 以上）。但 8 月時 PyTorch、llama.cpp 尚無驗證版本，ComfyUI 目前查不到官方支援說明；Windows Central 測試時 OpenClaw 連不上 gateway。",
+      "url": "https://docs.nvidia.com/cuda/archive/13.4.1/cuda-toolkit-release-notes/index.html"
+    },
+    {
+      "title": "同晶片筆電持續滿載時斷電",
+      "severity": "low",
+      "status": "ongoing",
+      "note": "StorageReview 在 Surface Laptop Ultra 上以全核心持續運算，兩台同樣出現斷電三次；那是 80W 筆電，GR1X 尚無案例，但長時間滿載運作值得留意。",
+      "url": "https://www.storagereview.com/review/microsoft-surface-laptop-ultra-for-business-review-rtx-spark-n1x"
+    }
+  ],
+  "alternatives": [
+    {
+      "name": "現有筆電 ROG Strix SCAR 18（RTX 5090 Laptop 24GB）",
+      "price": 0,
+      "why": "遊戲約 2 倍快、24GB 內的模型更快（同級 5090 筆電約 2.3 倍）；只有放不下 24GB 的大模型才輸"
+    },
+    {
+      "name": "自組 RTX 5090 桌機（32GB）",
+      "price": null,
+      "why": "Time Spy 約為你筆電 +88%、算圖最快；單卡就要 159,990 元起（見 App 內 RTX 5090），整機更貴、耗電 575W"
+    },
+    {
+      "name": "Apple Mac Studio（M5 Max，最高 128GB）",
+      "price": 84900,
+      "why": "台灣起價（128GB 配置價未查到），頻寬 614GB/s，但不能玩 Windows 電腦遊戲"
+    }
+  ],
+  "brief": "委託只寫「主機」，我選了最符合「AI 代理＋生圖＋電腦遊戲雙用」的華碩 ProArt GR1X（RTX Spark 迷你主機，華碩稱「代理人電腦」），因為它是少數原生跑 Windows、又主打 128GB 記憶體的新機。它台灣尚未開賣、未定價，也沒有任何 GR1X 實測，以下數據都來自同晶片的筆電。最關鍵的取捨：128GB 統一記憶體能放下你 24GB 放不下的 70B～120B 模型，也能 24 小時掛機跑代理，代價是遊戲約只剩你筆電一半（Time Spy 顯示分數約 -50%），24GB 內的模型速度也只有約 4 成。Windows on Arm 的遊戲、防作弊與 PyTorch／ComfyUI 相容性還沒完全站穩，記憶體漲價也讓同晶片機種偏貴。遊戲與生圖速度以你現有筆電較強，GR1X 的優勢只在大容量記憶體與常駐低功耗運作。",
+  "learn": [
+    {
+      "term": "統一記憶體",
+      "explain": "CPU 與 GPU 共用同一大塊記憶體。容量大、能放大型模型，但頻寬通常低於獨立顯示卡的專用記憶體。"
+    },
+    {
+      "term": "Windows on Arm",
+      "explain": "Windows 跑在 Arm 晶片上。x86 程式要靠模擬執行，多數能用，但部分遊戲與防作弊軟體可能不相容。"
+    },
+    {
+      "term": "記憶體頻寬",
+      "explain": "每秒能搬運的資料量，本地模型的生字速度主要受它限制。這顆晶片約 300GB/s 級，你的筆電 5090 為 896GB/s。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "ASUS 官方：ProArt GR1X 迷你主機（尚無購買連結、未列台灣價格）",
+      "url": "https://www.asus.com/displays-desktops/mini-pcs/proart-mini-pc-series/proart-gr1x-mini-pc/",
+      "date": "2026-10-22"
+    },
+    {
+      "title": "經濟日報：華碩 RTX Spark 新品，GR1X 預計 10 月在台上市",
+      "url": "https://www.ctee.com.tw/news/20261008700928-430502",
+      "date": "2026-10-08"
+    },
+    {
+      "title": "Cool3c：華碩 RTX Spark 首波機種（GR1X 140W 散熱、24 小時運作；P14／P16 售價）",
+      "url": "https://www.cool3c.com/article/252759",
+      "date": null
+    },
+    {
+      "title": "Gizmochina：ProArt GR1X 規格（64／128GB、140W、1.1 公升）",
+      "url": "https://www.gizmochina.com/2026/10/08/asus-proart-gr1x-mini-pc-launched-specs-price/",
+      "date": "2026-10-08"
+    },
+    {
+      "title": "Windows Central：RTX Spark 一週實測",
+      "url": "https://www.windowscentral.com/hardware/nvidia/rtx-spark-review-benchmarks-2026",
+      "date": null
+    },
+    {
+      "title": "Notebookcheck：RTX Spark 分析（對比 Apple M5 Pro／Max）",
+      "url": "https://www.notebookcheck.net/Nvidia-RTX-Spark-Analysis-Finally-an-answer-to-Apple-s-M5-Pro-M5-Max.1422820.0.html",
+      "date": null
+    },
+    {
+      "title": "PC Gamer：RTX Spark 筆電遊戲實測與防作弊相容性",
+      "url": "https://www.pcgamer.com/hardware/gaming-laptops/nvidias-rtx-spark-makes-for-an-impressive-arm-based-gaming-laptop-but-not-one-id-recommend-you-buy-just-for-pc-gaming/",
+      "date": null
+    },
+    {
+      "title": "StorageReview：Surface Laptop Ultra 評測（本地 LLM 速度、頻寬、斷電問題）",
+      "url": "https://www.storagereview.com/review/microsoft-surface-laptop-ultra-for-business-review-rtx-spark-n1x",
+      "date": null
+    },
+    {
+      "title": "StorageReview：RTX Spark 預購、桌機 11 月、Dev Box 價格",
+      "url": "https://www.storagereview.com/zh-TW/news/nvidia-rtx-spark-pre-orders-n1x-laptop-desktop-tdp-mxc-dgx-station-for-windows",
+      "date": null
+    },
+    {
+      "title": "NVIDIA：CUDA Toolkit 13.4.1 發行說明（支援 RTX Spark 的 Windows on Arm）",
+      "url": "https://docs.nvidia.com/cuda/archive/13.4.1/cuda-toolkit-release-notes/index.html",
+      "date": null
+    },
+    {
+      "title": "LeCompute：RTX Spark 的 PyTorch、vLLM、WSL 支援現況",
+      "url": "https://lecompute.fr/en/silicon/rtx-spark-windows-pile-llm/",
+      "date": "2026-08-12"
+    },
+    {
+      "title": "Guru3D：NVIDIA 每兩年推出新的 Windows Arm 處理器",
+      "url": "https://guru3d.com/story/nvidia-commits-to-new-windows-arm-processors-every-two-years/",
+      "date": "2026-06-01"
+    },
+    {
+      "title": "TBreak：N2X、N3X 已在規劃",
+      "url": "https://tbreak.com/nvidia-rtx-spark-n2x-n3x-handheld/",
+      "date": "2026-08-04"
+    },
+    {
+      "title": "Digital Citizen：DGX Spark 價格高於官方價",
+      "url": "https://www.digitalcitizen.life/dgx-spark-prices-rise-above-nvidia-list-price-ahead-of-rtx-spark-launch/",
+      "date": "2026-09-22"
+    },
+    {
+      "title": "PCWorld：RTX Spark 機種定價預期",
+      "url": "https://www.pcworld.com/article/3156219/the-price-of-nvidia-rtx-spark-pcs-is-going-to-hurt.html",
+      "date": null
+    },
+    {
+      "title": "Inside：Mac Studio M5 Max／M5 Ultra 台灣售價與規格",
+      "url": "https://www.inside.com.tw/article/42190-new-mac-studio-m5-max-m5-ultra",
+      "date": null
+    }
+  ],
+  "priceLog": []
+}

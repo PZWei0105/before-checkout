@@ -10,20 +10,25 @@
    "d": "2026-10-21",
    "p": 53990,
    "src": "原價屋"
+  },
+  {
+   "d": "2026-10-22",
+   "p": 53990,
+   "src": "原價屋"
   }
  ],
  "latest": {
   "p": 53990,
-  "at": "2026-10-21T21:42:51+08:00",
+  "at": "2026-10-22T09:37:54+08:00",
   "src": "coolpc",
   "srcLabel": "原價屋",
-  "title": "限搭機｛華碩 PRIME-RTX5080-16G-EVO｝2640MHz/31cm/三風扇/註五年/2.5 Slot",
+  "title": "限搭機｛技嘉 RTX5080 WINDFORCE OC SFF 16G｝2670MHz/31cm/三風扇/註冊四年保",
   "url": "https://www.coolpc.com.tw/evaluate.php",
   "cond": "限搭機",
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-10-21T21:42:51+08:00",
+ "checkedAt": "2026-10-22T09:37:54+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
@@ -34,11 +39,11 @@
   },
   "coolpc": {
    "status": "ok",
-   "seen": 219,
-   "n": 12,
+   "seen": 218,
+   "n": 11,
    "best": {
     "p": 53990,
-    "title": "限搭機｛華碩 PRIME-RTX5080-16G-EVO｝2640MHz/31cm/三風扇/註五年/2.5 Slot",
+    "title": "限搭機｛技嘉 RTX5080 WINDFORCE OC SFF 16G｝2670MHz/31cm/三風扇/註冊四年保",
     "url": "https://www.coolpc.com.tw/evaluate.php",
     "cond": "限搭機"
    }

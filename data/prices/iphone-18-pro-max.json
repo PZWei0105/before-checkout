@@ -25,19 +25,24 @@
    "d": "2026-10-24",
    "p": 49900,
    "src": "PChome 24h"
+  },
+  {
+   "d": "2026-10-25",
+   "p": 49900,
+   "src": "PChome 24h"
   }
  ],
  "latest": {
   "p": 49900,
-  "at": "2026-10-24T21:32:47+08:00",
+  "at": "2026-10-25T09:32:32+08:00",
   "src": "pchome",
   "srcLabel": "PChome 24h",
   "title": "Apple 蘋果 iPhone 18 Pro Max (256GB)",
-  "url": "https://24h.pchome.com.tw/prod/DYAJO4-A900KFJR6",
+  "url": "https://24h.pchome.com.tw/prod/DYAJO0-1900KFKUU",
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-10-24T21:32:47+08:00",
+ "checkedAt": "2026-10-25T09:32:32+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
@@ -47,7 +52,7 @@
    "best": {
     "p": 49900,
     "title": "Apple 蘋果 iPhone 18 Pro Max (256GB)",
-    "url": "https://24h.pchome.com.tw/prod/DYAJO4-A900KFJR6"
+    "url": "https://24h.pchome.com.tw/prod/DYAJO0-1900KFKUU"
    }
   }
  }

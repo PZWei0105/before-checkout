@@ -43,49 +43,53 @@
   },
   {
    "d": "2026-10-28",
-   "p": 53990,
-   "src": "原價屋"
+   "p": 52888,
+   "src": "PChome 24h"
   }
  ],
  "latest": {
-  "p": 53990,
-  "at": "2026-10-28T07:03:06+08:00",
-  "src": "coolpc",
-  "srcLabel": "原價屋",
-  "title": "限搭機｛華碩 PRIME-RTX5080-16G-EVO｝2640MHz/31cm/三風扇/註五年/2.5 Slot",
-  "url": "https://www.coolpc.com.tw/evaluate.php",
-  "cond": "限搭機",
+  "p": 52888,
+  "at": "2026-10-28T07:05:16+08:00",
+  "src": "pchome",
+  "srcLabel": "PChome 24h",
+  "title": "INNO3D 映眾 GeForce RTX 5080 16GB GDDR7 X3 顯示卡",
+  "url": "https://24h.pchome.com.tw/prod/DRADGJ-A900IK56B",
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-10-28T07:03:06+08:00",
+ "checkedAt": "2026-10-28T07:05:16+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
-   "status": "none",
+   "status": "ok",
    "seen": 60,
-   "n": 0,
-   "best": null,
+   "n": 4,
+   "best": {
+    "p": 52888,
+    "title": "INNO3D 映眾 GeForce RTX 5080 16GB GDDR7 X3 顯示卡",
+    "url": "https://24h.pchome.com.tw/prod/DRADGJ-A900IK56B"
+   },
    "why": {
-    "not:組合": 2,
-    "not:主機": 3,
-    "must": 55
+    "not:組合": 3,
+    "not:主機": 33,
+    "not:電腦": 1,
+    "must": 19
    },
    "near": [
     {
-     "p": 76990,
-     "t": "GIGABYTE 技嘉 RTX 5080 WINDFORCE OC SFF 16G 顯示卡(組合包B)",
-     "r": "not:組合"
-    },
-    {
-     "p": 84890,
-     "t": "ASUS 華碩 PRIME-RTX5080-16G 顯示卡+華碩 ROG MAXIMUS Z890 HERO 主機板+華碩 ROG GX60",
+     "p": 56590,
+     "t": "【顯卡+主機板】華碩 PRIME RTX 5080 16GB GDDR7 EVO 顯示卡 + PRIME B760M-K D4-CSM 主機",
      "r": "not:主機"
     },
     {
-     "p": 85790,
-     "t": "GIGABYTE 技嘉 RTX 5080 AERO OC SFF 16G 顯示卡(組合包C)",
-     "r": "not:組合"
+     "p": 56990,
+     "t": "GIGABYTE 技嘉 RTX 5080 WINDFORCE OC SFF 16G 顯示卡 + 技嘉 B650EM FORCE WF6E 主",
+     "r": "not:主機"
+    },
+    {
+     "p": 56990,
+     "t": "GIGABYTE 技嘉 RTX 5080 WINDFORCE OC SFF 16G 顯示卡 + 技嘉 B650EM FORCE WF6E 主",
+     "r": "not:主機"
     }
    ]
   },

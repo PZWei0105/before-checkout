@@ -55,6 +55,7 @@
 <main class="wrap">
   <!-- 簡報 -->
   <section id="view-brief" class="view" aria-label="今日簡報">
+    <div id="update"></div>
     <div id="install"></div>
     <button type="button" class="vfd board" id="board" data-act="board"></button>
     <article class="memo paper zz-b" id="memo">
@@ -133,6 +134,15 @@
         <li>不分潤、不放購物連結、不收業配；來源連結只為了讓你查核。</li>
       </ol>
     </section>
+    <section class="card">
+      <h2>判定用哪個價格</h2>
+      <ol class="principles">
+        <li>秘書查到的價格，查證後 7 天內有效；自動追價抓到的價格，3 天內有效。兩個都有效就用比較低的。</li>
+        <li>秘書的價格超過 7 天，就改用自動追價最新抓到的；商品頁的「自動追價」會寫明用哪個、為什麼。</li>
+        <li>自動追價每天早上、晚上 9 點多各一次，大促前 3 天到隔天每小時；只用條款允許自動抓取的 PChome 24h、原價屋。</li>
+        <li>抓到的價格跟上次差超過 25% 先擋下，標「待秘書確認」，不進判定。原價屋標「限搭機」的價格要整台組裝才買得到，會照實標示。</li>
+      </ol>
+    </section>
   </section>
 
   <!-- 我 -->
@@ -191,6 +201,7 @@
 <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
 <noscript><p class="wrap">這個 App 需要開啟 JavaScript。</p></noscript>
 <script src="engine.js"></script>
+<script src="updates.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

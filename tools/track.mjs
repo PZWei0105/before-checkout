@@ -63,6 +63,13 @@ function matcher(rule,band){
   };
 }
 const condOf=t=>/限搭機/.test(t)?'限搭機':/任搭價/.test(t)?'任搭價':'';
+/* 沒選上的商品裡，最像目標的 3 筆（must 對中越多越前面）。寫進價格檔，比對不到時看這裡就知道該怎麼調 must／not。 */
+function nearOf(rej,cfg){
+  const must=(cfg.must||[]).map(norm);
+  const hit=c=>{const t=norm(c.title);return must.filter(k=>t.includes(k)).length};
+  return rej.map(x=>({...x,h:hit(x.c)})).sort((a,b)=>b.h-a.h||a.c.price-b.c.price).slice(0,3)
+    .map(x=>({p:x.c.price,t:String(x.c.title).slice(0,70),r:x.r}));
+}
 
 /* ---------- fetch ---------- */
 let pchomeQueries={};
@@ -167,10 +174,11 @@ for(const p of products){
     const cfg=tr[name];if(!cfg)continue;
     try{
       const list=await fn(cfg,band);const ok=matcher(cfg,band);
-      const kept=[];const why={};
-      for(const c of list){const r=ok(c);if(r)why[r]=(why[r]||0)+1;else kept.push({...c,cond:condOf(c.title)})}
+      const kept=[];const why={};const rej=[];
+      for(const c of list){const r=ok(c);if(r){why[r]=(why[r]||0)+1;rej.push({c,r})}else kept.push({...c,cond:condOf(c.title)})}
       kept.sort((a,b)=>a.price-b.price);
-      src[name]={status:kept.length?'ok':'none',seen:list.length,n:kept.length,best:kept[0]?{p:kept[0].price,title:kept[0].title,url:kept[0].url,cond:kept[0].cond||undefined}:null};
+      src[name]={status:kept.length?'ok':'none',seen:list.length,n:kept.length,best:kept[0]?{p:kept[0].price,title:kept[0].title,url:kept[0].url,cond:kept[0].cond||undefined}:null,
+        why,near:nearOf(rej,cfg)};
       cands.push(...kept);
       report.push(`  ${p.id.padEnd(24)} ${name.padEnd(6)} 看了 ${String(list.length).padStart(3)} 筆，符合 ${kept.length} 筆${kept[0]?`，最低 ${kept[0].price}「${kept[0].title.slice(0,46)}」`:''}  排除：${JSON.stringify(why)}`);
       runLog.sources[name]=runLog.sources[name]==='error'?'error':'ok';

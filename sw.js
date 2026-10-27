@@ -3,7 +3,7 @@
  * 字型（Google Fonts）存起來重複用。VERSION 裡的版本號由 tools/build.mjs 打包時填入。 */
 const VERSION='bc-__BUILD__';
 const FONTS='bc-fonts';
-const SHELL=['./','./index.html','./app.css','./app.js','./engine.js','./manifest.webmanifest','./icons/icon-192.png','./icons/apple-touch-icon.png','./data/bundle.json'];
+const SHELL=['./','./index.html','./app.css','./app.js','./engine.js','./updates.js','./manifest.webmanifest','./icons/icon-192.png','./icons/apple-touch-icon.png','./data/bundle.json'];
 
 self.addEventListener('install',e=>{
   e.waitUntil(caches.open(VERSION).then(c=>c.addAll(SHELL)).catch(()=>{}).then(()=>self.skipWaiting()));

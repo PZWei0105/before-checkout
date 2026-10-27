@@ -10,7 +10,7 @@ const {USES,USE_LABEL,CATS,V,V_ORDER,LV,URG,DESK,SUCC,TREND,DEFAULT_THR,THR_META
 const REPO='PZWei0105/before-checkout';
 const REPO_URL='https://github.com/'+REPO;
 const CLAUDE_URL='https://claude.ai/new';
-const LS={bundle:'bc.bundle.v1',profile:'bc.profile.v1',reqs:'bc.requests.v1',prefs:'bc.prefs.v1',install:'bc.install.v1'};
+const LS={bundle:'bc.bundle.v1',profile:'bc.profile.v1',reqs:'bc.requests.v1',prefs:'bc.prefs.v1',install:'bc.install.v1',upd:'bc.update.v1'};
 const store={
   get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},
   set(k,v){try{localStorage.setItem(k,JSON.stringify(v));return true}catch(e){return false}},
@@ -128,9 +128,12 @@ function priceChart(p){
   const X=t=>L+(t-t0)/((t1-t0)||1)*(W-L-R),Y=v=>T+(1-(v-lo)/(hi-lo))*(H-T-B);
   const d=line.map((x,i)=>(i?'L':'M')+X(x.d.getTime()).toFixed(1)+' '+Y(x.p).toFixed(1)).join(' ');const e=line[line.length-1];
   const k=v=>Math.round(v/1000*10)/10+'k';const f=x=>`${x.getMonth()+1}/${x.getDate()}`;
+  // 參考價和最新價的標籤太近會疊在一起：把「參考」那行挪到另一邊
+  const yE=Y(e.p);let yR=ref!=null?Y(ref):0;
+  if(ref!=null&&Math.abs(yE-yR)<11)yR=yE+12<=H-B-2?yE+12:yE-11;
   return `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="價格走勢，${line.length} 筆紀錄">
     <line class="c-grid" x1="${L}" y1="${H-B}" x2="${W-R}" y2="${H-B}"/>
-    ${ref!=null?`<line class="c-ref" x1="${L}" y1="${Y(ref).toFixed(1)}" x2="${W-R}" y2="${Y(ref).toFixed(1)}"/><text x="${W-R+4}" y="${(Y(ref)+3).toFixed(1)}">參考 ${k(ref)}</text>`:''}
+    ${ref!=null?`<line class="c-ref" x1="${L}" y1="${Y(ref).toFixed(1)}" x2="${W-R}" y2="${Y(ref).toFixed(1)}"/><text x="${W-R+4}" y="${(yR+3).toFixed(1)}">參考 ${k(ref)}</text>`:''}
     <path class="c-area" d="${d} L${X(e.d.getTime()).toFixed(1)} ${H-B} L${X(line[0].d.getTime()).toFixed(1)} ${H-B} Z"/><path class="c-line" d="${d}"/>
     ${dots.map(x=>`<circle class="c-dot" cx="${X(x.d.getTime()).toFixed(1)}" cy="${Y(x.p).toFixed(1)}" r="3"/>`).join('')}
     <circle class="c-end" cx="${X(e.d.getTime()).toFixed(1)}" cy="${Y(e.p).toFixed(1)}" r="3.5"/>
@@ -142,32 +145,60 @@ function priceChart(p){
 
 /* ---------- 自動追價 ---------- */
 const chg=x=>`比上次${x>=0?'高':'低'} ${Math.abs(x*100).toFixed(0)}%`;
+const srcNames=a=>Object.values((a&&a.sources)||{}).map(s=>s.label).filter(Boolean).join('、')||'PChome 24h、原價屋';
+/* 判定用哪個價格、為什麼：照打包時記下的 price.pick（tools/merge.mjs）寫，不自己猜。short＝客顯螢幕下那一行的尾巴 */
+function pickText(p,short){
+  const P=p.price||{};const k=P.pick;if(!k||!k.by)return '';
+  const sec=k.sec,au=k.auto;const when=sec&&sec.at?md(sec.at)+' ':'';
+  if(k.by==='auto'&&au){
+    if(k.why==='lower')return short?'，比秘書查到的便宜，判定採用這個價格':`判定採用自動追價 ${money(au.p)}：比秘書 ${when}查到的 ${money(sec.p)} 低。`;
+    if(k.why==='secStale'&&sec){
+      if(short)return '，判定採用這個價格（秘書的查證已超過 7 天）';
+      if(sec.p<au.p)return `判定採用自動追價 ${money(au.p)}：秘書 ${when}查到的 ${money(sec.p)} 比較便宜，但已超過 7 天沒確認，可能已經不是這個價。想用那個價格判定，請秘書重查。`;
+      if(sec.p>au.p)return `判定採用自動追價 ${money(au.p)}：比秘書 ${when}查到的 ${money(sec.p)} 低（秘書的查證已超過 7 天）。`;
+      return `判定採用自動追價 ${money(au.p)}：秘書 ${when}查到的也是這個價格，但已超過 7 天，改用最新抓到的。`;
+    }
+    return short?'，判定採用這個價格':`判定採用自動追價 ${money(au.p)}：秘書沒有查到台灣現價。`;
+  }
+  if(k.by==='secretary'&&sec){
+    if(k.why==='lower')return short?'；秘書查到的更便宜，判定先用秘書的':`判定採用秘書 ${when}查到的 ${money(sec.p)}：比自動追價 ${money(au&&au.p)} 低，而且是 7 天內的查證。`;
+    if(k.why==='tie')return short?'；和秘書查到的一樣':`判定採用秘書 ${when}查到的 ${money(sec.p)}：和自動追價一樣，而且是 7 天內的查證。`;
+    if(k.why==='autoStale')return short?`（${au?md(au.at):''} 抓到的，超過 3 天，先不採用）`:`判定採用秘書 ${when}查到的 ${money(sec.p)}：自動追價最後一次抓到是 ${au?mdhm(au.at):'—'}，超過 3 天，先不採用。`;
+    if(k.why==='bothStale')return short?'':`判定先用秘書 ${when}查到的 ${money(sec.p)}，但已超過 7 天；準備下單前請秘書重查。`;
+  }
+  return '';
+}
 function autoLineHTML(p){
   const a=p.auto;if(!a)return '';
   const P=p.price||{};const L=a.latest;const t=a.checkedAt?mdhm(a.checkedAt):'';
   if(a.status==='held'&&a.held)return `<p class="auto held">⚠ 自動追價 ${esc(t)} 抓到 ${esc(a.held.src)} ${money(a.held.p)}（${chg(a.held.change)}），可能是特價或比對錯誤，先不採用，等秘書確認。</p>`;
-  if(a.status==='ok'&&L){const used=P.nowBy==='auto';
-    return `<p class="auto${used?' on':''}">⟳ 自動追價 ${esc(t)}：${esc(L.src)} ${money(L.p)}${L.cond?`（${esc(L.cond)}）`:''}${used?'，判定採用這個價格':P.now!=null&&L.p>P.now?'；秘書查到的更便宜，判定先用秘書的':''}</p>`}
-  if(a.status==='none')return `<p class="auto">⟳ 自動追價 ${esc(t)}：PChome、原價屋目前都沒有單賣這一款${L?`（上次 ${esc(mdhm(L.at))} 是 ${esc(L.src)} ${money(L.p)}）`:''}，價格以秘書查證為準。</p>`;
+  if(a.status==='ok'&&L)return `<p class="auto${P.nowBy==='auto'?' on':''}">⟳ 自動追價 ${esc(t)}：${esc(L.src)} ${money(L.p)}${L.cond?`（${esc(L.cond)}）`:''}${esc(pickText(p,true))}</p>`;
+  if(a.status==='none')return `<p class="auto">⟳ 自動追價 ${esc(t)}：在 ${esc(tail(srcNames(a)))}都沒比對到單賣的這一款${L?`（上次 ${esc(mdhm(L.at))} 是 ${esc(L.src)} ${money(L.p)}）`:''}，價格以秘書查證為準。</p>`;
   if(a.status==='error')return `<p class="auto">⟳ 自動追價這次連不上通路，下次會再試${L?`（上次 ${esc(mdhm(L.at))} 是 ${money(L.p)}）`:''}。</p>`;
   return '<p class="auto">⟳ 已設定自動追價，等第一次執行。</p>';
 }
 function autoCardHTML(p){
-  const a=p.auto;const P=p.price||{};
+  const a=p.auto;
   if(!a)return '<p class="small muted">這件沒有設定自動追價，價格以秘書查證為準。</p>';
-  const rows=Object.values(a.sources||{}).map(s=>`<li><span class="as-n">${esc(s.label)}</span>${s.best?`<b class="mono">${money(s.best.p)}</b><span class="as-t">${link(s.best.url,s.best.title)}${s.best.cond?`（${esc(s.best.cond)}）`:''}</span>`:`<span class="as-t muted">${s.status==='error'?'這次連不上':'目前沒有單賣'}</span>`}</li>`).join('');
-  const used=P.nowBy==='auto'?`判定採用自動追價 ${money(P.now)}${P.secNow&&P.secNow.p!=null?`，比秘書查到的 ${money(P.secNow.p)} 低`:''}。`
-    :a.latest&&a.status==='ok'&&P.now!=null?`判定採用秘書查到的 ${money(P.now)}：比自動追價低，而且是 7 天內的查證。`:'';
+  const rows=Object.values(a.sources||{}).map(s=>`<li><span class="as-n">${esc(s.label)}</span>${s.best?`<b class="mono">${money(s.best.p)}</b><span class="as-t">${link(s.best.url,s.best.title)}${s.best.cond?`（${esc(s.best.cond)}）`:''}</span>`:`<span class="as-t muted">${s.status==='error'?'這次連不上':'沒比對到單賣的這一款'}</span>`}</li>`).join('');
+  const why=pickText(p,false);
   return `<div class="autobox"><div class="ab-h"><b>⟳ 自動追價</b><span class="small muted">${a.checkedAt?esc(mdhm(a.checkedAt)):'尚未執行'}</span></div>
-    ${rows?`<ul class="auto-src">${rows}</ul>`:''}${used?`<p class="small">${used}</p>`:''}
+    ${rows?`<ul class="auto-src">${rows}</ul>`:''}${why?`<p class="small">${esc(why)}</p>`:''}
     ${a.held?`<p class="small held">⚠ 待秘書確認：${esc(a.held.src)} ${money(a.held.p)}（${chg(a.held.change)}）。<button type="button" class="btn-link" data-act="refresh" data-id="${esc(p.id)}">請秘書重查</button></p>`:''}
-    <p class="small muted">每天早晚各追一次，大促前後每小時。只用條款允許的通路：PChome 24h、原價屋。</p></div>`;
+    <p class="small muted">每天早上、晚上 9 點多各追一次，大促前後每小時。只用條款允許的通路：PChome 24h、原價屋。</p></div>`;
 }
-/* 下一次追價時間（台灣時間）：大促前 3 天到隔天每小時，其餘 09:07、21:07 */
-function nextRunText(){
-  const now=Date.now();const TW=8*36e5;
+/* 下一次追價（台灣時間）：大促前 3 天到隔天每小時，其餘每天 9 點、21 點。
+ * GitHub 的排程常晚 10–40 分鐘，所以只說「幾點多」，不報到分鐘。 */
+function nextRunText(short){
+  const now=Date.now();const TW=8*36e5;const day=t=>Math.floor((t+TW)/864e5);
   const inSale=t=>(S.calendar||[]).some(e=>(e.type||'sale')==='sale'&&/^\d{4}-\d{2}-\d{2}$/.test(e.date||'')&&(()=>{const d=Date.parse(e.date+'T00:00:00+08:00');return t>=d-3*864e5&&t<d+2*864e5})());
-  for(let h=0;h<=25;h++){const t=Math.floor((now+TW)/36e5)*36e5-TW+h*36e5+7*6e4;if(t<=now)continue;const hr=new Date(t+TW).getUTCHours();if(inSale(t)||hr===9||hr===21)return hm(t)}
+  const last=S.tracker&&S.tracker.lastRun&&Date.parse(S.tracker.lastRun.at);
+  for(let h=0;h<=26;h++){const t=Math.floor((now+TW)/36e5)*36e5-TW+h*36e5;const hr=new Date(t+TW).getUTCHours();
+    if(!(inSale(t)||hr===9||hr===21))continue;
+    if(last&&last>=t)continue;                       // 這個時段已經追過了
+    const d=day(t)-day(now);const when=(d===0?'今天':d===1?'明天':'後天')+` ${hr} 點多`;
+    return inSale(t)&&!short?`${when}（大促期間每小時）`:when;
+  }
   return '—';
 }
 const resTxt=l=>l.status==='pass'?'過關':l.status==='hit'?'● '+V[l.effect].label:l.status==='info'?'提醒':'跳過';
@@ -207,7 +238,7 @@ function boardMsgs(){
   if(ev.length)out.push({top:'CHECKOUT LIST',name:`清單 ${ev.length} 件`,big:'BUY '+cnt.buy,unit:'',sub:`HOLD ${cnt.wait} ・ NEXT ${cnt.next} ・ SKIP ${cnt.skip}`});
   const tracked=ev.filter(x=>x.p.auto);
   if(tracked.length){const got=tracked.filter(x=>x.p.auto.latest).length;const last=S.tracker&&S.tracker.lastRun;
-    out.push({top:'PRICE BOT',name:'自動追價',big:`${got}/${tracked.length}`,unit:'ITEMS',sub:last?`最近 ${mdhm(last.at)}・下一次 ${nextRunText()}`:'等第一次執行'})}
+    out.push({top:'PRICE BOT',name:'自動追價',big:`${got}/${tracked.length}`,unit:'ITEMS',sub:last?`最近 ${mdhm(last.at)}・下次 ${nextRunText(true)}`:'等第一次執行'})}
   if(S.dataAt)out.push({top:'LAST CHECK',name:'最新查證',big:md(S.dataAt),unit:hm(pd(S.dataAt)),sub:S.sync==='offline'?'離線中・連上網路後下拉同步':'下拉畫面就能同步最新資料'});
   if(!out.length)out.push({top:'BEFORE CHECKOUT',name:'',big:'READY',unit:'',sub:'正在整理你的清單'});
   return out;
@@ -235,7 +266,7 @@ function renderBrief(){
   if(S.prodReady&&S.sync==='offline')t+=`<span class="off">目前離線，顯示 ${esc(mdhm(S.builtAt))} 的資料。</span>`;
   $('#memo-text').innerHTML=t;
   $('#tally').innerHTML=V_ORDER.map(v=>`<button type="button" class="v-${v}" data-act="tally" data-val="${v}" aria-label="${V[v].label} ${cnt[v]} 件"><b>${S.prodReady?cnt[v]:'–'}</b><span>${V[v].label}</span></button>`).join('');
-  renderBoard(false);renderInstall();renderTickets();renderUpcoming();renderAttention(ev);
+  renderBoard(false);renderUpdate();renderInstall();renderTickets();renderUpcoming();renderAttention(ev);
 }
 
 function upcoming(){
@@ -270,9 +301,13 @@ function renderAttention(ev){
       if(c<=-0.03&&age!=null&&age<=1)out.push(`<b>降價</b>：${esc(p.name)} ${esc(x.src||'')} ${money(x.p)}，比前一次低 ${Math.round(-c*100)}%（${money(y.p)}）。<button type="button" class="btn-link" data-act="open" data-id="${esc(p.id)}">看單</button>`)}
     const P1=r.lines.find(l=>l.id==='P1');
     if(r.verdict==='wait'&&P1&&P1.status==='hit'&&r.now!=null&&r.target!=null){const gap=r.now-r.target;if(gap>0&&gap/r.now<0.06)out.push(`${esc(p.name)} 再降 ${money(gap)}，價格這關就過了。<button type="button" class="btn-link" data-act="open" data-id="${esc(p.id)}">看單</button>`)}
-    if(r.age!=null&&r.age>r.thr.freshDays)out.push(`${esc(p.name)} 已 ${r.age} 天沒查證。<button type="button" class="btn-link" data-act="refresh" data-id="${esc(p.id)}">請秘書重查</button>`);
     const s=p.successor;const n=s&&daysUntil(s.eta);if(s&&s.name&&s.status&&s.status!=='rumor'&&s.status!=='none'&&n!=null&&n>=0&&n<=60)out.push(`${esc(s.name)} 約 ${n} 天後上市，會影響 ${esc(p.name)} 的判定。`);
   }
+  // 過了保鮮期的合成一行：平常一週內的資料夠參考，準備下單前再請秘書重查就好
+  const stale=ev.filter(({r})=>r.age!=null&&r.age>r.thr.freshDays).sort((a,b)=>b.r.age-a.r.age);
+  if(stale.length===1){const {p,r}=stale[0];out.push(`${esc(p.name)} 已 ${r.age} 天沒請秘書查證。準備下單前，按「請秘書重查」更新。<button type="button" class="btn-link" data-act="refresh" data-id="${esc(p.id)}">請秘書重查</button>`)}
+  else if(stale.length>1){const names=stale.slice(0,3).map(x=>esc(x.p.name)).join('、')+(stale.length>3?` 等 ${stale.length} 件`:'');
+    out.push(`${names}，超過 ${stale[0].r.thr.freshDays} 天沒請秘書查證。不急著買就先放著；準備下單前，在商品頁按「請秘書重查」更新價格、新一代消息和已知問題。`)}
   for(const q of S.reqs){const st=reqStatus(q);if(!st.done&&(Date.now()-q.createdAt)/36e5>3&&(Date.now()-q.createdAt)/864e5<3)out.push(`委託「${esc(q.q)}」（${esc(q.code)}）還沒回來。確認你有把委託單貼到 Claude 並送出。<button type="button" class="btn-link" data-act="req-copy" data-code="${esc(q.code)}">再複製一次</button>`)}
   el.innerHTML=out.length?out.slice(0,6).map(x=>`<li><span>${x}</span></li>`).join(''):'<li><span>目前沒有需要你處理的事。</span></li>';
 }
@@ -340,6 +375,22 @@ function ticketHTML(r){
   return `<li class="ticket ${cls}"><div class="tk-h"><span class="tk-q">${esc(r.q)}<span class="tk-code">${esc(r.code)}</span></span><span class="row" style="gap:6px;flex:none"><span class="tk-st">${label}</span><button type="button" class="tk-x" data-act="del-req" data-code="${esc(r.code)}" aria-label="移除這張委託">×</button></span></div>${body}</li>`;
 }
 function renderTickets(){const el=$('#tickets');el.innerHTML=S.reqs.slice(0,6).map(ticketHTML).join('')}
+
+/* ---------- 更新紀錄（updates.js）：App 改版時在簡報頁提示一次 ---------- */
+const UPD=(Array.isArray(window.BC_UPDATES)?window.BC_UPDATES:[]).filter(u=>u&&u.id&&Array.isArray(u.items));
+let updHidden=false;
+function renderUpdate(){
+  const el=$('#update');if(!el)return;const u=UPD[0];
+  if(!u||updHidden||store.get(LS.upd,null)===u.id){el.innerHTML='';return}
+  el.innerHTML=`<section class="card upd" aria-labelledby="upd-h"><div class="card-h"><h2 id="upd-h">App 更新了</h2><span class="eyebrow">UPDATE ${esc(md(u.date))}</span></div>
+    <p class="upd-t">${esc(u.title)}</p><ul class="upd-list">${u.items.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>
+    <div class="row"><button type="button" class="btn-ghost" data-act="upd-seen">知道了</button><span class="small muted">之後在「我」的「更新紀錄」看得到。</span></div></section>`;
+}
+function updLogHTML(){
+  if(!UPD.length)return '';
+  return `<section class="card"><div class="card-h"><h2>更新紀錄</h2><span class="eyebrow">CHANGELOG</span></div>
+    <div class="upd-log">${UPD.slice(0,6).map(u=>`<div><p class="upd-t"><time>${esc(u.date)}</time>${esc(u.title)}</p><ul class="upd-list">${u.items.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`).join('')}</div></section>`;
+}
 
 /* ---------- 加到主畫面 ---------- */
 const isStandalone=()=>{try{return matchMedia('(display-mode: standalone)').matches||navigator.standalone===true}catch(e){return false}};
@@ -425,7 +476,8 @@ function countUp(el,target){
 function renderVfd(p,first){
   const P=p.price||{};const now=num(P.now);const low90=num(P.low90),ref=num(P.ref);const base=low90!=null?low90:ref;
   const delta=now!=null&&base!=null?pctTxt((now-base)/base*100):'--';
-  const d=pd(p.checkedAt);const ds=d?`${String(d.getMonth()+1).padStart(2,'0')}/${String(d.getDate()).padStart(2,'0')}`:'--/--';
+  // 「NOW」後面的日期＝這個價格實際查到的日子：用自動追價時是機器人抓到的時間，不是秘書查證日
+  const d=pd(P.nowBy==='auto'&&P.pick&&P.pick.auto?P.pick.auto.at:p.checkedAt);const ds=d?`${String(d.getMonth()+1).padStart(2,'0')}/${String(d.getDate()).padStart(2,'0')}`:'--/--';
   $('#sh-vfd').innerHTML=`<div class="vfd" role="img" aria-label="現價 ${money(now)}">
     <div class="vfd-row vfd-sm"><span>NOW ${ds}</span><span>${low90!=null?'vs LOW90':'vs REF'} ${delta}</span></div>
     <div class="vfd-row vfd-big"><span id="vfd-now">${now!=null?'NT$ '+Math.round(now).toLocaleString('en-US'):'NT$ ------'}</span></div>
@@ -585,7 +637,7 @@ function renderMeExtra(){
     <dl class="kv"><dt>最新查證</dt><dd>${esc(S.dataAt?mdhm(S.dataAt):'—')}</dd><dt>App 更新</dt><dd>${esc(S.builtAt?mdhm(S.builtAt):'—')}</dd><dt>商品</dt><dd>${n} 件</dd>
       <dt>自動追價</dt><dd>${esc(trackerText())}</dd><dt>同步</dt><dd>${esc(S.syncedAt?'今天 '+hm(S.syncedAt):S.sync==='offline'?'離線':'—')}</dd><dt>原始碼</dt><dd>${link(REPO_URL,REPO)}</dd></dl>
     <p class="small muted">不分潤、不導購。判定由固定規則計算，秘書只查事實。</p>
-  </section>`;
+  </section>${updLogHTML()}`;
 }
 function trackerText(){
   const last=S.tracker&&S.tracker.lastRun;if(!last)return '還沒執行';
@@ -707,6 +759,7 @@ document.addEventListener('click',e=>{
   else if(a==='thr-reset'){S.thrDraft={...DEFAULT_THR};S.thrDirty=true;renderThr()}
   else if(a==='install'){const ev=S.installEvt;if(!ev)return;ev.prompt();(ev.userChoice||Promise.resolve()).then(()=>{S.installEvt=null;renderInstall()})}
   else if(a==='hide-install'){store.set(LS.install,true);renderInstall()}
+  else if(a==='upd-seen'){if(UPD[0])store.set(LS.upd,UPD[0].id);updHidden=true;renderUpdate()}
 });
 
 $('#f-dispatch').addEventListener('submit',e=>{e.preventDefault();const q=$('#d-q').value.trim();if(!q){toast('先輸入想查的商品。');$('#d-q').focus();return}
@@ -751,8 +804,12 @@ function openFromHash(){
 }
 let hashDone=false;
 function boot(){
+  // 重新整理時一律從最上面開始（瀏覽器的「回到上次位置」遇到上方多出卡片會往下跳）
+  try{history.scrollRestoration='manual'}catch(e){}
   measureTopbar();renderDispatchSeg();
   const cached=store.get(LS.bundle,null);
+  // 第一次打開的人不用看「更新了什麼」，直接記成已讀；用過的人才提示
+  if(!cached&&UPD[0]&&store.get(LS.upd,null)==null)store.set(LS.upd,UPD[0].id);
   if(cached&&Array.isArray(cached.products))applyBundle(cached,true);
   renderAll();
   if(S.prodReady){hashDone=true;openFromHash()}

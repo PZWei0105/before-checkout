@@ -8,6 +8,7 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import {createRequire} from 'node:module';
 import {fileURLToPath} from 'node:url';
+import {mergeAuto,SRC_LABEL} from './merge.mjs';
 
 const ROOT=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const require=createRequire(import.meta.url);
@@ -29,7 +30,6 @@ const ENUM={category:['gpu','phone','peripheral'],status:['on-sale','preorder','
 const USES=E.USES.map(u=>u[0]);
 const reDate=/^\d{4}-\d{2}-\d{2}$/,reEta=/^\d{4}-\d{2}(-\d{2})?$/,reId=/^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const KNOWN=new Set(['id','name','brand','category','kind','tagline','status','launchDate','cycleMonths','checkedAt','lastRequest','track','price','specs','tests','gain','gainBasis','needs','successor','issues','alternatives','brief','learn','sources','priceLog']);
-const SRC_LABEL={pchome:'PChome 24h',coolpc:'原價屋'};
 const twDate=d=>new Date(d.getTime()+8*36e5).toISOString().slice(0,10);
 
 function readJSON(file){
@@ -113,9 +113,7 @@ function checkTrack(f,t){
   }
 }
 
-/* ---- 自動追價：data/prices/<id>.json 合併進商品 ---- */
-const avg=a=>a.reduce((s,x)=>s+x,0)/a.length;
-const twFmt=iso=>{const t=new Date(Date.parse(iso)+8*36e5);return `${t.getUTCMonth()+1}/${t.getUTCDate()} ${String(t.getUTCHours()).padStart(2,'0')}:${String(t.getUTCMinutes()).padStart(2,'0')}`};
+/* ---- 自動追價：data/prices/<id>.json 合併進商品（規則在 tools/merge.mjs） ---- */
 function readPrices(){
   const dir=path.join(ROOT,'data','prices');const m={};let runs=[];
   if(!fs.existsSync(dir))return {prices:m,runs};
@@ -124,48 +122,6 @@ function readPrices(){
     catch(e){warn('data/prices/'+fn,'讀不到（'+e.message+'），這次先不用')}
   }
   return {prices:m,runs};
-}
-function mergeAuto(p,a,nowMs){
-  const P={...(p.price||{})};
-  const L=a.latest&&a.latest.status==='ok'&&Number.isFinite(a.latest.p)&&Date.parse(a.latest.at)?a.latest:null;
-  const secAt=E.pd(p.checkedAt);const secAge=secAt?(nowMs-secAt.getTime())/864e5:Infinity;
-  const cands=[];
-  if(typeof P.now==='number'&&secAge<=7)cands.push({by:'secretary',p:P.now});
-  if(L&&(nowMs-Date.parse(L.at))/864e5<=3)cands.push({by:'auto',p:L.p});
-  if(cands.length){
-    const best=cands.sort((x,y)=>x.p-y.p||(x.by==='secretary'?-1:1))[0];
-    if(best.by==='auto'){
-      P.secNow=typeof P.now==='number'?{p:P.now,src:P.nowSource||null,url:P.nowUrl||null}:null;
-      P.now=L.p;P.nowSource=`${L.srcLabel}（自動追價 ${twFmt(L.at)}${L.cond?'・'+L.cond:''}）`;P.nowUrl=L.url||null;
-    }
-    P.nowBy=best.by;
-  }else P.nowBy=typeof P.now==='number'?'secretary':null;
-  const daily=(Array.isArray(a.daily)?a.daily:[]).filter(x=>x&&/^\d{4}-\d{2}-\d{2}$/.test(x.d)&&Number.isFinite(x.p));
-  // 近 90 天低點：自動追價＋秘書紀錄，累積滿 30 天才採用
-  const cutoff=new Date(nowMs-90*864e5).toISOString().slice(0,10);
-  const pts=[...daily,...(Array.isArray(p.priceLog)?p.priceLog:[])].filter(x=>x&&x.d>=cutoff&&Number.isFinite(x.p));
-  if(pts.length){
-    const first=pts.map(x=>x.d).sort()[0];const span=(nowMs-Date.parse(first+'T00:00:00+08:00'))/864e5;
-    if(span>=30){P.low90=Math.min(...pts.map(x=>x.p));P.low90Source=`自動追價＋秘書紀錄（近 ${Math.min(90,Math.round(span))} 天）`}
-  }
-  // 走勢：自動追價滿 10 筆，最近 3 筆平均對照前兩週平均
-  if(daily.length>=10){
-    const end=Date.parse(daily[daily.length-1].d);
-    const win=daily.filter(x=>{const t=Date.parse(x.d);return t<=end-4*864e5&&t>=end-17*864e5});
-    if(win.length>=3){
-      const ch=(avg(daily.slice(-3).map(x=>x.p))-avg(win.map(x=>x.p)))/avg(win.map(x=>x.p))*100;
-      P.trendSec={trend:P.trend,note:P.trendNote||null};
-      P.trend=ch>3?'up':ch<-3?'down':'flat';
-      P.trendNote=`自動追價：最近 3 次平均比前兩週${ch>=0?'高':'低'} ${Math.abs(ch).toFixed(1)}%`;
-      P.trendSources=[];P.trendBy='auto';
-    }
-  }
-  p.price=P;
-  p.auto={status:a.status||'pending',checkedAt:a.checkedAt||null,
-    latest:L?{p:L.p,at:L.at,src:L.srcLabel,title:L.title,url:L.url||null,cond:L.cond||null}:null,
-    held:a.status==='held'&&a.held?{p:a.held.p,at:a.held.at,src:a.held.srcLabel,title:a.held.title,url:a.held.url||null,ref:a.held.ref,change:a.held.change}:null,
-    sources:Object.fromEntries(Object.entries(a.sources||{}).map(([k,s])=>[k,{label:SRC_LABEL[k]||k,status:s.status,n:s.n??null,best:s.best||null}])),
-    daily:daily.slice(-120)};
 }
 function checkCalendar(c){
   const f='data/calendar.json';
@@ -231,12 +187,12 @@ console.log(`\n✓ 資料檢查通過${warns.length?`（${warns.length} 個提�
 if(OUT){
   const read=f=>fs.readFileSync(path.join(ROOT,f),'utf8');
   const tracker=runs[0]?{lastRun:runs[0],recent:runs.slice(0,10).map(r=>({at:r.at,mode:r.mode,sources:r.sources}))}:null;
-  const buildId=crypto.createHash('sha256').update(JSON.stringify({profile,calendar,merged,tracker})+read('app.js')+read('engine.js')+read('app.css')+read('index.html')+read('sw.js')).digest('hex').slice(0,12);
+  const buildId=crypto.createHash('sha256').update(JSON.stringify({profile,calendar,merged,tracker})+read('app.js')+read('engine.js')+read('updates.js')+read('app.css')+read('index.html')+read('sw.js')).digest('hex').slice(0,12);
   const latest=products.map(p=>E.pd(p.checkedAt)).filter(Boolean).sort((a,b)=>b-a)[0];
   const bundle={buildId,builtAt:new Date().toISOString(),dataAt:latest?latest.toISOString():null,profile,calendar,tracker,products:merged};
   fs.rmSync(OUT,{recursive:true,force:true});
   fs.mkdirSync(path.join(OUT,'data'),{recursive:true});
-  for(const f of ['index.html','app.css','app.js','engine.js','manifest.webmanifest'])fs.copyFileSync(path.join(ROOT,f),path.join(OUT,f));
+  for(const f of ['index.html','app.css','app.js','engine.js','updates.js','manifest.webmanifest'])fs.copyFileSync(path.join(ROOT,f),path.join(OUT,f));
   const sw=read('sw.js').replaceAll('__BUILD__',buildId);
   if(sw.includes('__BUILD__')||!sw.includes(`'bc-${buildId}'`)){console.log('✗ sw.js 的版本號沒有填入，請檢查 VERSION 那一行');process.exit(1)}
   fs.writeFileSync(path.join(OUT,'sw.js'),sw);

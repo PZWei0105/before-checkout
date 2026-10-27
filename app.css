@@ -234,6 +234,14 @@ textarea.input{resize:vertical;min-height:72px;line-height:1.5}
 .empty{padding:14px;border:1.5px dashed var(--rule);border-radius:10px;color:var(--ink-2);font-size:14px}
 .install{border:1.5px dashed color-mix(in srgb,var(--seal) 55%,transparent);box-shadow:none}
 .install p b{font-weight:900}
+/* 更新紀錄：像釘在櫃台上的一張公告，左邊一條朱紅 */
+.upd{box-shadow:inset 3px 0 0 var(--seal),0 1px 0 var(--paper-edge),0 8px 20px -14px var(--shadow)}
+.upd-t{margin:0;font-weight:700;font-size:14.5px}
+.upd-t time{font-family:var(--f-mono);font-size:12px;font-weight:500;color:var(--ink-3);margin-right:8px}
+.upd-list{margin:0;padding-left:1.15em;display:grid;gap:4px;font-size:13.5px;color:var(--ink-2)}
+.upd-log{display:grid;gap:14px}
+.upd-log>div{display:grid;gap:6px}
+.upd-log>div+div{padding-top:12px;border-top:1px dashed var(--rule)}
 
 /* list */
 .filters{display:grid;gap:8px}
@@ -257,7 +265,7 @@ textarea.input{resize:vertical;min-height:72px;line-height:1.5}
 .spark .sp-end{fill:var(--seal)}
 
 /* ---------- sheet (detail) ---------- */
-.sheet{position:fixed;inset:0;z-index:40;background:var(--counter);overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;
+.sheet{position:fixed;inset:0;z-index:40;background:var(--counter);overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;
   padding-bottom:env(safe-area-inset-bottom,0px);animation:rise .28s ease-out both}
 @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
 .sheet-top{position:sticky;top:0;z-index:5;background:var(--counter);border-bottom:1px solid var(--rule);padding-top:env(safe-area-inset-top,0px)}

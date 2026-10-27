@@ -1,20 +1,60 @@
 {
  "id": "elgato-4k-x",
  "daily": [],
- "checkedAt": "2026-10-27T21:52:00+08:00",
+ "checkedAt": "2026-10-28T07:03:06+08:00",
  "status": "none",
  "sources": {
   "pchome": {
    "status": "none",
    "seen": 10,
    "n": 0,
-   "best": null
+   "best": null,
+   "why": {
+    "must": 10
+   },
+   "near": [
+    {
+     "p": 5690,
+     "t": "ELGATO Wave XLR MK.2 整合式麥克風介面 公司貨",
+     "r": "must"
+    },
+    {
+     "p": 5690,
+     "t": "ELGATO Key Light Air MK.2 15 吋 LED 面板 公司貨",
+     "r": "must"
+    },
+    {
+     "p": 6790,
+     "t": "ELGATO CORSAIR 海盜船 STREAM DECK + 主控台 直播控制器 巨集 快捷鍵 旋鈕 觸控",
+     "r": "must"
+    }
+   ]
   },
   "coolpc": {
    "status": "none",
    "seen": 17,
    "n": 0,
-   "best": null
+   "best": null,
+   "why": {
+    "must": 17
+   },
+   "near": [
+    {
+     "p": 4990,
+     "t": "｛海盜船 elgato Stream Deck MK.2｝直播控制器 / 15鍵",
+     "r": "must"
+    },
+    {
+     "p": 6190,
+     "t": "｛海盜船 elgato Stream Deck +｝直播控制器 / 8鍵 / 4旋鈕 / 橫向觸控螢幕【訂】",
+     "r": "must"
+    },
+    {
+     "p": 190,
+     "t": "｛伽利略 Usb51B｝ 音效卡/Usb/2.1模擬7.1/支援Win10/鋁製外殼",
+     "r": "must"
+    }
+   ]
   }
  }
 }

@@ -40,11 +40,16 @@
    "d": "2026-10-27",
    "p": 4290,
    "src": "PChome 24h"
+  },
+  {
+   "d": "2026-10-28",
+   "p": 4290,
+   "src": "PChome 24h"
   }
  ],
  "latest": {
   "p": 4290,
-  "at": "2026-10-27T21:52:00+08:00",
+  "at": "2026-10-28T07:03:06+08:00",
   "src": "pchome",
   "srcLabel": "PChome 24h",
   "title": "ELGATO Stream Deck MK.2 串流直播控制台二代-白色 公司貨",
@@ -52,7 +57,7 @@
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-10-27T21:52:00+08:00",
+ "checkedAt": "2026-10-28T07:03:06+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
@@ -63,7 +68,9 @@
     "p": 4290,
     "title": "ELGATO Stream Deck MK.2 串流直播控制台二代-白色 公司貨",
     "url": "https://24h.pchome.com.tw/prod/DGAFBD-A900FY8QC"
-   }
+   },
+   "why": {},
+   "near": []
   },
   "coolpc": {
    "status": "ok",
@@ -73,7 +80,27 @@
     "p": 4990,
     "title": "｛海盜船 elgato Stream Deck MK.2｝直播控制器 / 15鍵",
     "url": "https://www.coolpc.com.tw/evaluate.php"
-   }
+   },
+   "why": {
+    "must": 16
+   },
+   "near": [
+    {
+     "p": 190,
+     "t": "｛伽利略 Usb51B｝ 音效卡/Usb/2.1模擬7.1/支援Win10/鋁製外殼",
+     "r": "must"
+    },
+    {
+     "p": 390,
+     "t": "｛伽利略 可調式USB2.0｝音效卡/支援高音質解析雙聲道DAC/免安裝驅動",
+     "r": "must"
+    },
+    {
+     "p": 490,
+     "t": "｛伽利略 U3THVAC｝USB3.0 影音擷取器 / FHD60Hz / USB-A、C / HDMI輸入",
+     "r": "must"
+    }
+   ]
   }
  }
 }

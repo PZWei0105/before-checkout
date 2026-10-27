@@ -1,20 +1,60 @@
 {
  "id": "elgato-facecam-4k",
  "daily": [],
- "checkedAt": "2026-10-27T21:52:00+08:00",
+ "checkedAt": "2026-10-28T07:03:06+08:00",
  "status": "none",
  "sources": {
   "pchome": {
    "status": "none",
    "seen": 7,
    "n": 0,
-   "best": null
+   "best": null,
+   "why": {
+    "must": 7
+   },
+   "near": [
+    {
+     "p": 4590,
+     "t": "ELGATO GREEN SCREEN 背景綠幕 公司貨",
+     "r": "must"
+    },
+    {
+     "p": 4890,
+     "t": "ELGATO GREEN SCREEN XL 背景綠幕(XL) 公司貨",
+     "r": "must"
+    },
+    {
+     "p": 5990,
+     "t": "AverMedia 圓剛 PW515 4K 自動對焦 AI網路攝影機webcam",
+     "r": "must"
+    }
+   ]
   },
   "coolpc": {
    "status": "none",
    "seen": 27,
    "n": 0,
-   "best": null
+   "best": null,
+   "why": {
+    "must": 27
+   },
+   "near": [
+    {
+     "p": 799,
+     "t": "｛羅技 C270｝ /動態HD720P/靜態300萬畫素/有線/單聲道麥克風/固定焦距",
+     "r": "must"
+    },
+    {
+     "p": 935,
+     "t": "｛圓剛 PW313｝ 高畫質網路攝影機/動態1080P 30FPS/靜態200萬畫素/旋轉式鏡頭/固定對焦",
+     "r": "must"
+    },
+    {
+     "p": 1290,
+     "t": "｛羅技 Brio 100｝ 網路攝影機 石墨黑/1080p 30Fps/USB/200萬畫素/自動光線校正",
+     "r": "must"
+    }
+   ]
   }
  }
 }

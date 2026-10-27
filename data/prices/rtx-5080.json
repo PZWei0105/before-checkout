@@ -40,11 +40,16 @@
    "d": "2026-10-27",
    "p": 53990,
    "src": "原價屋"
+  },
+  {
+   "d": "2026-10-28",
+   "p": 53990,
+   "src": "原價屋"
   }
  ],
  "latest": {
   "p": 53990,
-  "at": "2026-10-27T21:52:00+08:00",
+  "at": "2026-10-28T07:03:06+08:00",
   "src": "coolpc",
   "srcLabel": "原價屋",
   "title": "限搭機｛華碩 PRIME-RTX5080-16G-EVO｝2640MHz/31cm/三風扇/註五年/2.5 Slot",
@@ -53,14 +58,36 @@
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-10-27T21:52:00+08:00",
+ "checkedAt": "2026-10-28T07:03:06+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
    "status": "none",
    "seen": 60,
    "n": 0,
-   "best": null
+   "best": null,
+   "why": {
+    "not:組合": 2,
+    "not:主機": 3,
+    "must": 55
+   },
+   "near": [
+    {
+     "p": 76990,
+     "t": "GIGABYTE 技嘉 RTX 5080 WINDFORCE OC SFF 16G 顯示卡(組合包B)",
+     "r": "not:組合"
+    },
+    {
+     "p": 84890,
+     "t": "ASUS 華碩 PRIME-RTX5080-16G 顯示卡+華碩 ROG MAXIMUS Z890 HERO 主機板+華碩 ROG GX60",
+     "r": "not:主機"
+    },
+    {
+     "p": 85790,
+     "t": "GIGABYTE 技嘉 RTX 5080 AERO OC SFF 16G 顯示卡(組合包C)",
+     "r": "not:組合"
+    }
+   ]
   },
   "coolpc": {
    "status": "ok",
@@ -71,7 +98,27 @@
     "title": "限搭機｛華碩 PRIME-RTX5080-16G-EVO｝2640MHz/31cm/三風扇/註五年/2.5 Slot",
     "url": "https://www.coolpc.com.tw/evaluate.php",
     "cond": "限搭機"
-   }
+   },
+   "why": {
+    "must": 203
+   },
+   "near": [
+    {
+     "p": 190,
+     "t": "[加購價]｛麗臺 mini-DP轉DVI-D轉接線｝",
+     "r": "must"
+    },
+    {
+     "p": 490,
+     "t": "｛酷碼 VGA Holder 顯卡用支架｝千斤頂顯卡支撐架/(0005-KUH00)",
+     "r": "must"
+    },
+    {
+     "p": 790,
+     "t": "｛酷碼 ARGB 強化玻璃 顯卡支撐架｝(MCA-U000R-GSBTG-00)",
+     "r": "must"
+    }
+   ]
   }
  }
 }

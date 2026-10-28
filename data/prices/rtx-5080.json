@@ -48,47 +48,47 @@
   }
  ],
  "latest": {
-  "p": 52888,
-  "at": "2026-10-28T07:05:16+08:00",
+  "p": 64990,
+  "at": "2026-10-28T09:55:37+08:00",
   "src": "pchome",
   "srcLabel": "PChome 24h",
-  "title": "INNO3D 映眾 GeForce RTX 5080 16GB GDDR7 X3 顯示卡",
-  "url": "https://24h.pchome.com.tw/prod/DRADGJ-A900IK56B",
+  "title": "ZOTAC GAMING GeForce RTX 5080 SOLID CORE OC 顯示卡",
+  "url": "https://24h.pchome.com.tw/prod/DRADLX-A900IIQCF",
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-10-28T07:05:16+08:00",
+ "checkedAt": "2026-10-28T09:55:37+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
    "status": "ok",
    "seen": 60,
-   "n": 4,
+   "n": 2,
    "best": {
-    "p": 52888,
-    "title": "INNO3D 映眾 GeForce RTX 5080 16GB GDDR7 X3 顯示卡",
-    "url": "https://24h.pchome.com.tw/prod/DRADGJ-A900IK56B"
+    "p": 64990,
+    "title": "ZOTAC GAMING GeForce RTX 5080 SOLID CORE OC 顯示卡",
+    "url": "https://24h.pchome.com.tw/prod/DRADLX-A900IIQCF"
    },
    "why": {
-    "not:組合": 3,
-    "not:主機": 33,
+    "not:組合": 2,
     "not:電腦": 1,
-    "must": 19
+    "not:主機": 8,
+    "must": 47
    },
    "near": [
     {
-     "p": 56590,
-     "t": "【顯卡+主機板】華碩 PRIME RTX 5080 16GB GDDR7 EVO 顯示卡 + PRIME B760M-K D4-CSM 主機",
+     "p": 57390,
+     "t": "GIGABYTE 技嘉 RTX 5080 GAMING OC 16G 顯示卡 + 技嘉 B550M GAMING X WIFI6 AMD 主",
      "r": "not:主機"
     },
     {
-     "p": 56990,
-     "t": "GIGABYTE 技嘉 RTX 5080 WINDFORCE OC SFF 16G 顯示卡 + 技嘉 B650EM FORCE WF6E 主",
+     "p": 57990,
+     "t": "GIGABYTE 技嘉 RTX 5080 GAMING OC 16G 顯示卡 + 技嘉 B550M GAMING X WIFI6 主機板",
      "r": "not:主機"
     },
     {
-     "p": 56990,
-     "t": "GIGABYTE 技嘉 RTX 5080 WINDFORCE OC SFF 16G 顯示卡 + 技嘉 B650EM FORCE WF6E 主",
+     "p": 58290,
+     "t": "GIGABYTE 技嘉 RTX 5080 GAMING OC 16G 顯示卡 + 技嘉 B650EM FORCE WF6E 主機板",
      "r": "not:主機"
     }
    ]

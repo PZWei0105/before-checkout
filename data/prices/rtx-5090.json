@@ -1,21 +1,31 @@
 {
  "id": "rtx-5090",
  "daily": [],
- "checkedAt": "2026-10-28T07:05:16+08:00",
+ "checkedAt": "2026-10-28T09:55:37+08:00",
  "status": "none",
  "sources": {
   "pchome": {
    "status": "none",
-   "seen": 1,
+   "seen": 3,
    "n": 0,
    "best": null,
    "why": {
-    "must": 1
+    "must": 3
    },
    "near": [
     {
      "p": 85790,
      "t": "GIGABYTE 技嘉 RTX 5080 AERO OC SFF 16G 顯示卡(組合包C)",
+     "r": "must"
+    },
+    {
+     "p": 88888,
+     "t": "GIGABYTE 技嘉 〈現貨〉RTX 5080 GAMING OC 16G 顯示卡+技嘉 X870E AERO X3D WOOD 主機板",
+     "r": "must"
+    },
+    {
+     "p": 192000,
+     "t": "Leadtek 麗臺 NVIDIA RTX PRO 4500 Blackwell 32G GDDR7 256bit 專業繪圖卡",
      "r": "must"
     }
    ]

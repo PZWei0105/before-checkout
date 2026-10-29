@@ -54,7 +54,7 @@
  ],
  "latest": {
   "p": 52888,
-  "at": "2026-10-29T09:55:49+08:00",
+  "at": "2026-10-29T22:01:41+08:00",
   "src": "pchome",
   "srcLabel": "PChome 24h",
   "title": "INNO3D 映眾 GeForce RTX 5080 16GB GDDR7 X3 顯示卡",
@@ -62,7 +62,7 @@
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-10-29T09:55:49+08:00",
+ "checkedAt": "2026-10-29T22:01:41+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
@@ -77,8 +77,8 @@
    "why": {
     "not:組合": 3,
     "not:電腦": 1,
-    "not:主機": 33,
-    "must": 19
+    "not:主機": 39,
+    "must": 13
    },
    "near": [
     {
@@ -92,15 +92,15 @@
      "r": "not:主機"
     },
     {
-     "p": 56790,
-     "t": "GIGABYTE 技嘉 RTX 5080 WINDFORCE OC SFF 16G 顯示卡 + 技嘉 B550M GAMING X WIFI",
+     "p": 56690,
+     "t": "【顯卡+主機板】技嘉 RTX 5080 WINDFORCE OC V2 SFF 16G顯示卡 + 技嘉 B550M GAMING X WIF",
      "r": "not:主機"
     }
    ]
   },
   "coolpc": {
    "status": "ok",
-   "seen": 205,
+   "seen": 201,
    "n": 7,
    "best": {
     "p": 53990,
@@ -109,7 +109,7 @@
     "cond": "限搭機"
    },
    "why": {
-    "must": 198
+    "must": 194
    },
    "near": [
     {

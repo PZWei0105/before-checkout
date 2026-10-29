@@ -80,6 +80,8 @@ try:
     pg.click('.tab[data-view="list"]'); pg.wait_for_timeout(250)
     rows = dict(pg.eval_on_selector_all('.stub', 'els=>els.map(e=>[e.dataset.id,e.querySelector(".stamp").textContent])'))
     ok(rows == {k: v['label'] for k, v in EXP.items()}, f'清單的判定跟規則引擎一樣（{len(rows)} 件）')
+    cut = pg.eval_on_selector_all('.stub-age', 'els=>els.filter(e=>{const r=e.getBoundingClientRect(),c=e.closest(".stub-main").getBoundingClientRect();return e.scrollWidth>e.clientWidth+1||r.right>c.right+1}).map(e=>e.closest(".stub").dataset.id)')
+    ok(not cut, '390 清單的「幾天前查證」沒有被切掉' + (f'：{cut}' if cut else ''))
 
     # 每一件商品頁：規則逐條、NOW 日期、價格說明不能自相矛盾
     for pid in IDS:
@@ -164,6 +166,9 @@ try:
     for v in ['brief', 'list', 'rules', 'me']:
         pg.click(f'.tab[data-view="{v}"]'); pg.wait_for_timeout(150)
         ok(sw(pg) <= 360, f'360 {v} 沒有左右捲動')
+    pg.click('.tab[data-view="list"]'); pg.wait_for_timeout(150)
+    cut = pg.eval_on_selector_all('.stub-age', 'els=>els.filter(e=>{const r=e.getBoundingClientRect(),c=e.closest(".stub-main").getBoundingClientRect();return e.scrollWidth>e.clientWidth+1||r.right>c.right+1}).map(e=>e.closest(".stub").dataset.id)')
+    ok(not cut, '360 清單的「幾天前查證」沒有被切掉' + (f'：{cut}' if cut else ''))
     c.close()
 
     # ---------- 桌機 1440，深淺兩種 ----------

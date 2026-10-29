@@ -254,9 +254,10 @@ textarea.input{resize:vertical;min-height:72px;line-height:1.5}
 .stub-main{min-width:0;display:grid;gap:1px}
 .stub-name{font-weight:700;line-height:1.35;overflow-wrap:anywhere}
 .stub-sub{font-size:12.5px;color:var(--ink-3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.stub-row{display:flex;align-items:center;gap:8px;margin-top:4px;min-width:0}
+.stub-row{display:flex;flex-wrap:wrap;align-items:center;gap:3px 8px;margin-top:4px;min-width:0}
 .stub-price{font-family:var(--f-mono);font-weight:600;font-size:14px;white-space:nowrap}
-.stub-age{font-size:11.5px;color:var(--ink-3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* 「幾天前查證」不截斷：一行放不下就整段換到下一行 */
+.stub-age{font-size:11.5px;color:var(--ink-3);white-space:nowrap}
 .stub-age.old{color:var(--wait)}
 .spark{display:block;flex:none}
 .spark .sp-line{fill:none;stroke:var(--ink-2);stroke-width:1.5}

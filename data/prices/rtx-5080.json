@@ -59,7 +59,7 @@
  ],
  "latest": {
   "p": 52888,
-  "at": "2026-10-30T09:56:59+08:00",
+  "at": "2026-10-30T21:59:35+08:00",
   "src": "pchome",
   "srcLabel": "PChome 24h",
   "title": "INNO3D 映眾 GeForce RTX 5080 16GB GDDR7 X3 顯示卡",
@@ -67,7 +67,7 @@
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-10-30T09:56:59+08:00",
+ "checkedAt": "2026-10-30T21:59:35+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
@@ -82,8 +82,8 @@
    "why": {
     "not:組合": 3,
     "not:電腦": 1,
-    "not:主機": 33,
-    "must": 19
+    "not:主機": 49,
+    "must": 3
    },
    "near": [
     {
@@ -105,8 +105,8 @@
   },
   "coolpc": {
    "status": "ok",
-   "seen": 201,
-   "n": 7,
+   "seen": 198,
+   "n": 6,
    "best": {
     "p": 53990,
     "title": "限搭機｛華碩 PRIME-RTX5080-16G-EVO｝2640MHz/31cm/三風扇/註五年/2.5 Slot",
@@ -114,7 +114,7 @@
     "cond": "限搭機"
    },
    "why": {
-    "must": 194
+    "must": 192
    },
    "near": [
     {

@@ -1,16 +1,16 @@
 {
  "id": "elgato-4k-x",
  "daily": [],
- "checkedAt": "2026-10-30T09:56:59+08:00",
+ "checkedAt": "2026-10-30T21:59:35+08:00",
  "status": "none",
  "sources": {
   "pchome": {
    "status": "none",
-   "seen": 10,
+   "seen": 9,
    "n": 0,
    "best": null,
    "why": {
-    "must": 10
+    "must": 9
    },
    "near": [
     {
@@ -19,13 +19,13 @@
      "r": "must"
     },
     {
-     "p": 5690,
-     "t": "ELGATO Key Light Air MK.2 15 吋 LED 面板 公司貨",
+     "p": 6790,
+     "t": "ELGATO CORSAIR 海盜船 STREAM DECK + 主控台 直播控制器 巨集 快捷鍵 旋鈕 觸控",
      "r": "must"
     },
     {
-     "p": 6790,
-     "t": "ELGATO CORSAIR 海盜船 STREAM DECK + 主控台 直播控制器 巨集 快捷鍵 旋鈕 觸控",
+     "p": 7990,
+     "t": "ELGATO Prompter 多合一創作者提詞器 公司貨",
      "r": "must"
     }
    ]

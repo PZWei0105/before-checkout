@@ -64,7 +64,7 @@
  ],
  "latest": {
   "p": 52888,
-  "at": "2026-10-31T09:55:48+08:00",
+  "at": "2026-10-31T21:45:16+08:00",
   "src": "pchome",
   "srcLabel": "PChome 24h",
   "title": "INNO3D 映眾 GeForce RTX 5080 16GB GDDR7 X3 顯示卡",
@@ -72,7 +72,7 @@
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-10-31T09:55:48+08:00",
+ "checkedAt": "2026-10-31T21:45:16+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
@@ -86,19 +86,19 @@
    },
    "why": {
     "not:組合": 3,
-    "not:主機": 49,
     "not:電腦": 1,
-    "must": 3
+    "not:主機": 48,
+    "must": 4
    },
    "near": [
     {
-     "p": 56490,
-     "t": "GIGABYTE 技嘉 RTX 5080 WINDFORCE OC SFF 16G 顯示卡 + 技嘉 B550M GAMING X WIFI",
+     "p": 56590,
+     "t": "【顯卡+主機板】華碩 PRIME RTX 5080 16GB GDDR7 EVO 顯示卡 + PRIME B760M-K D4-CSM 主機",
      "r": "not:主機"
     },
     {
-     "p": 56590,
-     "t": "【顯卡+主機板】華碩 PRIME RTX 5080 16GB GDDR7 EVO 顯示卡 + PRIME B760M-K D4-CSM 主機",
+     "p": 56690,
+     "t": "【顯卡+主機板】技嘉 RTX 5080 WINDFORCE OC V2 SFF 16G顯示卡 + 技嘉 B550M GAMING X WIF",
      "r": "not:主機"
     },
     {
@@ -110,7 +110,7 @@
   },
   "coolpc": {
    "status": "ok",
-   "seen": 198,
+   "seen": 197,
    "n": 6,
    "best": {
     "p": 53990,
@@ -119,7 +119,7 @@
     "cond": "限搭機"
    },
    "why": {
-    "must": 192
+    "must": 191
    },
    "near": [
     {

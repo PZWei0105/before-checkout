@@ -1,16 +1,16 @@
 {
  "id": "elgato-4k-x",
  "daily": [],
- "checkedAt": "2026-10-30T21:59:35+08:00",
+ "checkedAt": "2026-10-31T09:55:48+08:00",
  "status": "none",
  "sources": {
   "pchome": {
    "status": "none",
-   "seen": 9,
+   "seen": 10,
    "n": 0,
    "best": null,
    "why": {
-    "must": 9
+    "must": 10
    },
    "near": [
     {

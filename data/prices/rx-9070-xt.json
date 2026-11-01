@@ -69,7 +69,7 @@
  ],
  "latest": {
   "p": 29890,
-  "at": "2026-11-01T09:01:54+08:00",
+  "at": "2026-11-01T21:47:16+08:00",
   "src": "coolpc",
   "srcLabel": "原價屋",
   "title": "｛華擎 RX9070XT Challenger 16GB｝2970MHz/29cm/三風扇/註五年保",
@@ -77,25 +77,25 @@
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-11-01T09:01:54+08:00",
+ "checkedAt": "2026-11-01T21:47:16+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
    "status": "ok",
    "seen": 60,
-   "n": 7,
+   "n": 6,
    "best": {
     "p": 30990,
-    "title": "SAPPHIRE 藍寶石 PULSE 脈動 RX 9070 XT GAMING 16GB 顯示卡",
-    "url": "https://24h.pchome.com.tw/prod/DSBC1T-A900J1ZK2"
+    "title": "撼訊 Reaper RX9070XT 16G-A 16G GDDR6 顯示卡",
+    "url": "https://24h.pchome.com.tw/prod/DRAD1Y-A900KMJPA"
    },
    "why": {
-    "not:硬碟": 6,
+    "not:SSD": 3,
     "not:電供": 8,
-    "not:記憶體": 6,
+    "not:硬碟": 7,
     "not:鈔省價": 4,
-    "not:SSD": 4,
-    "must": 25
+    "not:記憶體": 6,
+    "must": 26
    },
    "near": [
     {
@@ -110,14 +110,14 @@
     },
     {
      "p": 33888,
-     "t": "〈鈔省價〉藍寶石PULSE脈動RX 9070 XT GAMING 16G顯示卡+海韻 750W 電供",
+     "t": "〈鈔省價〉藍寶石PULSE脈動RX 9070 XT GAMING 16G顯卡+全漢 750W 電供",
      "r": "not:電供"
     }
    ]
   },
   "coolpc": {
    "status": "ok",
-   "seen": 197,
+   "seen": 195,
    "n": 13,
    "best": {
     "p": 29890,
@@ -125,7 +125,7 @@
     "url": "https://www.coolpc.com.tw/evaluate.php"
    },
    "why": {
-    "must": 184
+    "must": 182
    },
    "near": [
     {
@@ -140,7 +140,7 @@
     },
     {
      "p": 790,
-     "t": "｛酷碼 ARGB 強化玻璃 顯卡支撐架｝(MCA-U000R-GSBTG-00)",
+     "t": "｛微星 MPG ARGB 顯卡支撐架 黑｝磁吸式底座/90度可旋轉設計",
      "r": "must"
     }
    ]

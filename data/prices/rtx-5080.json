@@ -69,7 +69,7 @@
  ],
  "latest": {
   "p": 52888,
-  "at": "2026-11-01T09:01:54+08:00",
+  "at": "2026-11-01T21:47:16+08:00",
   "src": "pchome",
   "srcLabel": "PChome 24h",
   "title": "INNO3D 映眾 GeForce RTX 5080 16GB GDDR7 X3 顯示卡",
@@ -77,7 +77,7 @@
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-11-01T09:01:54+08:00",
+ "checkedAt": "2026-11-01T21:47:16+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
@@ -91,8 +91,8 @@
    },
    "why": {
     "not:組合": 3,
-    "not:主機": 48,
     "not:電腦": 1,
+    "not:主機": 48,
     "must": 4
    },
    "near": [
@@ -102,21 +102,21 @@
      "r": "not:主機"
     },
     {
-     "p": 56790,
-     "t": "GIGABYTE 技嘉 RTX 5080 WINDFORCE OC SFF 16G 顯示卡 + 技嘉 B550M GAMING X WIFI",
+     "p": 56690,
+     "t": "【顯卡+主機板】技嘉 RTX 5080 WINDFORCE OC V2 SFF 16G顯示卡 + 技嘉 B550M GAMING X WIF",
      "r": "not:主機"
     },
     {
-     "p": 56990,
-     "t": "GIGABYTE 技嘉 RTX 5080 WINDFORCE OC SFF 16G 顯示卡 + 技嘉 B650EM FORCE WF6E 主",
+     "p": 56690,
+     "t": "【顯卡+主機板】技嘉 RTX 5080 WINDFORCE OC V2 SFF 16G顯示卡 + 技嘉 B550M GAMING X WIF",
      "r": "not:主機"
     }
    ]
   },
   "coolpc": {
    "status": "ok",
-   "seen": 197,
-   "n": 6,
+   "seen": 195,
+   "n": 5,
    "best": {
     "p": 53990,
     "title": "限搭機｛華碩 PRIME-RTX5080-16G-EVO｝2640MHz/31cm/三風扇/註五年/2.5 Slot",
@@ -124,7 +124,7 @@
     "cond": "限搭機"
    },
    "why": {
-    "must": 191
+    "must": 190
    },
    "near": [
     {
@@ -139,7 +139,7 @@
     },
     {
      "p": 790,
-     "t": "｛酷碼 ARGB 強化玻璃 顯卡支撐架｝(MCA-U000R-GSBTG-00)",
+     "t": "｛微星 MPG ARGB 顯卡支撐架 黑｝磁吸式底座/90度可旋轉設計",
      "r": "must"
     }
    ]

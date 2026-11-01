@@ -1,7 +1,7 @@
 {
  "id": "rtx-5090",
  "daily": [],
- "checkedAt": "2026-11-01T09:01:54+08:00",
+ "checkedAt": "2026-11-01T21:47:16+08:00",
  "status": "none",
  "sources": {
   "pchome": {
@@ -22,11 +22,11 @@
   },
   "coolpc": {
    "status": "none",
-   "seen": 197,
+   "seen": 195,
    "n": 0,
    "best": null,
    "why": {
-    "must": 197
+    "must": 195
    },
    "near": [
     {
@@ -41,7 +41,7 @@
     },
     {
      "p": 790,
-     "t": "｛酷碼 ARGB 強化玻璃 顯卡支撐架｝(MCA-U000R-GSBTG-00)",
+     "t": "｛微星 MPG ARGB 顯卡支撐架 黑｝磁吸式底座/90度可旋轉設計",
      "r": "must"
     }
    ]

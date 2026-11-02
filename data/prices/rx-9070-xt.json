@@ -65,11 +65,16 @@
    "d": "2026-11-01",
    "p": 29890,
    "src": "原價屋"
+  },
+  {
+   "d": "2026-11-02",
+   "p": 29890,
+   "src": "原價屋"
   }
  ],
  "latest": {
   "p": 29890,
-  "at": "2026-11-01T21:47:16+08:00",
+  "at": "2026-11-02T10:03:56+08:00",
   "src": "coolpc",
   "srcLabel": "原價屋",
   "title": "｛華擎 RX9070XT Challenger 16GB｝2970MHz/29cm/三風扇/註五年保",
@@ -77,7 +82,7 @@
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-11-01T21:47:16+08:00",
+ "checkedAt": "2026-11-02T10:03:56+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
@@ -90,11 +95,11 @@
     "url": "https://24h.pchome.com.tw/prod/DRAD1Y-A900KMJPA"
    },
    "why": {
-    "not:SSD": 3,
+    "not:SSD": 4,
     "not:電供": 8,
-    "not:硬碟": 7,
-    "not:鈔省價": 4,
+    "not:硬碟": 6,
     "not:記憶體": 6,
+    "not:鈔省價": 4,
     "must": 26
    },
    "near": [

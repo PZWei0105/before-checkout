@@ -75,35 +75,37 @@
    "d": "2026-11-03",
    "p": 52888,
    "src": "PChome 24h"
+  },
+  {
+   "d": "2026-11-04",
+   "p": 54888,
+   "src": "原價屋"
   }
  ],
  "latest": {
-  "p": 52888,
-  "at": "2026-11-03T22:13:19+08:00",
-  "src": "pchome",
-  "srcLabel": "PChome 24h",
-  "title": "INNO3D 映眾 GeForce RTX 5080 16GB GDDR7 X3 顯示卡",
-  "url": "https://24h.pchome.com.tw/prod/DRADGJ-A900IK56B",
+  "p": 54888,
+  "at": "2026-11-04T09:58:40+08:00",
+  "src": "coolpc",
+  "srcLabel": "原價屋",
+  "title": "限搭機｛INNO3D RTX5080 X3｝2617MHz/30cm/三風扇/Dual Slot/註四年",
+  "url": "https://www.coolpc.com.tw/evaluate.php",
+  "cond": "限搭機",
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-11-03T22:13:19+08:00",
+ "checkedAt": "2026-11-04T09:58:40+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
-   "status": "ok",
+   "status": "none",
    "seen": 60,
-   "n": 4,
-   "best": {
-    "p": 52888,
-    "title": "INNO3D 映眾 GeForce RTX 5080 16GB GDDR7 X3 顯示卡",
-    "url": "https://24h.pchome.com.tw/prod/DRADGJ-A900IK56B"
-   },
+   "n": 0,
+   "best": null,
    "why": {
-    "not:組合": 3,
+    "not:組合": 2,
+    "not:主機": 49,
     "not:電腦": 1,
-    "not:主機": 48,
-    "must": 4
+    "must": 8
    },
    "near": [
     {
@@ -112,13 +114,13 @@
      "r": "not:主機"
     },
     {
-     "p": 56790,
-     "t": "GIGABYTE 技嘉 RTX 5080 WINDFORCE OC SFF 16G 顯示卡 + 技嘉 B550M GAMING X WIFI",
+     "p": 56590,
+     "t": "【顯卡+主機板】華碩 PRIME RTX 5080 16GB GDDR7 EVO 顯示卡 + PRIME B760M-K D4-CSM 主機",
      "r": "not:主機"
     },
     {
-     "p": 56990,
-     "t": "GIGABYTE 技嘉 RTX 5080 WINDFORCE OC SFF 16G 顯示卡 + 技嘉 B650EM FORCE WF6E 主",
+     "p": 56790,
+     "t": "GIGABYTE 技嘉 RTX 5080 WINDFORCE OC SFF 16G 顯示卡 + 技嘉 B550M GAMING X WIFI",
      "r": "not:主機"
     }
    ]

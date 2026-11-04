@@ -1,32 +1,22 @@
 {
  "id": "elgato-facecam-4k",
  "daily": [],
- "checkedAt": "2026-11-04T09:58:40+08:00",
+ "checkedAt": "2026-11-04T21:01:45+08:00",
  "status": "none",
  "sources": {
   "pchome": {
    "status": "none",
-   "seen": 8,
+   "seen": 1,
    "n": 0,
    "best": null,
    "why": {
-    "must": 8
+    "not:鏡頭": 1
    },
    "near": [
     {
-     "p": 4590,
-     "t": "ELGATO GREEN SCREEN 背景綠幕 公司貨",
-     "r": "must"
-    },
-    {
-     "p": 4890,
-     "t": "ELGATO GREEN SCREEN XL 背景綠幕(XL) 公司貨",
-     "r": "must"
-    },
-    {
-     "p": 5990,
-     "t": "AverMedia 圓剛 PW515 4K 自動對焦 AI網路攝影機webcam",
-     "r": "must"
+     "p": 6590,
+     "t": "ELGATO Facecam 4K 視訊攝影機 視訊鏡頭 會議 直播 網路攝影機",
+     "r": "not:鏡頭"
     }
    ]
   },

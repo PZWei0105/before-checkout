@@ -1,7 +1,7 @@
 {
  "id": "elgato-4k-x",
  "daily": [],
- "checkedAt": "2026-11-04T09:58:40+08:00",
+ "checkedAt": "2026-11-04T21:01:45+08:00",
  "status": "none",
  "sources": {
   "pchome": {
@@ -19,7 +19,7 @@
      "r": "must"
     },
     {
-     "p": 6790,
+     "p": 6190,
      "t": "ELGATO CORSAIR 海盜船 STREAM DECK + 主控台 直播控制器 巨集 快捷鍵 旋鈕 觸控",
      "r": "must"
     },

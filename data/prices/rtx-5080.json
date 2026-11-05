@@ -89,7 +89,7 @@
  ],
  "latest": {
   "p": 52888,
-  "at": "2026-11-05T09:00:18+08:00",
+  "at": "2026-11-05T21:07:33+08:00",
   "src": "pchome",
   "srcLabel": "PChome 24h",
   "title": "INNO3D 映眾 GeForce RTX 5080 16GB GDDR7 X3 顯示卡",
@@ -97,12 +97,12 @@
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-11-05T09:00:18+08:00",
+ "checkedAt": "2026-11-05T21:07:33+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
    "status": "ok",
-   "seen": 35,
+   "seen": 40,
    "n": 4,
    "best": {
     "p": 52888,
@@ -111,9 +111,9 @@
    },
    "why": {
     "not:組合": 3,
-    "not:主機": 12,
     "not:電腦": 1,
-    "must": 15
+    "must": 22,
+    "not:主機": 10
    },
    "near": [
     {
@@ -127,24 +127,24 @@
      "r": "not:主機"
     },
     {
-     "p": 60190,
-     "t": "【顯卡+主機板】技嘉 RTX 5080 GAMING OC 16G 顯示卡 + 技嘉 B860M GAMING X WIFI6E Intel",
+     "p": 59990,
+     "t": "【顯卡+主機板】微星 RTX 5080 16G GAMING TRIO OC 顯示卡 + B760M GAMING PLUS WIFI D4",
      "r": "not:主機"
     }
    ]
   },
   "coolpc": {
    "status": "ok",
-   "seen": 195,
+   "seen": 193,
    "n": 6,
    "best": {
-    "p": 54888,
+    "p": 60888,
     "title": "限搭機｛INNO3D RTX5080 X3｝2617MHz/30cm/三風扇/Dual Slot/註四年",
     "url": "https://www.coolpc.com.tw/evaluate.php",
     "cond": "限搭機"
    },
    "why": {
-    "must": 189
+    "must": 187
    },
    "near": [
     {

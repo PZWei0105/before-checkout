@@ -1,22 +1,28 @@
 {
  "id": "elgato-facecam-4k",
  "daily": [],
- "checkedAt": "2026-11-04T21:01:45+08:00",
+ "checkedAt": "2026-11-05T09:00:18+08:00",
  "status": "none",
  "sources": {
   "pchome": {
    "status": "none",
-   "seen": 1,
+   "seen": 2,
    "n": 0,
    "best": null,
    "why": {
-    "not:鏡頭": 1
+    "not:鏡頭": 1,
+    "must": 1
    },
    "near": [
     {
      "p": 6590,
      "t": "ELGATO Facecam 4K 視訊攝影機 視訊鏡頭 會議 直播 網路攝影機",
      "r": "not:鏡頭"
+    },
+    {
+     "p": 4590,
+     "t": "ELGATO Facecam MK.2 FHD 視訊攝影機 視訊鏡頭 會議 直播 網路攝影機",
+     "r": "must"
     }
    ]
   },

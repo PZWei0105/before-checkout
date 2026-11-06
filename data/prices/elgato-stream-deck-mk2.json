@@ -90,36 +90,54 @@
    "d": "2026-11-06",
    "p": 4290,
    "src": "PChome 24h"
+  },
+  {
+   "d": "2026-11-07",
+   "p": 3990,
+   "src": "PChome 24h"
   }
  ],
  "latest": {
-  "p": 4290,
-  "at": "2026-11-06T09:03:29+08:00",
+  "p": 3990,
+  "at": "2026-11-07T00:42:20+08:00",
   "src": "pchome",
   "srcLabel": "PChome 24h",
   "title": "ELGATO Stream Deck MK.2 串流直播控制台二代-白色 公司貨",
-  "url": "https://24h.pchome.com.tw/prod/DGAFBD-A900FY8QC",
+  "url": "https://24h.pchome.com.tw/prod/DGAFAV-A900K0JV8",
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-11-06T09:03:29+08:00",
+ "checkedAt": "2026-11-07T00:42:20+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
    "status": "ok",
-   "seen": 5,
+   "seen": 7,
    "n": 5,
    "best": {
-    "p": 4290,
+    "p": 3990,
     "title": "ELGATO Stream Deck MK.2 串流直播控制台二代-白色 公司貨",
-    "url": "https://24h.pchome.com.tw/prod/DGAFBD-A900FY8QC"
+    "url": "https://24h.pchome.com.tw/prod/DGAFAV-A900K0JV8"
    },
-   "why": {},
-   "near": []
+   "why": {
+    "not:SCISSOR": 2
+   },
+   "near": [
+    {
+     "p": 3990,
+     "t": "ELGATO Stream Deck MK.2 (Scissor Keys) 直播控台 剪刀腳 公司貨",
+     "r": "not:SCISSOR"
+    },
+    {
+     "p": 3990,
+     "t": "ELGATO Stream Deck MK.2 (Scissor Keys) 直播控台 剪刀腳 公司貨",
+     "r": "not:SCISSOR"
+    }
+   ]
   },
   "coolpc": {
    "status": "ok",
-   "seen": 17,
+   "seen": 16,
    "n": 1,
    "best": {
     "p": 4990,
@@ -127,7 +145,7 @@
     "url": "https://www.coolpc.com.tw/evaluate.php"
    },
    "why": {
-    "must": 16
+    "must": 15
    },
    "near": [
     {

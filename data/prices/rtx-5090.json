@@ -1,42 +1,38 @@
 {
  "id": "rtx-5090",
  "daily": [],
- "checkedAt": "2026-11-06T09:03:29+08:00",
+ "checkedAt": "2026-11-07T00:42:20+08:00",
  "status": "none",
  "sources": {
   "pchome": {
    "status": "none",
-   "seen": 7,
+   "seen": 2,
    "n": 0,
    "best": null,
    "why": {
-    "must": 7
+    "must": 1,
+    "not:筆電": 1
    },
    "near": [
     {
+     "p": 189000,
+     "t": "HyperX OMEN MAX 16 16吋電競筆電黑色(Ultra-9 290HX Plus/64GB/RTX 5090-24GB/1TB",
+     "r": "not:筆電"
+    },
+    {
      "p": 85790,
      "t": "GIGABYTE 技嘉 RTX 5080 AERO OC SFF 16G 顯示卡(組合包C)",
-     "r": "must"
-    },
-    {
-     "p": 126500,
-     "t": "Leadtek 麗臺 NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 工作站繪圖卡",
-     "r": "must"
-    },
-    {
-     "p": 126500,
-     "t": "Leadtek 麗臺 NVIDIA RTX PRO 4000 Blackwell 工作站繪圖卡",
      "r": "must"
     }
    ]
   },
   "coolpc": {
    "status": "none",
-   "seen": 193,
+   "seen": 190,
    "n": 0,
    "best": null,
    "why": {
-    "must": 193
+    "must": 190
    },
    "near": [
     {

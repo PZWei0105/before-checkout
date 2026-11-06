@@ -85,11 +85,16 @@
    "d": "2026-11-05",
    "p": 48900,
    "src": "PChome 24h"
+  },
+  {
+   "d": "2026-11-06",
+   "p": 48900,
+   "src": "PChome 24h"
   }
  ],
  "latest": {
   "p": 48900,
-  "at": "2026-11-05T21:07:33+08:00",
+  "at": "2026-11-06T09:03:29+08:00",
   "src": "pchome",
   "srcLabel": "PChome 24h",
   "title": "Apple 蘋果 iPhone 18 Pro Max (256GB)",
@@ -97,7 +102,7 @@
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-11-05T21:07:33+08:00",
+ "checkedAt": "2026-11-06T09:03:29+08:00",
  "status": "ok",
  "sources": {
   "pchome": {

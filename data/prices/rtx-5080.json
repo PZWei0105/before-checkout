@@ -85,11 +85,16 @@
    "d": "2026-11-05",
    "p": 52888,
    "src": "PChome 24h"
+  },
+  {
+   "d": "2026-11-06",
+   "p": 52888,
+   "src": "PChome 24h"
   }
  ],
  "latest": {
   "p": 52888,
-  "at": "2026-11-05T21:07:33+08:00",
+  "at": "2026-11-06T09:03:29+08:00",
   "src": "pchome",
   "srcLabel": "PChome 24h",
   "title": "INNO3D 映眾 GeForce RTX 5080 16GB GDDR7 X3 顯示卡",
@@ -97,12 +102,12 @@
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-11-05T21:07:33+08:00",
+ "checkedAt": "2026-11-06T09:03:29+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
    "status": "ok",
-   "seen": 40,
+   "seen": 51,
    "n": 4,
    "best": {
     "p": 52888,
@@ -112,8 +117,8 @@
    "why": {
     "not:組合": 3,
     "not:電腦": 1,
-    "must": 22,
-    "not:主機": 10
+    "must": 34,
+    "not:主機": 9
    },
    "near": [
     {

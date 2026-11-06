@@ -1,16 +1,16 @@
 {
  "id": "rtx-5090",
  "daily": [],
- "checkedAt": "2026-11-05T21:07:33+08:00",
+ "checkedAt": "2026-11-06T09:03:29+08:00",
  "status": "none",
  "sources": {
   "pchome": {
    "status": "none",
-   "seen": 2,
+   "seen": 7,
    "n": 0,
    "best": null,
    "why": {
-    "must": 2
+    "must": 7
    },
    "near": [
     {
@@ -19,8 +19,13 @@
      "r": "must"
     },
     {
-     "p": 192000,
-     "t": "Leadtek 麗臺 NVIDIA RTX PRO 4500 Blackwell 32G GDDR7 256bit 專業繪圖卡",
+     "p": 126500,
+     "t": "Leadtek 麗臺 NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 工作站繪圖卡",
+     "r": "must"
+    },
+    {
+     "p": 126500,
+     "t": "Leadtek 麗臺 NVIDIA RTX PRO 4000 Blackwell 工作站繪圖卡",
      "r": "must"
     }
    ]

@@ -1,16 +1,16 @@
 {
  "id": "elgato-4k-x",
  "daily": [],
- "checkedAt": "2026-11-07T00:42:20+08:00",
+ "checkedAt": "2026-11-07T09:49:10+08:00",
  "status": "none",
  "sources": {
   "pchome": {
    "status": "none",
-   "seen": 13,
+   "seen": 15,
    "n": 0,
    "best": null,
    "why": {
-    "must": 13
+    "must": 15
    },
    "near": [
     {
@@ -25,7 +25,7 @@
     },
     {
      "p": 6190,
-     "t": "ELGATO CORSAIR 海盜船 STREAM DECK + 主控台 白色 直播控制器 巨集 快捷鍵 旋鈕 觸控",
+     "t": "ELGATO STREAM DECK + 主控台 直播控制器 白色 巨集 快捷鍵 旋鈕 觸控",
      "r": "must"
     }
    ]

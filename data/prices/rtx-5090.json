@@ -1,16 +1,16 @@
 {
  "id": "rtx-5090",
  "daily": [],
- "checkedAt": "2026-11-07T23:37:15+08:00",
+ "checkedAt": "2026-11-08T04:09:37+08:00",
  "status": "none",
  "sources": {
   "pchome": {
    "status": "none",
-   "seen": 2,
+   "seen": 6,
    "n": 0,
    "best": null,
    "why": {
-    "must": 1,
+    "must": 5,
     "not:筆電": 1
    },
    "near": [
@@ -22,6 +22,11 @@
     {
      "p": 85790,
      "t": "GIGABYTE 技嘉 RTX 5080 AERO OC SFF 16G 顯示卡(組合包C)",
+     "r": "must"
+    },
+    {
+     "p": 126500,
+     "t": "Leadtek 麗臺 NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 工作站繪圖卡",
      "r": "must"
     }
    ]

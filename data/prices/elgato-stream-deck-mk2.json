@@ -95,11 +95,16 @@
    "d": "2026-11-07",
    "p": 3990,
    "src": "PChome 24h"
+  },
+  {
+   "d": "2026-11-08",
+   "p": 3990,
+   "src": "PChome 24h"
   }
  ],
  "latest": {
   "p": 3990,
-  "at": "2026-11-07T23:37:15+08:00",
+  "at": "2026-11-08T04:09:37+08:00",
   "src": "pchome",
   "srcLabel": "PChome 24h",
   "title": "ELGATO Stream Deck MK.2 串流直播控制台二代-白色 公司貨",
@@ -107,7 +112,7 @@
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-11-07T23:37:15+08:00",
+ "checkedAt": "2026-11-08T04:09:37+08:00",
  "status": "ok",
  "sources": {
   "pchome": {

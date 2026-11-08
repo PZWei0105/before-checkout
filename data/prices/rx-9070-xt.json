@@ -104,7 +104,7 @@
  ],
  "latest": {
   "p": 29890,
-  "at": "2026-11-08T04:09:37+08:00",
+  "at": "2026-11-08T08:26:32+08:00",
   "src": "coolpc",
   "srcLabel": "原價屋",
   "title": "｛華擎 RX9070XT Challenger 16GB｝2970MHz/29cm/三風扇/註五年保",
@@ -112,7 +112,7 @@
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-11-08T04:09:37+08:00",
+ "checkedAt": "2026-11-08T08:26:32+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
@@ -127,9 +127,9 @@
    "why": {
     "not:電供": 8,
     "not:SSD": 4,
-    "not:硬碟": 6,
-    "not:記憶體": 6,
     "not:鈔省價": 4,
+    "not:記憶體": 6,
+    "not:硬碟": 6,
     "must": 24
    },
    "near": [

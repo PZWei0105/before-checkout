@@ -109,7 +109,7 @@
  ],
  "latest": {
   "p": 53990,
-  "at": "2026-11-09T03:32:39+08:00",
+  "at": "2026-11-09T07:38:51+08:00",
   "src": "pchome",
   "srcLabel": "PChome 24h",
   "title": "MSI 微星 GeForce RTX 5080 16G VENTUS 3X OC 顯示卡",
@@ -117,12 +117,12 @@
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-11-09T03:32:39+08:00",
+ "checkedAt": "2026-11-09T07:38:51+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
    "status": "ok",
-   "seen": 60,
+   "seen": 34,
    "n": 4,
    "best": {
     "p": 53990,
@@ -131,9 +131,9 @@
    },
    "why": {
     "not:組合": 3,
+    "not:主機": 11,
     "not:電腦": 1,
-    "must": 41,
-    "not:主機": 11
+    "must": 15
    },
    "near": [
     {

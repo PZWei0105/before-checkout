@@ -105,11 +105,16 @@
    "d": "2026-11-09",
    "p": 53990,
    "src": "PChome 24h"
+  },
+  {
+   "d": "2026-11-10",
+   "p": 53990,
+   "src": "PChome 24h"
   }
  ],
  "latest": {
   "p": 53990,
-  "at": "2026-11-09T14:06:25+08:00",
+  "at": "2026-11-10T00:06:58+08:00",
   "src": "pchome",
   "srcLabel": "PChome 24h",
   "title": "MSI 微星 GeForce RTX 5080 16G VENTUS 3X OC 顯示卡",
@@ -117,12 +122,12 @@
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-11-09T14:06:25+08:00",
+ "checkedAt": "2026-11-10T00:06:58+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
    "status": "ok",
-   "seen": 46,
+   "seen": 33,
    "n": 4,
    "best": {
     "p": 53990,
@@ -131,9 +136,9 @@
    },
    "why": {
     "not:組合": 3,
-    "not:主機": 14,
     "not:電腦": 1,
-    "must": 24
+    "not:主機": 13,
+    "must": 12
    },
    "near": [
     {
@@ -155,8 +160,8 @@
   },
   "coolpc": {
    "status": "ok",
-   "seen": 189,
-   "n": 3,
+   "seen": 186,
+   "n": 2,
    "best": {
     "p": 65990,
     "title": "限搭機｛微星 RTX5080 16G COD MW4 EDITION OC｝決勝時刻：現代戰爭4 限量版",
@@ -164,7 +169,7 @@
     "cond": "限搭機"
    },
    "why": {
-    "must": 186
+    "must": 184
    },
    "near": [
     {

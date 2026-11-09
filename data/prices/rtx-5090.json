@@ -1,7 +1,7 @@
 {
  "id": "rtx-5090",
  "daily": [],
- "checkedAt": "2026-11-09T14:06:25+08:00",
+ "checkedAt": "2026-11-10T00:06:58+08:00",
  "status": "none",
  "sources": {
   "pchome": {
@@ -28,11 +28,11 @@
   },
   "coolpc": {
    "status": "none",
-   "seen": 189,
+   "seen": 186,
    "n": 0,
    "best": null,
    "why": {
-    "must": 189
+    "must": 186
    },
    "near": [
     {

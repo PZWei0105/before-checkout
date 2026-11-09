@@ -105,32 +105,37 @@
    "d": "2026-11-09",
    "p": 45477,
    "src": "PChome 24h"
+  },
+  {
+   "d": "2026-11-10",
+   "p": 45477,
+   "src": "PChome 24h"
   }
  ],
  "latest": {
   "p": 45477,
-  "at": "2026-11-09T14:06:25+08:00",
+  "at": "2026-11-10T00:06:58+08:00",
   "src": "pchome",
   "srcLabel": "PChome 24h",
   "title": "iPhone 18 Pro Max (256GB) -勃根地紅色",
-  "url": "https://24h.pchome.com.tw/prod/DGAV0M-A900KN2DV",
+  "url": "https://24h.pchome.com.tw/prod/DGAV0M-A900KN29R",
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-11-09T14:06:25+08:00",
+ "checkedAt": "2026-11-10T00:06:58+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
    "status": "ok",
    "seen": 40,
-   "n": 16,
+   "n": 15,
    "best": {
     "p": 45477,
     "title": "iPhone 18 Pro Max (256GB) -勃根地紅色",
-    "url": "https://24h.pchome.com.tw/prod/DGAV0M-A900KN2DV"
+    "url": "https://24h.pchome.com.tw/prod/DGAV0M-A900KN29R"
    },
    "why": {
-    "must": 24
+    "must": 25
    },
    "near": [
     {

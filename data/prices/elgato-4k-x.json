@@ -1,16 +1,16 @@
 {
  "id": "elgato-4k-x",
  "daily": [],
- "checkedAt": "2026-11-11T00:58:44+08:00",
+ "checkedAt": "2026-11-11T06:18:42+08:00",
  "status": "none",
  "sources": {
   "pchome": {
    "status": "none",
-   "seen": 9,
+   "seen": 10,
    "n": 0,
    "best": null,
    "why": {
-    "must": 9
+    "must": 10
    },
    "near": [
     {
@@ -19,13 +19,13 @@
      "r": "must"
     },
     {
-     "p": 6003,
-     "t": "ELGATO STREAM DECK + 主控台 直播控制器 巨集 快捷鍵 旋鈕 觸控",
+     "p": 5931,
+     "t": "ELGATO Facecam 4K 網路攝影機 公司貨",
      "r": "must"
     },
     {
-     "p": 6720,
-     "t": "ELGATO Stream Deck XL 直播控制台 公司貨",
+     "p": 6003,
+     "t": "ELGATO STREAM DECK + 主控台 直播控制器 巨集 快捷鍵 旋鈕 觸控",
      "r": "must"
     }
    ]

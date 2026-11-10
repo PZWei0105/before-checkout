@@ -114,25 +114,25 @@
  ],
  "latest": {
   "p": 3990,
-  "at": "2026-11-10T08:13:59+08:00",
+  "at": "2026-11-10T16:19:27+08:00",
   "src": "pchome",
   "srcLabel": "PChome 24h",
   "title": "ELGATO Stream Deck MK.2 串流直播控制台二代-白色 公司貨",
-  "url": "https://24h.pchome.com.tw/prod/DGAFBD-A900FY8QC",
+  "url": "https://24h.pchome.com.tw/prod/DGAFAV-A900K0JV8",
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-11-10T08:13:59+08:00",
+ "checkedAt": "2026-11-10T16:19:27+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
    "status": "ok",
-   "seen": 4,
-   "n": 3,
+   "seen": 3,
+   "n": 2,
    "best": {
     "p": 3990,
     "title": "ELGATO Stream Deck MK.2 串流直播控制台二代-白色 公司貨",
-    "url": "https://24h.pchome.com.tw/prod/DGAFBD-A900FY8QC"
+    "url": "https://24h.pchome.com.tw/prod/DGAFAV-A900K0JV8"
    },
    "why": {
     "not:SCISSOR": 1

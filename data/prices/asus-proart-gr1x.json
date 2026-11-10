@@ -1,16 +1,16 @@
 {
  "id": "asus-proart-gr1x",
  "daily": [],
- "checkedAt": "2026-11-10T00:06:58+08:00",
+ "checkedAt": "2026-11-10T08:13:59+08:00",
  "status": "none",
  "sources": {
   "pchome": {
    "status": "none",
-   "seen": 37,
+   "seen": 40,
    "n": 0,
    "best": null,
    "why": {
-    "must": 37
+    "must": 40
    },
    "near": [
     {

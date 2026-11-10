@@ -110,11 +110,16 @@
    "d": "2026-11-10",
    "p": 53990,
    "src": "PChome 24h"
+  },
+  {
+   "d": "2026-11-11",
+   "p": 53990,
+   "src": "PChome 24h"
   }
  ],
  "latest": {
   "p": 53990,
-  "at": "2026-11-10T16:19:27+08:00",
+  "at": "2026-11-11T00:58:44+08:00",
   "src": "pchome",
   "srcLabel": "PChome 24h",
   "title": "MSI 微星 GeForce RTX 5080 16G VENTUS 3X OC 顯示卡",
@@ -122,12 +127,12 @@
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-11-10T16:19:27+08:00",
+ "checkedAt": "2026-11-11T00:58:44+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
    "status": "ok",
-   "seen": 34,
+   "seen": 53,
    "n": 4,
    "best": {
     "p": 53990,
@@ -136,9 +141,9 @@
    },
    "why": {
     "not:組合": 3,
+    "not:主機": 22,
     "not:電腦": 1,
-    "not:主機": 13,
-    "must": 13
+    "must": 23
    },
    "near": [
     {
@@ -152,16 +157,16 @@
      "r": "not:主機"
     },
     {
-     "p": 59090,
-     "t": "【顯卡+主機板】華碩 PRIME RTX 5080 EVO 16GB OC 超頻版 顯示卡 + PRIME B550M-K ARGB-CSM",
+     "p": 59990,
+     "t": "【顯卡+主機板】微星 RTX 5080 16G GAMING TRIO OC 顯示卡 + B760M GAMING PLUS WIFI D4",
      "r": "not:主機"
     }
    ]
   },
   "coolpc": {
    "status": "ok",
-   "seen": 202,
-   "n": 10,
+   "seen": 206,
+   "n": 11,
    "best": {
     "p": 60888,
     "title": "限搭機｛INNO3D RTX5080 X3｝2617MHz/30cm/三風扇/Dual Slot/註四年",
@@ -169,7 +174,7 @@
     "cond": "限搭機"
    },
    "why": {
-    "must": 192
+    "must": 195
    },
    "near": [
     {

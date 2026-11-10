@@ -1,16 +1,17 @@
 {
  "id": "rtx-5090",
  "daily": [],
- "checkedAt": "2026-11-10T16:19:27+08:00",
+ "checkedAt": "2026-11-11T00:58:44+08:00",
  "status": "none",
  "sources": {
   "pchome": {
    "status": "none",
-   "seen": 2,
+   "seen": 9,
    "n": 0,
    "best": null,
    "why": {
-    "must": 1,
+    "not:處理器": 1,
+    "must": 7,
     "not:筆電": 1
    },
    "near": [
@@ -18,6 +19,11 @@
      "p": 189000,
      "t": "HyperX OMEN MAX 16 16吋電競筆電黑色(Ultra-9 290HX Plus/64GB/RTX 5090-24GB/1TB",
      "r": "not:筆電"
+    },
+    {
+     "p": 299990,
+     "t": "GIGABYTE 技嘉 AORUS RTX 5090 AI BOX 顯示卡+X870主機板+處理器+電源",
+     "r": "not:處理器"
     },
     {
      "p": 85790,
@@ -28,11 +34,11 @@
   },
   "coolpc": {
    "status": "none",
-   "seen": 202,
+   "seen": 206,
    "n": 0,
    "best": null,
    "why": {
-    "must": 202
+    "must": 206
    },
    "near": [
     {

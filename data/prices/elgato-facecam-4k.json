@@ -1,24 +1,26 @@
 {
  "id": "elgato-facecam-4k",
- "daily": [],
- "checkedAt": "2026-11-10T16:19:27+08:00",
- "status": "none",
+ "daily": [
+  {
+   "d": "2026-11-11",
+   "p": 5931,
+   "src": "PChome 24h"
+  }
+ ],
+ "checkedAt": "2026-11-11T00:58:44+08:00",
+ "status": "ok",
  "sources": {
   "pchome": {
-   "status": "none",
+   "status": "ok",
    "seen": 1,
-   "n": 0,
-   "best": null,
-   "why": {
-    "not:鏡頭": 1
+   "n": 1,
+   "best": {
+    "p": 5931,
+    "title": "ELGATO Facecam 4K 網路攝影機 公司貨",
+    "url": "https://24h.pchome.com.tw/prod/DGAFBD-A900JIOEY"
    },
-   "near": [
-    {
-     "p": 6590,
-     "t": "ELGATO Facecam 4K 視訊攝影機 視訊鏡頭 會議 直播 網路攝影機",
-     "r": "not:鏡頭"
-    }
-   ]
+   "why": {},
+   "near": []
   },
   "coolpc": {
    "status": "none",
@@ -46,5 +48,15 @@
     }
    ]
   }
- }
+ },
+ "latest": {
+  "p": 5931,
+  "at": "2026-11-11T00:58:44+08:00",
+  "src": "pchome",
+  "srcLabel": "PChome 24h",
+  "title": "ELGATO Facecam 4K 網路攝影機 公司貨",
+  "url": "https://24h.pchome.com.tw/prod/DGAFBD-A900JIOEY",
+  "status": "ok"
+ },
+ "held": null
 }

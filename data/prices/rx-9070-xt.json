@@ -110,11 +110,16 @@
    "d": "2026-11-10",
    "p": 29890,
    "src": "原價屋"
+  },
+  {
+   "d": "2026-11-11",
+   "p": 29890,
+   "src": "原價屋"
   }
  ],
  "latest": {
   "p": 29890,
-  "at": "2026-11-10T16:19:27+08:00",
+  "at": "2026-11-11T00:58:44+08:00",
   "src": "coolpc",
   "srcLabel": "原價屋",
   "title": "｛華擎 RX9070XT Challenger 16GB｝2970MHz/29cm/三風扇/註五年保",
@@ -122,7 +127,7 @@
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-11-10T16:19:27+08:00",
+ "checkedAt": "2026-11-11T00:58:44+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
@@ -135,34 +140,29 @@
     "url": "https://24h.pchome.com.tw/prod/DRAD1Y-A900KMJPA"
    },
    "why": {
-    "not:電供": 8,
-    "not:SSD": 4,
-    "not:硬碟": 6,
-    "not:記憶體": 6,
-    "not:鈔省價": 4,
-    "must": 25
+    "must": 53
    },
    "near": [
     {
-     "p": 32288,
-     "t": "〈鈔省價〉藍寶石 PULSE 脈動 RX 9070 XT GAMING 16GB 顯示卡+酷碼 水冷",
-     "r": "not:鈔省價"
+     "p": 20370,
+     "t": "ASUS 華碩 Dual Radeon RX 9060 XT 16GB GDDR6 顯示卡",
+     "r": "must"
     },
     {
-     "p": 33688,
-     "t": "〈鈔省價〉藍寶石PULSE脈動 RX 9070 XT GAMING 16G顯卡+海韻 650W 電供",
-     "r": "not:電供"
+     "p": 20370,
+     "t": "ASUS 華碩 Dual Radeon RX 9060 XT 16GB GDDR6 顯示卡",
+     "r": "must"
     },
     {
-     "p": 33888,
-     "t": "〈鈔省價〉藍寶石PULSE脈動RX 9070 XT GAMING 16G顯卡+全漢 750W 電供",
-     "r": "not:電供"
+     "p": 20490,
+     "t": "SAPPHIRE 藍寶石 PULSE 脈動 RX 9060 XT GAMING OC 16GB 顯示卡",
+     "r": "must"
     }
    ]
   },
   "coolpc": {
    "status": "ok",
-   "seen": 202,
+   "seen": 206,
    "n": 15,
    "best": {
     "p": 29890,
@@ -170,7 +170,7 @@
     "url": "https://www.coolpc.com.tw/evaluate.php"
    },
    "why": {
-    "must": 187
+    "must": 191
    },
    "near": [
     {

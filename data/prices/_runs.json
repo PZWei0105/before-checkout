@@ -1,5 +1,24 @@
 [
  {
+  "at": "2026-11-11T18:44:08+08:00",
+  "mode": "sale:雙11",
+  "sources": {
+   "pchome": "ok",
+   "coolpc": "ok"
+  },
+  "products": {
+   "asus-proart-gr1x": "none",
+   "elgato-4k-x": "none",
+   "elgato-facecam-4k": "ok",
+   "elgato-stream-deck-mk2": "ok",
+   "iphone-18-pro-max": "ok",
+   "rtx-5080": "ok",
+   "rtx-5090": "none",
+   "rx-9070-xt": "ok"
+  },
+  "ms": 34978
+ },
+ {
   "at": "2026-11-11T10:44:01+08:00",
   "mode": "sale:雙11",
   "sources": {

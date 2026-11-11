@@ -7,7 +7,7 @@
    "src": "PChome 24h"
   }
  ],
- "checkedAt": "2026-11-11T10:44:01+08:00",
+ "checkedAt": "2026-11-11T18:44:08+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
@@ -24,11 +24,11 @@
   },
   "coolpc": {
    "status": "none",
-   "seen": 26,
+   "seen": 27,
    "n": 0,
    "best": null,
    "why": {
-    "must": 26
+    "must": 27
    },
    "near": [
     {
@@ -51,7 +51,7 @@
  },
  "latest": {
   "p": 5931,
-  "at": "2026-11-11T10:44:01+08:00",
+  "at": "2026-11-11T18:44:08+08:00",
   "src": "pchome",
   "srcLabel": "PChome 24h",
   "title": "ELGATO Facecam 4K 網路攝影機 公司貨",

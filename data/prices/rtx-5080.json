@@ -115,11 +115,16 @@
    "d": "2026-11-11",
    "p": 53990,
    "src": "PChome 24h"
+  },
+  {
+   "d": "2026-11-12",
+   "p": 53990,
+   "src": "PChome 24h"
   }
  ],
  "latest": {
   "p": 53990,
-  "at": "2026-11-11T18:44:08+08:00",
+  "at": "2026-11-12T02:38:00+08:00",
   "src": "pchome",
   "srcLabel": "PChome 24h",
   "title": "MSI 微星 GeForce RTX 5080 16G VENTUS 3X OC 顯示卡",
@@ -127,12 +132,12 @@
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-11-11T18:44:08+08:00",
+ "checkedAt": "2026-11-12T02:38:00+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
    "status": "ok",
-   "seen": 39,
+   "seen": 60,
    "n": 4,
    "best": {
     "p": 53990,
@@ -141,24 +146,23 @@
    },
    "why": {
     "not:組合": 3,
-    "not:主機": 19,
-    "not:電腦": 1,
-    "must": 12
+    "not:主機": 14,
+    "must": 39
    },
    "near": [
-    {
-     "p": 57090,
-     "t": "【顯卡+主機板】技嘉 RTX 5080 GAMING OC 16G 顯示卡 + 技嘉 B650EM FORCE WF6E 主機板",
-     "r": "not:主機"
-    },
     {
      "p": 59090,
      "t": "【顯卡+主機板】華碩 PRIME RTX 5080 EVO 16GB OC 超頻版 顯示卡 + PRIME B550M-K ARGB-CSM",
      "r": "not:主機"
     },
     {
-     "p": 59990,
-     "t": "【顯卡+主機板】微星 RTX 5080 16G GAMING TRIO OC 顯示卡 + B760M GAMING PLUS WIFI D4",
+     "p": 64592,
+     "t": "GIGABYTE 技嘉 RTX 5080 WINDFORCE OC SFF 16G 顯示卡+ X870/B850M 主機板",
+     "r": "not:主機"
+    },
+    {
+     "p": 65990,
+     "t": "MSI 微星 GeForce RTX 5080 16G COD MW4 EDITION OC 顯示卡+MPG B850 EDGE TI WI",
      "r": "not:主機"
     }
    ]

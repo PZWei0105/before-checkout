@@ -115,11 +115,16 @@
    "d": "2026-11-11",
    "p": 29890,
    "src": "原價屋"
+  },
+  {
+   "d": "2026-11-12",
+   "p": 29890,
+   "src": "原價屋"
   }
  ],
  "latest": {
   "p": 29890,
-  "at": "2026-11-11T18:44:08+08:00",
+  "at": "2026-11-12T02:38:00+08:00",
   "src": "coolpc",
   "srcLabel": "原價屋",
   "title": "｛華擎 RX9070XT Challenger 16GB｝2970MHz/29cm/三風扇/註五年保",
@@ -127,7 +132,7 @@
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-11-11T18:44:08+08:00",
+ "checkedAt": "2026-11-12T02:38:00+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
@@ -136,8 +141,8 @@
    "n": 7,
    "best": {
     "p": 30990,
-    "title": "撼訊 Reaper RX9070XT 16G-A 16G GDDR6 顯示卡",
-    "url": "https://24h.pchome.com.tw/prod/DRAD1Y-A900KMJPA"
+    "title": "SAPPHIRE 藍寶石 PULSE 脈動 RX 9070 XT GAMING 16GB 顯示卡",
+    "url": "https://24h.pchome.com.tw/prod/DSBC1T-A900J1ZK2"
    },
    "why": {
     "must": 53

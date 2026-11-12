@@ -1,18 +1,18 @@
 {
  "id": "rtx-5090",
  "daily": [],
- "checkedAt": "2026-11-12T09:28:34+08:00",
+ "checkedAt": "2026-11-12T17:42:49+08:00",
  "status": "none",
  "sources": {
   "pchome": {
    "status": "none",
-   "seen": 7,
+   "seen": 3,
    "n": 0,
    "best": null,
    "why": {
-    "not:處理器": 1,
     "not:筆電": 1,
-    "must": 5
+    "must": 1,
+    "not:處理器": 1
    },
    "near": [
     {

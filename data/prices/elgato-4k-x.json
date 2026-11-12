@@ -1,7 +1,7 @@
 {
  "id": "elgato-4k-x",
  "daily": [],
- "checkedAt": "2026-11-12T02:38:00+08:00",
+ "checkedAt": "2026-11-12T09:28:34+08:00",
  "status": "none",
  "sources": {
   "pchome": {
@@ -24,7 +24,7 @@
      "r": "must"
     },
     {
-     "p": 6003,
+     "p": 6190,
      "t": "ELGATO STREAM DECK + 主控台 直播控制器 巨集 快捷鍵 旋鈕 觸控",
      "r": "must"
     }

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-20",
+  "updatedAt": "2026-11-12",
   "events": [
     {
       "categories": [
@@ -31,6 +31,16 @@
       "note": "蝦皮、momo、PChome、酷澎年度大檔；2026 檔期多數未公告，去年常見全站滿額折與刷卡回饋",
       "type": "sale",
       "url": "https://www.businesstoday.com.tw/article/category/183030/post/202511050059/"
+    },
+    {
+      "categories": [
+        "phone"
+      ],
+      "date": "2026-11-25",
+      "name": "小米 18 Pro 系列台灣開賣",
+      "note": "預計 10 點開賣，部分小米之家已開放預約；台灣售價還沒公布",
+      "type": "launch",
+      "url": "https://www.sogi.com.tw/articles/xiaomi-18-pro-max/6270077"
     },
     {
       "categories": [

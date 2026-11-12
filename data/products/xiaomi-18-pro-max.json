@@ -145,11 +145,11 @@
       "url": "https://www.techadvisor.com/article/3257434/xiaomi-18-pro-max-global-leak-reveals-a-performance-focused-beast.html"
     },
     {
-      "note": "小米台灣 9/28 僅表示 18 Pro 系列年內登台；中國價換算約 34,302 元起，外媒預期國際版更貴。",
+      "note": "SOGI 11/9 報導：部分小米之家已開放預約，預購宣傳寫 11/25 開賣；台灣售價仍未公布。中國價換算約 34,302 元起，外媒預期國際版更貴。",
       "severity": "medium",
       "status": "ongoing",
-      "title": "台灣上市日與售價未公布",
-      "url": "https://www.setn.com/ampnews/1913651"
+      "title": "台灣售價未公布",
+      "url": "https://www.sogi.com.tw/articles/xiaomi-18-pro-max/6270077"
     },
     {
       "note": "規格未列肩鍵或主動散熱風扇，螢幕 120Hz；本質是相機旗艦，不是 ROG 那類電競機。",
@@ -199,6 +199,11 @@
     }
   ],
   "sources": [
+    {
+      "date": "2026-11-09",
+      "title": "SOGI：小米 18 Pro 系列預計 11/25 在台開賣、部分小米之家開放預約",
+      "url": "https://www.sogi.com.tw/articles/xiaomi-18-pro-max/6270077"
+    },
     {
       "date": "2026-09-28",
       "title": "三立新聞：小米台灣稱 18 Pro 系列今年登台",

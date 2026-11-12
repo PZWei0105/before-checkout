@@ -34,6 +34,8 @@ def ok(cond, msg):
 def mmdd(iso):
     m = re.match(r'(\d{4})-(\d{2})-(\d{2})', iso or ''); return f'{m.group(2)}/{m.group(3)}' if m else '--/--'
 def nums(s): return int(s.replace(',', ''))
+# 各規則觸發後，「什麼時候會改判」裡對應那一行會出現的字
+EXIT = {'N2': '組桌機', 'B1': '預算這關', 'G1': '上市後', 'S1': '開賣後', 'D1': '問題修正', 'P1': '價格這關', 'P2': '當天', 'T1': '走勢這關'}
 
 IPHONE = 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148 Safari/604.1'
 try:
@@ -89,6 +91,10 @@ try:
         pg.click(f'.stub[data-id="{pid}"]'); pg.wait_for_timeout(250)
         hits = pg.eval_on_selector_all('#sh-receipt .rl.hit', 'els=>els.map(e=>e.querySelector(".rl-id").textContent)')
         ok(hits == e['hits'], f'{pid} 判定單觸發 {hits}')
+        # 「什麼時候會改判」：每條觸發的規則都要寫出怎樣才會過關（N1 只在其他用途有升級時才寫，不檢查；最多列 5 條）
+        wl = pg.eval_on_selector_all('#sh-watch li', 'els=>els.map(e=>e.textContent)')
+        miss = [k for k in e['hits'] if k in EXIT and not any(EXIT[k] in x for x in wl)]
+        ok(not miss or len(wl) >= 5, f'{pid} 「什麼時候會改判」寫出每條觸發規則的過關條件' + (f'：缺 {miss}' if miss else ''))
         vfd = pg.inner_text('#sh-vfd')
         want = mmdd(e['pick']['auto']['at']) if e['nowBy'] == 'auto' and e['pick'] and e['pick'].get('auto') else mmdd(e['checkedAt'])
         ok(f'NOW {want}' in vfd.replace('\n', ' '), f'{pid} 客顯的 NOW 日期是價格實際查到的那天（{want}）')

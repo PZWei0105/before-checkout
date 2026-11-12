@@ -52,7 +52,7 @@
     "low90": null,
     "low90Source": null,
     "trend": "flat",
-    "trendNote": "台灣標價維持 6,590，但 momo、Yahoo購物中心、friDay、揚聲堡等 listing 已下架，現貨集中在酷澎（6,490，近期小漲 105）；蝦皮商城官方館 listing 狀態在 BigGo 兩次查詢顯示不一，PChome 搜尋無 Facecam。美國官網仍為 US$199.99，2026-02 曾在 Amazon 特價 US$159.99。",
+    "trendNote": "台灣標價維持 6,590，但 momo、Yahoo購物中心、friDay、揚聲堡等 listing 已下架，現貨集中在酷澎（6,490，近期小漲 105）；蝦皮商城官方館 listing 狀態在 BigGo 兩次查詢顯示不一，PChome 當時搜尋不到（11/11 起有上架，見自動追價）。美國官網仍為 US$199.99，2026-02 曾在 Amazon 特價 US$159.99。",
     "trendSources": [
       {
         "title": "BigGo 比價：Elgato Facecam 4K",
@@ -190,7 +190,7 @@
   },
   "issues": [
     {
-      "note": "BigGo 顯示 momo、Yahoo購物中心、friDay、揚聲堡等 6,590 listing 已下架，現貨以酷澎為主、PChome 無上架；購買時確認公司貨與保固",
+      "note": "BigGo 顯示 momo、Yahoo購物中心、friDay、揚聲堡等 6,590 listing 已下架，10/20 查證時現貨以酷澎為主、PChome 沒上架；11/11 起 PChome 24h 有公司貨頁面（自動追價抓到，庫存未確認）。購買時確認公司貨與保固",
       "severity": "medium",
       "status": "ongoing",
       "title": "台灣通路貨源縮減",

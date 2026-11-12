@@ -197,17 +197,19 @@ function conclude(p,r){
 
 function watchList(p,r,pr){
   const w=[];const get=id=>r.lines.find(l=>l.id===id);const s=p.successor||{};
-  const P1=get('P1'),B1=get('B1'),G1=get('G1'),P2=get('P2'),N1=get('N1'),N2=get('N2'),D1=get('D1');
+  const P1=get('P1'),B1=get('B1'),G1=get('G1'),S1=get('S1'),P2=get('P2'),T1=get('T1'),N1=get('N1'),N2=get('N2'),D1=get('D1');
   if(N2&&N2.status==='hit')w.push('你決定組桌機時：到「我」把桌機狀態改成「打算組桌機」，判定會重算。');
   if(N1&&N1.status==='hit'){const other=USES.map(([u])=>u).filter(u=>!(pr.uses||[]).includes(u)).map(u=>({u,lv:lvOf((p.gain||{})[u],r.thr)})).filter(x=>x.lv==='big'||x.lv==='some');
     if(other.length)w.push(`如果你開始需要${other.map(x=>USE_LABEL[x.u]).join('、')}：這幾項它是${other.map(x=>LV[x.lv]).join('、')}，判定會改變。`)}
   if(B1&&B1.status==='hit')w.push(`價格降到你的預算 ${money(r.budget)} 以下：預算這關就過了。`);
   if(G1&&G1.status==='hit')w.push(`${s.name} 上市後：請秘書重查，比較新舊價差（前一代常會降價）。`);
   else if(s.name&&s.status==='rumor')w.push(`${s.name} 若出現可信消息、而且在 ${r.thr.successorMonths} 個月內：會轉成「等新一代」。`);
+  if(S1&&S1.status==='hit')w.push('在台灣開賣後：請秘書重查，看上市價和實測。');
   if(D1&&D1.status==='hit')w.push('問題修正或改版消息出來後：請秘書重查。');
   if(P1&&P1.status==='hit'&&r.target!=null)w.push(`價格降到 ${money(r.target)} 以下：價格這關就過了。`);
   if(P1&&P1.status==='pass'&&r.target!=null&&r.verdict==='buy')w.push(`價格漲到 ${money(r.target+1)} 以上：會轉成「再等等」。`);
   if(P2&&P2.status==='hit')w.push(`${P2.evName}當天：請秘書重查，看實際折扣。`);
+  if(T1&&T1.status==='hit')w.push('價格不再往下掉（持平或回升）：走勢這關就過了。');
   if(r.age!=null&&r.age>r.thr.freshDays)w.push('資料已過保鮮期：請秘書重查，更新價格。');
   return w.slice(0,5);
 }

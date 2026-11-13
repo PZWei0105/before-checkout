@@ -120,11 +120,16 @@
    "d": "2026-11-12",
    "p": 29890,
    "src": "原價屋"
+  },
+  {
+   "d": "2026-11-13",
+   "p": 29890,
+   "src": "原價屋"
   }
  ],
  "latest": {
   "p": 29890,
-  "at": "2026-11-12T17:42:49+08:00",
+  "at": "2026-11-13T08:10:50+08:00",
   "src": "coolpc",
   "srcLabel": "原價屋",
   "title": "｛華擎 RX9070XT Challenger 16GB｝2970MHz/29cm/三風扇/註五年保",
@@ -132,20 +137,20 @@
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-11-12T17:42:49+08:00",
+ "checkedAt": "2026-11-13T08:10:50+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
    "status": "ok",
    "seen": 60,
-   "n": 7,
+   "n": 6,
    "best": {
     "p": 30990,
     "title": "SAPPHIRE 藍寶石 PULSE 脈動 RX 9070 XT GAMING 16GB 顯示卡",
     "url": "https://24h.pchome.com.tw/prod/DSBC1T-A900J1ZK2"
    },
    "why": {
-    "must": 53
+    "must": 54
    },
    "near": [
     {
@@ -167,7 +172,7 @@
   },
   "coolpc": {
    "status": "ok",
-   "seen": 206,
+   "seen": 204,
    "n": 15,
    "best": {
     "p": 29890,
@@ -175,7 +180,7 @@
     "url": "https://www.coolpc.com.tw/evaluate.php"
    },
    "why": {
-    "must": 191
+    "must": 189
    },
    "near": [
     {

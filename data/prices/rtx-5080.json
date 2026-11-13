@@ -120,11 +120,16 @@
    "d": "2026-11-12",
    "p": 53990,
    "src": "PChome 24h"
+  },
+  {
+   "d": "2026-11-13",
+   "p": 53990,
+   "src": "PChome 24h"
   }
  ],
  "latest": {
   "p": 53990,
-  "at": "2026-11-12T17:42:49+08:00",
+  "at": "2026-11-13T08:10:50+08:00",
   "src": "pchome",
   "srcLabel": "PChome 24h",
   "title": "MSI 微星 GeForce RTX 5080 16G VENTUS 3X OC 顯示卡",
@@ -132,12 +137,12 @@
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-11-12T17:42:49+08:00",
+ "checkedAt": "2026-11-13T08:10:50+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
    "status": "ok",
-   "seen": 40,
+   "seen": 42,
    "n": 4,
    "best": {
     "p": 53990,
@@ -147,7 +152,7 @@
    "why": {
     "not:組合": 3,
     "not:主機": 19,
-    "must": 13,
+    "must": 15,
     "not:電腦": 1
    },
    "near": [
@@ -170,8 +175,8 @@
   },
   "coolpc": {
    "status": "ok",
-   "seen": 206,
-   "n": 11,
+   "seen": 204,
+   "n": 10,
    "best": {
     "p": 60888,
     "title": "限搭機｛INNO3D RTX5080 X3｝2617MHz/30cm/三風扇/Dual Slot/註四年",
@@ -179,7 +184,7 @@
     "cond": "限搭機"
    },
    "why": {
-    "must": 195
+    "must": 194
    },
    "near": [
     {

@@ -1,34 +1,26 @@
 {
  "id": "elgato-4k-x",
- "daily": [],
- "checkedAt": "2026-11-13T08:10:50+08:00",
- "status": "none",
+ "daily": [
+  {
+   "d": "2026-11-14",
+   "p": 6790,
+   "src": "PChome 24h"
+  }
+ ],
+ "checkedAt": "2026-11-14T00:10:29+08:00",
+ "status": "ok",
  "sources": {
   "pchome": {
-   "status": "none",
-   "seen": 10,
-   "n": 0,
-   "best": null,
-   "why": {
-    "must": 10
+   "status": "ok",
+   "seen": 1,
+   "n": 1,
+   "best": {
+    "p": 6790,
+    "title": "ELGATO Game Capture 4K X 遊戲影像擷取盒 公司貨",
+    "url": "https://24h.pchome.com.tw/prod/DGBTBD-A900IXKXM"
    },
-   "near": [
-    {
-     "p": 5690,
-     "t": "ELGATO Wave XLR MK.2 整合式麥克風介面 公司貨",
-     "r": "must"
-    },
-    {
-     "p": 5931,
-     "t": "ELGATO Facecam 4K 網路攝影機 公司貨",
-     "r": "must"
-    },
-    {
-     "p": 6190,
-     "t": "ELGATO STREAM DECK + 主控台 直播控制器 巨集 快捷鍵 旋鈕 觸控",
-     "r": "must"
-    }
-   ]
+   "why": {},
+   "near": []
   },
   "coolpc": {
    "status": "none",
@@ -56,5 +48,15 @@
     }
    ]
   }
- }
+ },
+ "latest": {
+  "p": 6790,
+  "at": "2026-11-14T00:10:29+08:00",
+  "src": "pchome",
+  "srcLabel": "PChome 24h",
+  "title": "ELGATO Game Capture 4K X 遊戲影像擷取盒 公司貨",
+  "url": "https://24h.pchome.com.tw/prod/DGBTBD-A900IXKXM",
+  "status": "ok"
+ },
+ "held": null
 }

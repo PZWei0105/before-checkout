@@ -1,7 +1,7 @@
 {
  "id": "asus-proart-gr1x",
  "daily": [],
- "checkedAt": "2026-11-13T08:10:50+08:00",
+ "checkedAt": "2026-11-14T00:10:29+08:00",
  "status": "none",
  "sources": {
   "pchome": {
@@ -14,17 +14,17 @@
    },
    "near": [
     {
-     "p": 51200,
+     "p": 50900,
      "t": "Apple 蘋果 iPhone 18 Pro (512GB)",
      "r": "must"
     },
     {
-     "p": 51250,
+     "p": 50900,
      "t": "Apple 蘋果 iPhone 18 Pro (512GB)",
      "r": "must"
     },
     {
-     "p": 51390,
+     "p": 50900,
      "t": "Apple 蘋果 iPhone 18 Pro (512GB)",
      "r": "must"
     }

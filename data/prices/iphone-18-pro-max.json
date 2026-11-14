@@ -133,34 +133,34 @@
   }
  ],
  "latest": {
-  "p": 45477,
-  "at": "2026-11-14T00:10:29+08:00",
+  "p": 48900,
+  "at": "2026-11-14T18:14:02+08:00",
   "src": "pchome",
   "srcLabel": "PChome 24h",
-  "title": "iPhone 18 Pro Max (256GB) -勃根地紅色",
-  "url": "https://24h.pchome.com.tw/prod/DGAV0M-A900KN2DV",
+  "title": "Apple 蘋果 iPhone 18 Pro Max (256GB)",
+  "url": "https://24h.pchome.com.tw/prod/DYAJO0-A900KLG3C",
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-11-14T00:10:29+08:00",
+ "checkedAt": "2026-11-14T18:14:02+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
    "status": "ok",
-   "seen": 35,
-   "n": 12,
+   "seen": 33,
+   "n": 10,
    "best": {
-    "p": 45477,
-    "title": "iPhone 18 Pro Max (256GB) -勃根地紅色",
-    "url": "https://24h.pchome.com.tw/prod/DGAV0M-A900KN2DV"
+    "p": 48900,
+    "title": "Apple 蘋果 iPhone 18 Pro Max (256GB)",
+    "url": "https://24h.pchome.com.tw/prod/DYAJO0-A900KLG3C"
    },
    "why": {
     "must": 23
    },
    "near": [
     {
-     "p": 55762,
-     "t": "iPhone 18 Pro Max (512GB) -勃根地紅色",
+     "p": 55900,
+     "t": "Apple 蘋果 iPhone 18 Pro Max (512GB)",
      "r": "must"
     },
     {

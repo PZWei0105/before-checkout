@@ -144,7 +144,7 @@
  ],
  "latest": {
   "p": 53990,
-  "at": "2026-11-16T00:59:13+08:00",
+  "at": "2026-11-16T09:54:17+08:00",
   "src": "pchome",
   "srcLabel": "PChome 24h",
   "title": "MSI 微星 GeForce RTX 5080 16G VENTUS 3X OC 顯示卡",
@@ -152,12 +152,12 @@
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-11-16T00:59:13+08:00",
+ "checkedAt": "2026-11-16T09:54:17+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
    "status": "ok",
-   "seen": 41,
+   "seen": 60,
    "n": 4,
    "best": {
     "p": 53990,
@@ -165,9 +165,9 @@
     "url": "https://24h.pchome.com.tw/prod/DRADLA-A900IJQJ6"
    },
    "why": {
-    "not:組合": 3,
-    "not:主機": 17,
-    "must": 16,
+    "not:組合": 2,
+    "not:主機": 16,
+    "must": 37,
     "not:電腦": 1
    },
    "near": [
@@ -182,8 +182,8 @@
      "r": "not:主機"
     },
     {
-     "p": 59990,
-     "t": "【顯卡+主機板】微星 RTX 5080 16G GAMING TRIO OC 顯示卡 + B760M GAMING PLUS WIFI D4",
+     "p": 60190,
+     "t": "【顯卡+主機板】技嘉 RTX 5080 GAMING OC 16G 顯示卡 + 技嘉 B860M GAMING X WIFI6E Intel",
      "r": "not:主機"
     }
    ]

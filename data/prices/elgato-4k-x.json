@@ -15,9 +15,14 @@
    "d": "2026-11-16",
    "p": 6790,
    "src": "PChome 24h"
+  },
+  {
+   "d": "2026-11-17",
+   "p": 6790,
+   "src": "PChome 24h"
   }
  ],
- "checkedAt": "2026-11-16T09:54:17+08:00",
+ "checkedAt": "2026-11-17T04:19:52+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
@@ -34,11 +39,11 @@
   },
   "coolpc": {
    "status": "none",
-   "seen": 16,
+   "seen": 15,
    "n": 0,
    "best": null,
    "why": {
-    "must": 16
+    "must": 15
    },
    "near": [
     {
@@ -61,7 +66,7 @@
  },
  "latest": {
   "p": 6790,
-  "at": "2026-11-16T09:54:17+08:00",
+  "at": "2026-11-17T04:19:52+08:00",
   "src": "pchome",
   "srcLabel": "PChome 24h",
   "title": "ELGATO Game Capture 4K X 遊戲影像擷取盒 公司貨",

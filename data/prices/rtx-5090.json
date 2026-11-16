@@ -1,19 +1,20 @@
 {
  "id": "rtx-5090",
  "daily": [],
- "checkedAt": "2026-11-16T09:54:17+08:00",
+ "checkedAt": "2026-11-17T04:19:52+08:00",
  "status": "none",
  "sources": {
   "pchome": {
    "status": "none",
-   "seen": 8,
+   "seen": 16,
    "n": 0,
    "best": null,
    "why": {
-    "not:WIN11": 1,
+    "not:組合": 1,
     "not:筆電": 1,
-    "must": 5,
-    "not:處理器": 1
+    "must": 12,
+    "not:處理器": 1,
+    "not:WIN11": 1
    },
    "near": [
     {
@@ -35,11 +36,11 @@
   },
   "coolpc": {
    "status": "none",
-   "seen": 199,
+   "seen": 193,
    "n": 0,
    "best": null,
    "why": {
-    "must": 199
+    "must": 193
    },
    "near": [
     {

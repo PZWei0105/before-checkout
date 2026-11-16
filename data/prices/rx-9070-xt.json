@@ -140,11 +140,16 @@
    "d": "2026-11-16",
    "p": 29890,
    "src": "原價屋"
+  },
+  {
+   "d": "2026-11-17",
+   "p": 29890,
+   "src": "原價屋"
   }
  ],
  "latest": {
   "p": 29890,
-  "at": "2026-11-16T09:54:17+08:00",
+  "at": "2026-11-17T04:19:52+08:00",
   "src": "coolpc",
   "srcLabel": "原價屋",
   "title": "｛華擎 RX9070XT Challenger 16GB｝2970MHz/29cm/三風扇/註五年保",
@@ -152,26 +157,27 @@
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-11-16T09:54:17+08:00",
+ "checkedAt": "2026-11-17T04:19:52+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
    "status": "ok",
    "seen": 60,
-   "n": 5,
+   "n": 4,
    "best": {
-    "p": 30990,
-    "title": "SAPPHIRE 藍寶石 PULSE 脈動 RX 9070 XT GAMING 16GB 顯示卡",
-    "url": "https://24h.pchome.com.tw/prod/DSBC1T-A900J1ZK2"
+    "p": 31000,
+    "title": "AMD 超微 VASTARMOR 瀚鎧 RX9070XT 超合金 黑 顯示卡",
+    "url": "https://24h.pchome.com.tw/prod/DRADTT-A900KINLK"
    },
    "why": {
+    "not:+": 1,
     "must": 55
    },
    "near": [
     {
-     "p": 20370,
-     "t": "ASUS 華碩 Dual Radeon RX 9060 XT 16GB GDDR6 顯示卡",
-     "r": "must"
+     "p": 36990,
+     "t": "ASRock 華擎 RX 9070 XT Challenger 16GB 顯示卡+華擎 Steel Legend 850W 白 金牌全模",
+     "r": "not:+"
     },
     {
      "p": 20370,
@@ -179,15 +185,15 @@
      "r": "must"
     },
     {
-     "p": 20490,
-     "t": "SAPPHIRE 藍寶石 PULSE 脈動 RX 9060 XT GAMING OC 16GB 顯示卡",
+     "p": 20370,
+     "t": "ASUS 華碩 Dual Radeon RX 9060 XT 16GB GDDR6 顯示卡",
      "r": "must"
     }
    ]
   },
   "coolpc": {
    "status": "ok",
-   "seen": 199,
+   "seen": 193,
    "n": 15,
    "best": {
     "p": 29890,
@@ -195,7 +201,7 @@
     "url": "https://www.coolpc.com.tw/evaluate.php"
    },
    "why": {
-    "must": 184
+    "must": 178
    },
    "near": [
     {

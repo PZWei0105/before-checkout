@@ -148,22 +148,22 @@
   }
  ],
  "latest": {
-  "p": 29890,
-  "at": "2026-11-17T04:19:52+08:00",
+  "p": 30990,
+  "at": "2026-11-17T21:09:08+08:00",
   "src": "coolpc",
   "srcLabel": "原價屋",
-  "title": "｛華擎 RX9070XT Challenger 16GB｝2970MHz/29cm/三風扇/註五年保",
+  "title": "｛撼訊 RX9070XT 16G-A 遊蕩者｝2970MHz/31cm/三風扇/三年保/MIT台灣製",
   "url": "https://www.coolpc.com.tw/evaluate.php",
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-11-17T04:19:52+08:00",
+ "checkedAt": "2026-11-17T21:09:08+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
    "status": "ok",
    "seen": 60,
-   "n": 4,
+   "n": 5,
    "best": {
     "p": 31000,
     "title": "AMD 超微 VASTARMOR 瀚鎧 RX9070XT 超合金 黑 顯示卡",
@@ -171,7 +171,7 @@
    },
    "why": {
     "not:+": 1,
-    "must": 55
+    "must": 54
    },
    "near": [
     {
@@ -193,15 +193,16 @@
   },
   "coolpc": {
    "status": "ok",
-   "seen": 193,
-   "n": 15,
+   "seen": 201,
+   "n": 18,
    "best": {
-    "p": 29890,
-    "title": "｛華擎 RX9070XT Challenger 16GB｝2970MHz/29cm/三風扇/註五年保",
-    "url": "https://www.coolpc.com.tw/evaluate.php"
+    "p": 29990,
+    "title": "任搭價｛Acer NITRO RX9070XT 16G OC｝3100MHz/30cm/三風扇/三年保)",
+    "url": "https://www.coolpc.com.tw/evaluate.php",
+    "cond": "任搭價"
    },
    "why": {
-    "must": 178
+    "must": 183
    },
    "near": [
     {

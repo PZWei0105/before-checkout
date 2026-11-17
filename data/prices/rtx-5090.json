@@ -1,7 +1,7 @@
 {
  "id": "rtx-5090",
  "daily": [],
- "checkedAt": "2026-11-17T04:19:52+08:00",
+ "checkedAt": "2026-11-17T21:09:08+08:00",
  "status": "none",
  "sources": {
   "pchome": {
@@ -11,8 +11,8 @@
    "best": null,
    "why": {
     "not:組合": 1,
-    "not:筆電": 1,
-    "must": 12,
+    "not:筆電": 2,
+    "must": 11,
     "not:處理器": 1,
     "not:WIN11": 1
    },
@@ -28,19 +28,19 @@
      "r": "not:筆電"
     },
     {
-     "p": 299990,
-     "t": "GIGABYTE 技嘉 AORUS RTX 5090 AI BOX 顯示卡+X870主機板+處理器+電源",
-     "r": "not:處理器"
+     "p": 189000,
+     "t": "HP 惠普 OMEN MAX 16 16吋電競筆電黑色(Ultra-9 290HX Plus/64GB/RTX 5090-24GB/1TB/",
+     "r": "not:筆電"
     }
    ]
   },
   "coolpc": {
    "status": "none",
-   "seen": 193,
+   "seen": 201,
    "n": 0,
    "best": null,
    "why": {
-    "must": 193
+    "must": 201
    },
    "near": [
     {

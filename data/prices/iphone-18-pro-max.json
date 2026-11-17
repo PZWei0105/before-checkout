@@ -149,7 +149,7 @@
  ],
  "latest": {
   "p": 48900,
-  "at": "2026-11-17T04:19:52+08:00",
+  "at": "2026-11-17T21:09:08+08:00",
   "src": "pchome",
   "srcLabel": "PChome 24h",
   "title": "Apple 蘋果 iPhone 18 Pro Max (256GB)",
@@ -157,20 +157,20 @@
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-11-17T04:19:52+08:00",
+ "checkedAt": "2026-11-17T21:09:08+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
    "status": "ok",
-   "seen": 34,
-   "n": 12,
+   "seen": 37,
+   "n": 13,
    "best": {
     "p": 48900,
     "title": "Apple 蘋果 iPhone 18 Pro Max (256GB)",
     "url": "https://24h.pchome.com.tw/prod/DYAJO0-1900KFKUU"
    },
    "why": {
-    "must": 22
+    "must": 24
    },
    "near": [
     {

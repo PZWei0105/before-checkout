@@ -153,7 +153,7 @@
  },
  "held": {
   "p": 4990,
-  "at": "2026-11-17T21:09:08+08:00",
+  "at": "2026-11-18T12:10:16+08:00",
   "src": "pchome",
   "srcLabel": "PChome 24h",
   "title": "ELGATO STREAM DECK MK.2 主控台 直播控制器 巨集 快捷鍵",
@@ -161,7 +161,7 @@
   "ref": 3990,
   "change": 0.251
  },
- "checkedAt": "2026-11-17T21:09:08+08:00",
+ "checkedAt": "2026-11-18T12:10:16+08:00",
  "status": "held",
  "sources": {
   "pchome": {

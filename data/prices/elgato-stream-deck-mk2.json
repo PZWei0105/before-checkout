@@ -153,30 +153,35 @@
  },
  "held": {
   "p": 4990,
-  "at": "2026-11-18T12:10:16+08:00",
+  "at": "2026-11-18T21:49:55+08:00",
   "src": "pchome",
   "srcLabel": "PChome 24h",
-  "title": "ELGATO STREAM DECK MK.2 主控台 直播控制器 巨集 快捷鍵",
-  "url": "https://24h.pchome.com.tw/prod/DMAAO0-A900KC4OQ",
+  "title": "ELGATO Stream Deck MK.2 串流直播控制台二代-白色 公司貨",
+  "url": "https://24h.pchome.com.tw/prod/DGAFBD-A900FY8QC",
   "ref": 3990,
   "change": 0.251
  },
- "checkedAt": "2026-11-18T12:10:16+08:00",
+ "checkedAt": "2026-11-18T21:49:55+08:00",
  "status": "held",
  "sources": {
   "pchome": {
    "status": "ok",
-   "seen": 5,
-   "n": 3,
+   "seen": 7,
+   "n": 4,
    "best": {
     "p": 4990,
-    "title": "ELGATO STREAM DECK MK.2 主控台 直播控制器 巨集 快捷鍵",
-    "url": "https://24h.pchome.com.tw/prod/DMAAO0-A900KC4OQ"
+    "title": "ELGATO Stream Deck MK.2 串流直播控制台二代-白色 公司貨",
+    "url": "https://24h.pchome.com.tw/prod/DGAFBD-A900FY8QC"
    },
    "why": {
-    "not:SCISSOR": 2
+    "not:SCISSOR": 3
    },
    "near": [
+    {
+     "p": 4990,
+     "t": "ELGATO Stream Deck MK.2 (Scissor Keys) 直播控台 剪刀腳 公司貨",
+     "r": "not:SCISSOR"
+    },
     {
      "p": 4990,
      "t": "ELGATO Stream Deck MK.2 (Scissor Keys) 直播控台 剪刀腳 公司貨",

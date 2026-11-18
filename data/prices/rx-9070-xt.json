@@ -154,7 +154,7 @@
  ],
  "latest": {
   "p": 30990,
-  "at": "2026-11-18T12:10:16+08:00",
+  "at": "2026-11-18T21:49:55+08:00",
   "src": "coolpc",
   "srcLabel": "原價屋",
   "title": "｛撼訊 RX9070XT 16G-A 遊蕩者｝2970MHz/31cm/三風扇/三年保/MIT台灣製",
@@ -162,7 +162,7 @@
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-11-18T12:10:16+08:00",
+ "checkedAt": "2026-11-18T21:49:55+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
@@ -180,7 +180,7 @@
    },
    "near": [
     {
-     "p": 36990,
+     "p": 41990,
      "t": "ASRock 華擎 RX 9070 XT Challenger 16GB 顯示卡+華擎 Steel Legend 850W 白 金牌全模",
      "r": "not:+"
     },
@@ -198,7 +198,7 @@
   },
   "coolpc": {
    "status": "ok",
-   "seen": 201,
+   "seen": 200,
    "n": 18,
    "best": {
     "p": 29990,
@@ -207,7 +207,7 @@
     "cond": "任搭價"
    },
    "why": {
-    "must": 183
+    "must": 182
    },
    "near": [
     {

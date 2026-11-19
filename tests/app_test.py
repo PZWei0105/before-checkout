@@ -70,7 +70,7 @@ try:
     board = []
     for _ in range(7): board.append(pg.inner_text('#board').replace('\n', ' ')); pg.click('#board'); pg.wait_for_timeout(60)
     bot = [x for x in board if 'PRICE BOT' in x]
-    ok(not any(x['auto'] for x in EXP.values()) or (bot and ('點多' in bot[0] or '—' in bot[0] or '等第一次' in bot[0])), '客顯看板的追價時間說「幾點多」：' + (bot[0] if bot else '-'))
+    ok(not any(x['auto'] for x in EXP.values()) or (bot and ('點後' in bot[0] or '—' in bot[0] or '等第一次' in bot[0])), '客顯看板的追價時間說「幾點後」：' + (bot[0] if bot else '-'))
     for v in ['brief', 'list', 'rules', 'me']:
         pg.click(f'.tab[data-view="{v}"]'); pg.wait_for_timeout(200)
         ok(sw(pg) <= 390, f'390 {v} 沒有左右捲動（{sw(pg)}）')

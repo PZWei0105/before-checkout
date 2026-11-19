@@ -1,7 +1,7 @@
 name: deploy
 
 # 推到 main：檢查資料、打包、部署。
-# 每小時醒來一次：tools/track.mjs 自己判斷要不要追價（每天 09、21 點；大促前 3 天到隔天每小時），
+# 每小時醒來（排兩個時間，GitHub 常跳過排程，多排一個比較有機會叫醒）：tools/track.mjs 自己判斷要不要追價（每天 09、21 點；大促前 3 天到隔天每小時），
 #   有新價格就存回 repo 並重新部署；不是追價時段就直接結束。
 # 手動（Actions 頁面的 Run workflow）或 commit 訊息含「[追價]」：立刻追價一次。
 on:
@@ -9,6 +9,7 @@ on:
     branches: [main]
   schedule:
     - cron: '7 * * * *'
+    - cron: '37 * * * *'
   workflow_dispatch:
 
 permissions:

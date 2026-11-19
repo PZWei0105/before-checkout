@@ -145,6 +145,7 @@ function priceChart(p){
 
 /* ---------- 自動追價 ---------- */
 const chg=x=>`比上次${x>=0?'高':'低'} ${Math.abs(x*100).toFixed(0)}%`;
+const heldWhy=x=>x>0?'可能是特價結束、漲價或比對錯誤':'可能是特價或比對錯誤';
 const srcNames=a=>Object.values((a&&a.sources)||{}).map(s=>s.label).filter(Boolean).join('、')||'PChome 24h、原價屋';
 /* 判定用哪個價格、為什麼：照打包時記下的 price.pick（tools/merge.mjs）寫，不自己猜。short＝客顯螢幕下那一行的尾巴 */
 function pickText(p,short){
@@ -171,7 +172,7 @@ function pickText(p,short){
 function autoLineHTML(p){
   const a=p.auto;if(!a)return '';
   const P=p.price||{};const L=a.latest;const t=a.checkedAt?mdhm(a.checkedAt):'';
-  if(a.status==='held'&&a.held)return `<p class="auto held">⚠ 自動追價 ${esc(t)} 抓到 ${esc(a.held.src)} ${money(a.held.p)}（${chg(a.held.change)}），可能是特價或比對錯誤，先不採用，等秘書確認。</p>`;
+  if(a.status==='held'&&a.held)return `<p class="auto held">⚠ 自動追價 ${esc(t)} 抓到 ${esc(a.held.src)} ${money(a.held.p)}（${chg(a.held.change)}），${heldWhy(a.held.change)}，先不採用，等秘書確認。</p>`;
   if(a.status==='ok'&&L)return `<p class="auto${P.nowBy==='auto'?' on':''}">⟳ 自動追價 ${esc(t)}：${esc(L.src)} ${money(L.p)}${L.cond?`（${esc(L.cond)}）`:''}${esc(pickText(p,true))}</p>`;
   if(a.status==='none')return `<p class="auto">⟳ 自動追價 ${esc(t)}：在 ${esc(tail(srcNames(a)))}都沒比對到單賣的這一款${L?`（上次 ${esc(mdhm(L.at))} 是 ${esc(L.src)} ${money(L.p)}）`:''}，價格以秘書查證為準。</p>`;
   if(a.status==='error')return `<p class="auto">⟳ 自動追價這次連不上通路，下次會再試${L?`（上次 ${esc(mdhm(L.at))} 是 ${money(L.p)}）`:''}。</p>`;
@@ -185,10 +186,10 @@ function autoCardHTML(p){
   return `<div class="autobox"><div class="ab-h"><b>⟳ 自動追價</b><span class="small muted">${a.checkedAt?esc(mdhm(a.checkedAt)):'尚未執行'}</span></div>
     ${rows?`<ul class="auto-src">${rows}</ul>`:''}${why?`<p class="small">${esc(why)}</p>`:''}
     ${a.held?`<p class="small held">⚠ 待秘書確認：${esc(a.held.src)} ${money(a.held.p)}（${chg(a.held.change)}）。<button type="button" class="btn-link" data-act="refresh" data-id="${esc(p.id)}">請秘書重查</button></p>`:''}
-    <p class="small muted">每天早上、晚上 9 點多各追一次，大促前後每小時。只用條款允許的通路：PChome 24h、原價屋。</p></div>`;
+    <p class="small muted">每天早晚各追一次，大促前後加追；GitHub 的排程常晚到，有時延後幾小時。只用條款允許的通路：PChome 24h、原價屋。</p></div>`;
 }
 /* 下一次追價（台灣時間）：大促前 3 天到隔天每小時，其餘每天 9 點、21 點。
- * GitHub 的排程常晚 10–40 分鐘，所以只說「幾點多」，不報到分鐘。 */
+ * GitHub 的排程常晚到、有時延後幾小時，所以只說「幾點後」，不報到分鐘。 */
 function nextRunText(short){
   const now=Date.now();const TW=8*36e5;const day=t=>Math.floor((t+TW)/864e5);
   const inSale=t=>(S.calendar||[]).some(e=>(e.type||'sale')==='sale'&&/^\d{4}-\d{2}-\d{2}$/.test(e.date||'')&&(()=>{const d=Date.parse(e.date+'T00:00:00+08:00');return t>=d-3*864e5&&t<d+2*864e5})());
@@ -196,8 +197,8 @@ function nextRunText(short){
   for(let h=0;h<=26;h++){const t=Math.floor((now+TW)/36e5)*36e5-TW+h*36e5;const hr=new Date(t+TW).getUTCHours();
     if(!(inSale(t)||hr===9||hr===21))continue;
     if(last&&last>=t)continue;                       // 這個時段已經追過了
-    const d=day(t)-day(now);const when=(d===0?'今天':d===1?'明天':'後天')+` ${hr} 點多`;
-    return inSale(t)&&!short?`${when}（大促期間每小時）`:when;
+    const d=day(t)-day(now);const when=(d===0?'今天':d===1?'明天':'後天')+` ${hr} 點後`;
+    return inSale(t)&&!short?`${when}（大促期間加追）`:when;
   }
   return '—';
 }
@@ -295,7 +296,7 @@ function renderAttention(ev){
   if(!['gpu','phone','peripheral'].some(c=>num(pr.budget[c])!=null))out.push(`還沒設定預算。到「我」填上顯卡、手機、周邊預算，判定會更貼近你。<button type="button" class="btn-link" data-act="tab" data-view="me">去設定</button>`);
   for(const {p,r} of ev){
     const a=p.auto;
-    if(a&&a.status==='held'&&a.held)out.push(`<b>待秘書確認</b>：${esc(p.name)} 在 ${esc(a.held.src)} 出現 ${money(a.held.p)}（${chg(a.held.change)}），可能是特價或比對錯誤。<button type="button" class="btn-link" data-act="open" data-id="${esc(p.id)}">看單</button>`);
+    if(a&&a.status==='held'&&a.held)out.push(`<b>待秘書確認</b>：${esc(p.name)} 在 ${esc(a.held.src)} 出現 ${money(a.held.p)}（${chg(a.held.change)}），${heldWhy(a.held.change)}。<button type="button" class="btn-link" data-act="open" data-id="${esc(p.id)}">看單</button>`);
     const dl=autoPts(p);
     if(dl.length>=2){const x=dl[dl.length-1],y=dl[dl.length-2];const c=(x.p-y.p)/y.p;const age=daysSince(x.d);
       if(c<=-0.03&&age!=null&&age<=1)out.push(`<b>降價</b>：${esc(p.name)} ${esc(x.src||'')} ${money(x.p)}，比前一次低 ${Math.round(-c*100)}%（${money(y.p)}）。<button type="button" class="btn-link" data-act="open" data-id="${esc(p.id)}">看單</button>`)}

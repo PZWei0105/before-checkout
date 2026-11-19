@@ -45,8 +45,10 @@ export function mergeAuto(p,a,nowMs){
     const first=pts.map(x=>x.d).sort()[0];const span=(nowMs-Date.parse(first+'T00:00:00+08:00'))/DAY;
     if(span>=30){P.low90=Math.min(...pts.map(x=>x.p));P.low90Source=`自動追價＋秘書紀錄（近 ${Math.min(90,Math.round(span))} 天）`}
   }
-  // 走勢：自動追價滿 10 筆，最近 3 筆平均對照前兩週平均
-  if(daily.length>=10){
+  // 走勢：自動追價滿 10 筆，最近 3 筆平均對照前兩週平均。
+  // 最新一筆被擋下（待秘書確認）或紀錄已停超過 3 天時不算：手上的紀錄跟現況可能對不上，保留秘書的走勢。
+  const dailyFresh=daily.length&&(nowMs-Date.parse(daily[daily.length-1].d+'T00:00:00+08:00'))/DAY<=AUTO_FRESH_DAYS+1;
+  if(daily.length>=10&&a.status!=='held'&&dailyFresh){
     const end=Date.parse(daily[daily.length-1].d);
     const win=daily.filter(x=>{const t=Date.parse(x.d);return t<=end-4*DAY&&t>=end-17*DAY});
     if(win.length>=3){

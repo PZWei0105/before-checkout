@@ -22,7 +22,7 @@ PZ（痞子葳）沒有程式背景，所有回覆用台灣繁體中文、白話
 | `data/prices/*.json` | 追價機器人寫的價格紀錄，不要手動改。`sources.*.why`／`near` 是比對不到的原因和最接近的 3 筆 |
 | `tests/` | `merge_test.mjs`（價格合併規則）、`app_test.py`（瀏覽器測試，390／360／1440、深淺色、離線） |
 | `ROADMAP.md` | 待辦、已知問題、已完成 |
-| `.github/workflows/deploy.yml` | 推到 `main` 就檢查、打包、部署；每小時醒來由 `track.mjs` 判斷要不要追價 |
+| `.github/workflows/deploy.yml` | 推到 `main` 就檢查、打包、部署；每小時醒來兩次（GitHub 常跳過，實際一天約 3–5 次）由 `track.mjs` 判斷要不要追價 |
 
 ## 指令
 

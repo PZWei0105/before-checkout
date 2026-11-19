@@ -41,4 +41,9 @@ t('走勢：不滿 10 筆就保留秘書的',()=>{const daily=Array.from({length
 t('被擋下的價格不會變成現價',()=>{const a=prices({auto:50000});a.status='held';a.held={p:30000,at:daysAgo(0.1),srcLabel:'PChome 24h',title:'怪價格',ref:50000,change:-0.4};
   const q=mergeAuto(prod({sec:52000,secDays:8}),a,NOW);assert.equal(q.price.now,50000);assert.equal(q.auto.held.p,30000)});
 
+t('走勢：最新價格被擋下（待確認）時不算自動走勢，保留秘書的',()=>{const daily=Array.from({length:14},(_,i)=>({d:new Date(NOW-(13-i)*864e5+8*36e5).toISOString().slice(0,10),p:i>=11?45000:50000}));
+  const a=prices({auto:45000,daily});a.status='held';a.held={p:56500,at:daysAgo(0.1),srcLabel:'PChome 24h',title:'回到原價',ref:45000,change:0.256};
+  const p=mergeAuto(prod(),a,NOW).price;assert.equal(p.trend,'flat');assert.equal(p.trendBy,undefined)});
+t('走勢：自動紀錄停了超過 4 天就不算',()=>{const daily=Array.from({length:14},(_,i)=>({d:new Date(NOW-(18-i)*864e5+8*36e5).toISOString().slice(0,10),p:i>=11?45000:50000}));
+  const p=mergeAuto(prod(),prices({auto:45000,daily,autoDays:5}),NOW).price;assert.equal(p.trend,'flat');assert.equal(p.trendBy,undefined)});
 console.log(`\n${n} 項全部通過`);

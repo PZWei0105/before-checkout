@@ -1,32 +1,33 @@
 {
  "id": "asus-proart-gr1x",
  "daily": [],
- "checkedAt": "2026-11-18T21:49:55+08:00",
+ "checkedAt": "2026-11-19T11:14:04+08:00",
  "status": "none",
  "sources": {
   "pchome": {
    "status": "none",
-   "seen": 40,
+   "seen": 12,
    "n": 0,
    "best": null,
    "why": {
-    "must": 40
+    "not:記憶體": 8,
+    "not:SSD": 4
    },
    "near": [
     {
-     "p": 50900,
-     "t": "Apple 蘋果 iPhone 18 Pro (512GB)",
-     "r": "must"
+     "p": 169000,
+     "t": "ASUS 華碩 ProArt GR1X Mini PC-NVIDIA N1X處理器/64G記憶體/1TB SSD/Win11專業版(GR1X",
+     "r": "not:記憶體"
     },
     {
-     "p": 50900,
-     "t": "Apple 蘋果 iPhone 18 Pro (512GB)",
-     "r": "must"
+     "p": 169000,
+     "t": "ASUS 華碩 (商用)ProArt GR1X Mini PC(NVIDIA N1X/64G/1TB SSD/RTX-6144/W11P)",
+     "r": "not:SSD"
     },
     {
-     "p": 50900,
-     "t": "Apple 蘋果 iPhone 18 Pro (512GB)",
-     "r": "must"
+     "p": 169000,
+     "t": "ASUS 華碩 ProArt GR1X系列 - NVIDIA N1X / 64G記憶體 / 1TB SSD / Win11專業版電腦",
+     "r": "not:記憶體"
     }
    ]
   }

@@ -1,5 +1,24 @@
 [
  {
+  "at": "2026-11-20T03:37:08+08:00",
+  "mode": "catch-up",
+  "sources": {
+   "pchome": "ok",
+   "coolpc": "ok"
+  },
+  "products": {
+   "asus-proart-gr1x": "none",
+   "elgato-4k-x": "ok",
+   "elgato-facecam-4k": "ok",
+   "elgato-stream-deck-mk2": "ok",
+   "iphone-18-pro-max": "ok",
+   "rtx-5080": "ok",
+   "rtx-5090": "none",
+   "rx-9070-xt": "ok"
+  },
+  "ms": 35732
+ },
+ {
   "at": "2026-11-19T11:14:04+08:00",
   "mode": "catch-up",
   "sources": {
@@ -1119,24 +1138,5 @@
    "rx-9070-xt": "ok"
   },
   "ms": 32978
- },
- {
-  "at": "2026-10-24T09:42:27+08:00",
-  "mode": "routine",
-  "sources": {
-   "pchome": "ok",
-   "coolpc": "ok"
-  },
-  "products": {
-   "asus-proart-gr1x": "none",
-   "elgato-4k-x": "none",
-   "elgato-facecam-4k": "none",
-   "elgato-stream-deck-mk2": "ok",
-   "iphone-18-pro-max": "ok",
-   "rtx-5080": "ok",
-   "rtx-5090": "none",
-   "rx-9070-xt": "ok"
-  },
-  "ms": 36077
  }
 ]

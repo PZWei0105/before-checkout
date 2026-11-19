@@ -155,11 +155,16 @@
    "d": "2026-11-19",
    "p": 60888,
    "src": "原價屋"
+  },
+  {
+   "d": "2026-11-20",
+   "p": 60888,
+   "src": "原價屋"
   }
  ],
  "latest": {
   "p": 60888,
-  "at": "2026-11-19T11:14:04+08:00",
+  "at": "2026-11-20T03:37:08+08:00",
   "src": "coolpc",
   "srcLabel": "原價屋",
   "title": "限搭機｛INNO3D RTX5080 X3｝2617MHz/30cm/三風扇/Dual Slot/註四年",
@@ -168,7 +173,7 @@
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-11-19T11:14:04+08:00",
+ "checkedAt": "2026-11-20T03:37:08+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
@@ -178,30 +183,30 @@
    "best": null,
    "why": {
     "not:組合": 10,
-    "not:主機": 4,
-    "must": 46
+    "not:主機": 9,
+    "must": 41
    },
    "near": [
     {
-     "p": 76990,
-     "t": "GIGABYTE 技嘉 RTX 5080 WINDFORCE OC SFF 16G 顯示卡(組合包B)",
-     "r": "not:組合"
-    },
-    {
-     "p": 77980,
-     "t": "ASUS 華碩 PRIME RTX 5080 16GB GDDR7 EVO 顯示卡+ROG CROSSHAIR X870E DARK HER",
+     "p": 56390,
+     "t": "【顯卡+主機板】華碩 PRIME RTX 5080 16GB EVO 顯示卡 + PRIME B550M-K ARGB-CSM 主機板",
      "r": "not:主機"
     },
     {
-     "p": 85790,
-     "t": "GIGABYTE 技嘉 RTX 5080 AERO OC SFF 16G 顯示卡(組合包C)",
-     "r": "not:組合"
+     "p": 60190,
+     "t": "【顯卡+主機板】華碩 PRIME RTX 5080 16GB EVO 顯示卡 + TUF GAMING B850M-PLUS WIFI7 主",
+     "r": "not:主機"
+    },
+    {
+     "p": 60690,
+     "t": "【顯卡+主機板】華碩 PRIME RTX 5080 16GB EVO 顯示卡 + TUF GAMING B850-PLUS WIFI7 主機",
+     "r": "not:主機"
     }
    ]
   },
   "coolpc": {
    "status": "ok",
-   "seen": 200,
+   "seen": 199,
    "n": 2,
    "best": {
     "p": 60888,
@@ -210,7 +215,7 @@
     "cond": "限搭機"
    },
    "why": {
-    "must": 198
+    "must": 197
    },
    "near": [
     {

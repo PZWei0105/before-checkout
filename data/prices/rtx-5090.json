@@ -1,27 +1,21 @@
 {
  "id": "rtx-5090",
  "daily": [],
- "checkedAt": "2026-11-20T03:37:08+08:00",
+ "checkedAt": "2026-11-20T09:54:01+08:00",
  "status": "none",
  "sources": {
   "pchome": {
    "status": "none",
-   "seen": 34,
+   "seen": 15,
    "n": 0,
    "best": null,
    "why": {
     "not:組合": 1,
     "not:筆電": 2,
-    "must": 29,
-    "not:處理器": 1,
-    "not:WIN11": 1
+    "must": 11,
+    "not:處理器": 1
    },
    "near": [
-    {
-     "p": 169900,
-     "t": "MSI 微星 Raider A18 HX 18吋 電競miniLED筆電黑色(R9-9955HX3D/32GBx2/2TB/RTX 5090",
-     "r": "not:WIN11"
-    },
     {
      "p": 189000,
      "t": "HyperX OMEN MAX 16 16吋電競筆電黑色(Ultra-9 290HX Plus/64GB/RTX 5090-24GB/1TB",
@@ -31,6 +25,11 @@
      "p": 189000,
      "t": "HP 惠普 OMEN MAX 16 16吋電競筆電黑色(Ultra-9 290HX Plus/64GB/RTX 5090-24GB/1TB/",
      "r": "not:筆電"
+    },
+    {
+     "p": 299990,
+     "t": "GIGABYTE 技嘉 AORUS RTX 5090 AI BOX 顯示卡+X870主機板+處理器+電源",
+     "r": "not:處理器"
     }
    ]
   },

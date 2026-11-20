@@ -159,32 +159,35 @@
   {
    "d": "2026-11-20",
    "p": 60888,
-   "src": "原價屋"
+   "src": "PChome 24h"
   }
  ],
  "latest": {
   "p": 60888,
-  "at": "2026-11-20T03:37:08+08:00",
-  "src": "coolpc",
-  "srcLabel": "原價屋",
-  "title": "限搭機｛INNO3D RTX5080 X3｝2617MHz/30cm/三風扇/Dual Slot/註四年",
-  "url": "https://www.coolpc.com.tw/evaluate.php",
-  "cond": "限搭機",
+  "at": "2026-11-20T09:54:01+08:00",
+  "src": "pchome",
+  "srcLabel": "PChome 24h",
+  "title": "INNO3D 映眾 GeForce RTX 5080 16GB GDDR7 X3 顯示卡",
+  "url": "https://24h.pchome.com.tw/prod/DRADGJ-A900IK56B",
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-11-20T03:37:08+08:00",
+ "checkedAt": "2026-11-20T09:54:01+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
-   "status": "none",
+   "status": "ok",
    "seen": 60,
-   "n": 0,
-   "best": null,
+   "n": 3,
+   "best": {
+    "p": 60888,
+    "title": "INNO3D 映眾 GeForce RTX 5080 16GB GDDR7 X3 顯示卡",
+    "url": "https://24h.pchome.com.tw/prod/DRADGJ-A900IK56B"
+   },
    "why": {
-    "not:組合": 10,
-    "not:主機": 9,
-    "must": 41
+    "not:組合": 11,
+    "not:主機": 20,
+    "must": 26
    },
    "near": [
     {
@@ -193,13 +196,13 @@
      "r": "not:主機"
     },
     {
-     "p": 60190,
-     "t": "【顯卡+主機板】華碩 PRIME RTX 5080 16GB EVO 顯示卡 + TUF GAMING B850M-PLUS WIFI7 主",
+     "p": 59090,
+     "t": "【顯卡+主機板】華碩 PRIME RTX 5080 EVO 16GB OC 超頻版 顯示卡 + PRIME B550M-K ARGB-CSM",
      "r": "not:主機"
     },
     {
-     "p": 60690,
-     "t": "【顯卡+主機板】華碩 PRIME RTX 5080 16GB EVO 顯示卡 + TUF GAMING B850-PLUS WIFI7 主機",
+     "p": 59990,
+     "t": "【顯卡+主機板】微星 RTX 5080 16G GAMING TRIO OC 顯示卡 + B760M GAMING PLUS WIFI D4",
      "r": "not:主機"
     }
    ]

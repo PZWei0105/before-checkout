@@ -1,18 +1,22 @@
 {
  "id": "rtx-5090",
  "daily": [],
- "checkedAt": "2026-11-20T09:54:01+08:00",
- "status": "none",
+ "checkedAt": "2026-11-21T02:48:04+08:00",
+ "status": "held",
  "sources": {
   "pchome": {
-   "status": "none",
-   "seen": 15,
-   "n": 0,
-   "best": null,
+   "status": "ok",
+   "seen": 33,
+   "n": 1,
+   "best": {
+    "p": 217889,
+    "title": "AORUS GeForce RTX 5090 MASTER 32G 顯示卡",
+    "url": "https://24h.pchome.com.tw/prod/DGAV0M-A900KQ65I"
+   },
    "why": {
     "not:組合": 1,
-    "not:筆電": 2,
-    "must": 11,
+    "not:筆電": 1,
+    "must": 29,
     "not:處理器": 1
    },
    "near": [
@@ -22,24 +26,24 @@
      "r": "not:筆電"
     },
     {
-     "p": 189000,
-     "t": "HP 惠普 OMEN MAX 16 16吋電競筆電黑色(Ultra-9 290HX Plus/64GB/RTX 5090-24GB/1TB/",
-     "r": "not:筆電"
-    },
-    {
      "p": 299990,
      "t": "GIGABYTE 技嘉 AORUS RTX 5090 AI BOX 顯示卡+X870主機板+處理器+電源",
      "r": "not:處理器"
+    },
+    {
+     "p": 299999,
+     "t": "GIGABYTE 技嘉 AORUS RTX 5090 AI BOX 顯卡外接盒(組合包C)",
+     "r": "not:組合"
     }
    ]
   },
   "coolpc": {
    "status": "none",
-   "seen": 199,
+   "seen": 201,
    "n": 0,
    "best": null,
    "why": {
-    "must": 199
+    "must": 201
    },
    "near": [
     {
@@ -59,5 +63,15 @@
     }
    ]
   }
+ },
+ "held": {
+  "p": 217889,
+  "at": "2026-11-21T02:48:04+08:00",
+  "src": "pchome",
+  "srcLabel": "PChome 24h",
+  "title": "AORUS GeForce RTX 5090 MASTER 32G 顯示卡",
+  "url": "https://24h.pchome.com.tw/prod/DGAV0M-A900KQ65I",
+  "ref": 159990,
+  "change": 0.362
  }
 }

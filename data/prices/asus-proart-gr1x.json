@@ -1,17 +1,16 @@
 {
  "id": "asus-proart-gr1x",
  "daily": [],
- "checkedAt": "2026-11-20T09:54:01+08:00",
+ "checkedAt": "2026-11-21T02:48:04+08:00",
  "status": "none",
  "sources": {
   "pchome": {
    "status": "none",
-   "seen": 12,
+   "seen": 14,
    "n": 0,
    "best": null,
    "why": {
-    "not:記憶體": 8,
-    "not:SSD": 4
+    "not:記憶體": 14
    },
    "near": [
     {
@@ -21,12 +20,12 @@
     },
     {
      "p": 169000,
-     "t": "ASUS 華碩 (商用)ProArt GR1X Mini PC(NVIDIA N1X/64G/1TB SSD/RTX-6144/W11P)",
-     "r": "not:SSD"
+     "t": "ASUS 華碩 ProArt GR1X Mini PC-NVIDIA N1X處理器/64G記憶體/1TB SSD/Win11專業版(GR1X",
+     "r": "not:記憶體"
     },
     {
      "p": 169000,
-     "t": "ASUS 華碩 ProArt GR1X系列 - NVIDIA N1X / 64G記憶體 / 1TB SSD / Win11專業版電腦",
+     "t": "ASUS 華碩 ProArt GR1X Mini PC-NVIDIA N1X處理器/64G記憶體/1TB SSD/Win11專業版(GR1X",
      "r": "not:記憶體"
     }
    ]

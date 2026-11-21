@@ -154,15 +154,15 @@
  ],
  "latest": {
   "p": 4990,
-  "at": "2026-11-21T02:48:04+08:00",
+  "at": "2026-11-21T09:24:06+08:00",
   "src": "pchome",
   "srcLabel": "PChome 24h",
-  "title": "ELGATO Stream Deck MK.2 串流直播控制台二代 (白色) 公司貨",
-  "url": "https://24h.pchome.com.tw/prod/DGAFAV-A900KLMMK",
+  "title": "ELGATO STREAM DECK MK.2 主控台 直播控制器 巨集 快捷鍵",
+  "url": "https://24h.pchome.com.tw/prod/DMAAO0-A900KC4OQ",
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-11-21T02:48:04+08:00",
+ "checkedAt": "2026-11-21T09:24:06+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
@@ -171,8 +171,8 @@
    "n": 4,
    "best": {
     "p": 4990,
-    "title": "ELGATO Stream Deck MK.2 串流直播控制台二代 (白色) 公司貨",
-    "url": "https://24h.pchome.com.tw/prod/DGAFAV-A900KLMMK"
+    "title": "ELGATO STREAM DECK MK.2 主控台 直播控制器 巨集 快捷鍵",
+    "url": "https://24h.pchome.com.tw/prod/DMAAO0-A900KC4OQ"
    },
    "why": {
     "not:SCISSOR": 3

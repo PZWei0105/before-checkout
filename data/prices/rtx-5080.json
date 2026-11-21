@@ -169,7 +169,7 @@
  ],
  "latest": {
   "p": 60888,
-  "at": "2026-11-21T02:48:04+08:00",
+  "at": "2026-11-21T09:24:06+08:00",
   "src": "coolpc",
   "srcLabel": "原價屋",
   "title": "限搭機｛INNO3D RTX5080 X3｝2617MHz/30cm/三風扇/Dual Slot/註四年",
@@ -178,7 +178,7 @@
   "status": "ok"
  },
  "held": null,
- "checkedAt": "2026-11-21T02:48:04+08:00",
+ "checkedAt": "2026-11-21T09:24:06+08:00",
  "status": "ok",
  "sources": {
   "pchome": {
@@ -188,10 +188,15 @@
    "best": null,
    "why": {
     "not:組合": 10,
-    "not:主機": 7,
-    "must": 43
+    "not:主機": 8,
+    "must": 42
    },
    "near": [
+    {
+     "p": 71590,
+     "t": "GIGABYTE 技嘉 RTX 5080 GAMING OC 16G 顯示卡+X870 EAGLE WIFI7主機板",
+     "r": "not:主機"
+    },
     {
      "p": 73990,
      "t": "【顯卡+主機板】微星 RTX 5080 16G VENTUS 3X OC 顯示卡 + MAG X870E TOMAHAWK WIFI 主機板",
@@ -201,11 +206,6 @@
      "p": 74090,
      "t": "【顯卡+主機板】微星 RTX 5080 16G VENTUS OC 顯示卡 + MAG X870E TOMAHAWK WIFI 主機板",
      "r": "not:主機"
-    },
-    {
-     "p": 76990,
-     "t": "GIGABYTE 技嘉 RTX 5080 WINDFORCE OC SFF 16G 顯示卡(組合包B)",
-     "r": "not:組合"
     }
    ]
   },

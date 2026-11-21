@@ -1,7 +1,7 @@
 {
  "id": "rtx-5090",
  "daily": [],
- "checkedAt": "2026-11-21T02:48:04+08:00",
+ "checkedAt": "2026-11-21T09:24:06+08:00",
  "status": "held",
  "sources": {
   "pchome": {
@@ -66,7 +66,7 @@
  },
  "held": {
   "p": 217889,
-  "at": "2026-11-21T02:48:04+08:00",
+  "at": "2026-11-21T09:24:06+08:00",
   "src": "pchome",
   "srcLabel": "PChome 24h",
   "title": "AORUS GeForce RTX 5090 MASTER 32G 顯示卡",
